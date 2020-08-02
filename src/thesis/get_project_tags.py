@@ -5,10 +5,13 @@ Created on Apr 5, 2020
 '''
 
 import base64
+import getpass
 import json
 import os
+from urllib.error import URLError
 import urllib.request
-import getpass
+
+from thesis import get_dataset_dir
 
 projects = [
     "accumulo",
@@ -76,8 +79,8 @@ class GitHubComm:
             try:
                 with self.opener.open(req) as response:
                     data_str = response.read()
-            except Exception as e:
-                print("Tags Request failed for %s: %s" % (url, str(e)))
+            except URLError as exc:
+                print("Tags Request failed for %s: %s" % (url, str(exc)))
                 break
 
             data = json.loads(data_str)
@@ -88,8 +91,8 @@ class GitHubComm:
                 try:
                     with self.opener.open(req) as response:
                         data_str = response.read()
-                except Exception as e:
-                    print("Request failed for %s: %s" % (commit_url, str(e)))
+                except URLError as exc:
+                    print("Request failed for %s: %s" % (commit_url, str(exc)))
                     continue
                 commit_data = json.loads(data_str)
                 commit_date = commit_data["commit"]["author"]["date"]
@@ -102,17 +105,15 @@ class GitHubComm:
 
 
 if __name__ == "__main__":
-    curr_dir = os.path.dirname(__file__)
-    data_dir = os.path.join(os.pardir, os.pardir, "dataset")
-    data_dir = os.path.normpath(data_dir)
+    data_dir = get_dataset_dir()
     passwd = getpass.getpass("Please enter github password:")
 
     comm = GitHubComm(passwd)
-    fp = open(os.path.join(data_dir, "project_releases.csv"), "a")
-    for project in projects:
-        print("handing project:", project)
-        tags = comm.get_tags(project)
-        for project, tag_name, commit_date in tags:
-            fp.write("%s,%s,%s\n" % (project, tag_name, commit_date))
-        fp.flush()
-    fp.close()
+    filep = open(os.path.join(data_dir, "project_releases.csv"), "a")
+    for proj in projects:
+        print("handing project:", proj)
+        g_tags = comm.get_tags(proj)
+        for _, g_tag_name, g_commit_date in g_tags:
+            filep.write("%s,%s,%s\n" % (proj, g_tag_name, g_commit_date))
+        filep.flush()
+    filep.close()

@@ -1,0 +1,3489 @@
+@relation 'Efforts-5-Levels-Normal-Distribution'
+
+@attribute Class-Count numeric
+@attribute LOC numeric
+@attribute Smells-Rank {'Very Low',Low,Medium,High,'Very High'}
+@attribute Effort-Rank {'Very Low',Low,Medium,High,'Very High'}
+
+@data
+5,713,Very Low,Low
+5,2159,Low,Low
+4,152,Low,Low
+10,1019,Low,Low
+37,2898,Very Low,Low
+10,826,Low,Low
+6,70,Low,Low
+23,1093,Low,Low
+31,3200,Very Low,Very Low
+5,360,Low,Medium
+5,923,Low,Medium
+6,379,Very Low,Medium
+11,430,Low,Medium
+37,1828,Very Low,Medium
+6,238,Low,Medium
+10,401,Medium,Medium
+8,834,Medium,Low
+8,277,Medium,Medium
+24,3928,Medium,Very Low
+9,677,Medium,Very Low
+7,849,Medium,Very Low
+7,110,Medium,Medium
+5,295,Medium,Medium
+8,245,Medium,Medium
+5,937,Medium,Medium
+64,4780,Very Low,Low
+16,1420,Medium,Low
+31,3838,Low,Very Low
+17,976,Medium,Medium
+17,1136,Low,Medium
+3,191,Medium,Medium
+3,373,Medium,Medium
+1,93,Medium,Medium
+2,213,Medium,Medium
+2,50,Medium,Medium
+1,138,Medium,Medium
+5,125,Medium,Medium
+3,168,Medium,Medium
+4,276,Medium,Medium
+1,82,Medium,Medium
+5,577,Medium,High
+1,12,Medium,High
+10,271,High,High
+4,435,High,High
+5,498,High,High
+9,605,High,High
+2,303,High,Very Low
+10,479,High,Low
+25,1352,High,High
+2,14,High,High
+21,1299,High,High
+2,769,High,High
+1,320,High,High
+3,477,High,High
+2,301,Very High,Very High
+2,115,Very High,Very High
+1,24,Very High,Very High
+5,300,Very High,Very High
+3,112,Very High,Very High
+4,280,Very High,Very High
+7,823,Very Low,Very Low
+5,2304,Low,Very Low
+4,152,Very Low,Very Low
+10,1051,Low,Very Low
+37,2914,Very Low,Very Low
+10,826,Low,Low
+6,70,Low,Low
+23,1121,Low,Low
+47,4875,Very Low,Low
+5,302,Low,Low
+9,307,Low,Low
+22,1105,Low,Very Low
+14,653,Very Low,Low
+3,171,Medium,Low
+1,21,Medium,Low
+5,295,Medium,Low
+20,1576,Low,Low
+18,1824,Low,Low
+1,30,Medium,Low
+47,6218,Low,Low
+6,541,Medium,Low
+36,2027,Very Low,Low
+6,231,Medium,Low
+10,401,Medium,Medium
+21,2816,Medium,Medium
+3,948,Medium,Medium
+33,6433,Low,Very Low
+12,1291,Low,Medium
+34,6317,Low,Very Low
+5,972,Medium,Medium
+26,2226,Low,Medium
+8,129,Medium,Medium
+8,277,Medium,Medium
+6,1013,Very Low,Medium
+63,4807,Very Low,Medium
+1,81,Medium,Medium
+20,1987,Medium,Medium
+22,3133,Medium,Medium
+22,1480,Low,Medium
+15,1085,Low,Medium
+1,259,Medium,Medium
+3,360,Medium,Medium
+2,213,Medium,Medium
+5,125,Medium,Medium
+3,168,Medium,Medium
+4,274,Medium,Medium
+5,535,Medium,Medium
+10,271,Medium,Medium
+5,493,Medium,Medium
+23,851,Medium,Medium
+5,949,Medium,Medium
+5,166,Medium,Medium
+1,12,Medium,Medium
+21,1290,Medium,Medium
+2,760,Medium,Medium
+1,338,Medium,Medium
+18,1646,Medium,Medium
+19,1665,Medium,Medium
+4,502,High,High
+5,576,High,High
+5,424,High,High
+1,47,High,High
+2,135,High,High
+3,477,High,High
+10,575,High,High
+2,350,High,High
+19,1037,High,High
+10,722,High,High
+14,1089,High,High
+26,2357,High,High
+25,1347,High,High
+7,690,High,High
+11,868,High,High
+2,14,High,High
+3,477,High,High
+4,755,Very High,Very High
+4,53,Very High,Very High
+2,160,Very High,Very High
+3,108,Very High,Very High
+4,813,Very High,Very High
+4,296,Very High,Very High
+4,291,Very High,Very High
+2,329,Very High,Very High
+12,2578,Very High,Very High
+1,638,Low,Very Low
+7,831,Very Low,Low
+5,2321,Low,Very Low
+4,152,Very Low,Low
+10,1051,Low,Low
+37,2895,Very Low,Low
+10,826,Low,Low
+6,70,Low,Low
+23,1121,Low,Low
+49,5073,Very Low,Very Low
+5,302,Medium,Low
+9,310,Very Low,Low
+23,1157,Low,Low
+15,668,Very Low,Low
+3,171,Medium,Low
+1,21,Medium,Low
+5,295,Medium,Low
+5,620,Medium,Low
+20,1588,Low,Low
+18,1855,Low,Low
+1,30,Medium,Low
+47,6301,Low,Very Low
+6,549,Low,Medium
+11,633,Medium,Medium
+49,2974,Very Low,Medium
+6,238,Medium,Medium
+14,728,Medium,Medium
+22,3283,Low,Very Low
+3,948,Medium,Medium
+33,6505,Low,Medium
+9,1242,Low,Medium
+36,6301,Low,Medium
+2,264,Medium,Medium
+4,912,Medium,Medium
+27,2458,Low,Medium
+8,129,Medium,Medium
+8,277,Medium,Medium
+6,1019,Very Low,Medium
+63,4840,Very Low,Medium
+1,81,Medium,Medium
+20,2102,Medium,Medium
+22,3133,Medium,Very Low
+22,1481,Low,Medium
+15,1084,Low,Medium
+1,265,Medium,Medium
+3,360,Medium,Medium
+2,213,Medium,Medium
+3,3375,Medium,Medium
+1,117,Medium,Medium
+2,313,Medium,Medium
+5,125,Medium,Medium
+3,168,Medium,Medium
+4,274,Medium,Medium
+5,534,Medium,Medium
+10,271,Medium,Medium
+5,475,Medium,Medium
+23,851,Medium,Medium
+5,1025,Medium,Medium
+5,166,Medium,Medium
+1,12,Medium,Medium
+21,1290,Medium,High
+2,760,Medium,High
+2,171,Medium,High
+1,338,High,High
+19,1689,High,High
+20,1704,High,High
+4,502,High,High
+4,499,High,High
+5,424,High,Very Low
+1,47,High,High
+2,135,High,High
+2,350,High,High
+19,1037,High,High
+10,725,High,High
+14,1089,High,High
+26,2429,High,Very Low
+25,1347,High,High
+6,201,High,Very Low
+7,724,High,High
+11,868,High,High
+2,14,High,High
+3,477,Very High,Very High
+4,755,Very High,Very High
+4,53,Very High,Very High
+2,160,Very High,Very High
+3,108,Very High,Very High
+4,1016,Very High,Very High
+4,296,Very High,Very High
+4,297,Very High,Very High
+2,329,Very High,Very High
+14,2740,Very High,Very High
+27,1254,Low,Low
+6,137,Low,Low
+9,187,Low,Low
+12,312,Low,Low
+11,539,Low,Very Low
+21,1265,Low,Very Low
+42,3076,Very Low,Low
+21,1219,Very Low,Low
+11,787,Medium,Low
+9,672,Very Low,Medium
+17,624,Medium,Medium
+11,927,Medium,Medium
+44,1860,Very Low,Medium
+5,314,Medium,Medium
+37,1304,Medium,Medium
+6,150,Medium,Medium
+26,1260,Medium,Very Low
+8,1056,Medium,Medium
+25,2132,Medium,Medium
+39,1771,Low,Medium
+39,2327,Low,Medium
+9,143,Medium,Medium
+31,2775,Medium,Medium
+14,752,Medium,Medium
+17,659,Medium,Medium
+13,2867,Medium,Very Low
+37,3021,Medium,Medium
+6,101,Medium,High
+3,179,High,High
+21,1416,High,High
+16,881,High,High
+11,747,High,High
+4,180,High,High
+20,1031,High,High
+14,618,High,Low
+13,881,High,High
+1,27,Very High,Very High
+6,134,Very High,Very High
+4,246,Very High,Very High
+2,85,Very High,Very High
+2,153,Very High,Very High
+51,2108,Very Low,Very Low
+11,152,Low,Very Low
+10,301,Low,Low
+18,587,Low,Low
+44,3386,Low,Low
+2,196,Low,Low
+27,1256,Low,Low
+6,138,Low,Low
+14,345,Low,Low
+13,571,Low,Low
+30,1796,Very Low,Low
+8,303,Low,Low
+18,1034,Very Low,Low
+7,325,Low,Low
+9,672,Very Low,Low
+17,609,Medium,Medium
+11,926,Medium,Medium
+44,1837,Very Low,Medium
+5,297,Medium,Medium
+37,1295,Medium,Medium
+6,150,Medium,Medium
+28,1238,Medium,Medium
+10,675,Very Low,Medium
+8,1098,Medium,Medium
+14,928,Medium,Medium
+24,2101,Medium,Medium
+39,1756,Low,Very Low
+39,2399,Low,Medium
+14,195,Medium,Medium
+31,2793,Medium,Very Low
+14,747,Medium,Medium
+2,175,Medium,Medium
+16,587,Medium,Very Low
+14,2533,Medium,Medium
+37,3022,Medium,Medium
+4,246,Medium,Medium
+6,105,Medium,Medium
+28,454,Medium,Medium
+11,791,Medium,Medium
+1,39,Medium,Medium
+2,150,Medium,Medium
+3,56,Medium,Medium
+26,1714,Medium,Medium
+3,137,Medium,Medium
+2,32,Medium,Medium
+1,158,Medium,High
+21,1388,High,High
+5,120,High,High
+4,120,High,High
+1,8,High,High
+1,8,High,High
+10,945,High,High
+3,179,High,High
+16,881,High,High
+11,747,High,High
+4,180,High,High
+21,1485,High,High
+7,436,High,High
+10,500,High,Very High
+20,1031,Very High,Very High
+16,709,Very High,Very High
+13,878,Very High,Very High
+6,134,Very High,Very High
+4,192,Very High,Very High
+2,85,Very High,Very High
+2,157,Very High,Very Low
+51,1853,Very Low,Low
+11,147,Low,Low
+10,293,Low,Low
+16,490,Low,Low
+44,3116,Low,Very Low
+2,202,Low,Very Low
+10,921,Low,Low
+27,1193,Low,Low
+6,139,Low,Low
+14,330,Low,Low
+32,1938,Very Low,Very Low
+12,474,Low,Low
+8,288,Low,Medium
+19,1032,Very Low,Medium
+8,229,Medium,Medium
+9,671,Very Low,Medium
+17,602,Medium,Medium
+11,904,Medium,Low
+43,1730,Very Low,Very Low
+5,284,Medium,Medium
+41,1371,Medium,Medium
+6,150,Medium,Medium
+25,1232,Medium,Very Low
+10,663,Very Low,Medium
+8,1043,Medium,Medium
+14,894,Medium,Medium
+24,1914,Medium,Medium
+36,1459,Low,Low
+39,2254,Low,Very Low
+14,195,Medium,Medium
+33,2661,Medium,Medium
+14,687,Medium,Medium
+2,157,Medium,Medium
+11,269,Medium,Medium
+15,2585,Medium,Low
+38,2960,Medium,Medium
+4,242,Medium,Medium
+2,95,Medium,Medium
+29,466,Medium,Medium
+5,265,Medium,Medium
+3,49,Medium,Medium
+26,1677,Medium,Medium
+3,130,Medium,Medium
+2,32,Medium,High
+21,1371,High,High
+5,116,High,High
+4,120,High,High
+1,8,High,High
+1,8,High,High
+3,179,High,High
+7,361,High,Low
+16,829,High,High
+11,716,High,High
+4,175,High,High
+21,1419,High,High
+7,378,High,High
+10,488,High,High
+20,949,Very High,Very High
+16,685,Very High,Very High
+13,824,Very High,Very High
+6,134,Very High,Very High
+4,192,Very High,Very High
+2,16,Very High,Very High
+2,156,Very High,Very High
+47,1606,Very Low,Very Low
+11,147,Low,Very Low
+9,275,Low,Low
+14,387,Low,Low
+49,3084,Low,Low
+10,865,Low,Low
+37,1637,Low,Low
+6,139,Low,Low
+14,336,Low,Low
+13,483,Very Low,Low
+33,1672,Very Low,Low
+8,288,Low,Low
+19,1068,Very Low,Low
+8,482,Medium,Low
+9,292,Very Low,Low
+9,671,Very Low,Low
+20,794,Medium,Medium
+11,914,Medium,Medium
+47,1868,Low,Medium
+9,475,Low,Medium
+41,1316,Medium,Medium
+6,150,Medium,Medium
+24,1476,Medium,Very Low
+4,204,Medium,Medium
+10,743,Low,Medium
+8,993,Medium,Medium
+22,935,Low,Very Low
+15,1007,Medium,Medium
+24,1967,Medium,Very Low
+36,1526,Low,Medium
+48,2769,Medium,Medium
+9,137,Medium,Medium
+20,286,Medium,Medium
+33,2972,Medium,Medium
+14,698,Medium,Medium
+3,182,Medium,Medium
+14,415,Medium,Medium
+15,2702,Medium,Medium
+39,3171,Medium,Very Low
+2,95,Medium,Medium
+29,466,Medium,Medium
+5,265,Medium,Medium
+3,43,Medium,Medium
+26,1623,Medium,Medium
+3,130,Medium,Medium
+2,32,Medium,Medium
+21,1382,High,High
+5,116,High,High
+4,120,High,High
+3,168,High,High
+1,8,High,High
+1,8,High,High
+3,185,High,High
+16,878,High,High
+21,995,High,High
+11,722,High,High
+21,1612,High,High
+7,397,High,High
+10,547,High,High
+21,1063,High,High
+15,625,Very High,Very High
+13,842,Very High,Very High
+6,134,Very High,Very High
+4,242,Very High,Very High
+2,16,Very High,Very High
+2,28,Very High,Very High
+2,156,Very High,Very High
+47,1606,Very Low,Low
+11,147,Low,Low
+9,275,Low,Low
+14,387,Low,Low
+32,1871,Low,Low
+49,3084,Low,Low
+37,1650,Low,Low
+6,141,Low,Low
+14,336,Low,Low
+14,500,Very Low,Very Low
+33,1670,Very Low,Low
+8,288,Medium,Low
+19,1097,Very Low,Low
+7,444,Medium,Low
+9,292,Very Low,Low
+9,671,Very Low,Medium
+20,794,Medium,Very Low
+11,970,Medium,Medium
+50,1966,Low,Medium
+9,475,Low,Medium
+41,1316,Medium,Medium
+6,150,Medium,Medium
+32,2551,Low,Very Low
+4,204,Medium,Medium
+12,939,Medium,Medium
+23,1681,Medium,Medium
+8,993,Medium,Medium
+22,953,Low,Medium
+25,2228,Medium,Medium
+36,1527,Low,Very Low
+50,2814,Low,Medium
+10,151,Medium,Medium
+20,290,Medium,Medium
+33,2977,Medium,Very Low
+14,713,Medium,Medium
+3,182,Medium,Medium
+14,415,Medium,Medium
+15,2757,Medium,Medium
+45,3564,Medium,Medium
+2,95,Medium,Medium
+29,466,Medium,Medium
+5,265,Medium,Medium
+3,43,Medium,Medium
+3,130,Medium,Medium
+2,32,Medium,Medium
+20,1386,Medium,High
+5,116,High,High
+4,123,High,High
+3,168,High,High
+1,8,High,High
+1,8,High,High
+10,865,High,High
+3,185,High,High
+16,878,High,High
+21,995,High,Very Low
+11,722,High,High
+7,397,High,High
+10,546,High,High
+15,1007,High,High
+21,1063,High,High
+15,625,Very High,Very High
+13,847,Very High,Very High
+6,134,Very High,Very High
+4,246,Very High,Very High
+2,16,Very High,Very High
+2,28,Very High,Very High
+2,156,Very High,Very High
+47,1606,Very Low,Low
+11,147,Low,Low
+9,275,Low,Low
+14,387,Low,Low
+32,1871,Low,Low
+49,3084,Low,Low
+37,1650,Low,Low
+6,141,Low,Low
+14,336,Low,Low
+14,500,Very Low,Low
+33,1670,Very Low,Low
+8,288,Medium,Medium
+19,1097,Very Low,Medium
+7,444,Medium,Medium
+9,292,Very Low,Medium
+9,671,Very Low,Medium
+20,794,Medium,Very Low
+11,970,Medium,Very Low
+50,1966,Low,Medium
+9,475,Low,Medium
+41,1316,Medium,Medium
+6,150,Medium,Medium
+32,2551,Low,Medium
+4,204,Medium,Medium
+12,939,Medium,Low
+23,1681,Medium,Medium
+8,993,Medium,Medium
+22,953,Low,Medium
+25,2228,Medium,Medium
+36,1527,Low,Very Low
+50,2814,Low,Medium
+10,151,Medium,Medium
+20,290,Medium,Medium
+33,2977,Medium,Very Low
+14,713,Medium,Medium
+3,182,Medium,Medium
+14,415,Medium,Medium
+15,2757,Medium,Low
+45,3564,Medium,Medium
+2,95,Medium,Medium
+29,466,Medium,Medium
+5,265,Medium,Medium
+3,43,Medium,Medium
+3,130,Medium,High
+2,32,Medium,High
+20,1386,Medium,High
+5,116,High,High
+4,123,High,High
+3,168,High,High
+1,8,High,High
+1,8,High,High
+10,865,High,High
+3,185,High,High
+16,878,High,High
+21,995,High,High
+11,722,High,High
+7,397,High,High
+10,546,High,Very High
+15,1007,High,Very Low
+21,1063,High,Very High
+15,625,Very High,Very High
+13,847,Very High,Very Low
+6,134,Very High,Very High
+4,246,Very High,Very High
+2,16,Very High,Very High
+2,28,Very High,Very High
+2,156,Very High,Low
+32,3244,Low,Low
+73,6660,Low,Low
+184,19389,Very Low,Very Low
+42,5398,Low,Low
+30,3223,Low,Low
+38,2538,Very Low,Low
+15,1173,Low,Low
+39,4062,Low,Low
+40,4705,Low,Low
+51,5510,Very Low,Low
+264,17558,Low,Low
+19,1782,Low,Low
+13,2208,Low,Low
+14,2080,Low,Very Low
+45,3893,Very Low,Low
+32,6532,Medium,Medium
+45,4102,Low,Medium
+48,7438,Medium,Medium
+15,1016,Medium,Medium
+40,2588,Medium,Medium
+31,4793,Very Low,Very Low
+17,1165,Medium,Medium
+8,611,Medium,Medium
+20,2996,Medium,Very Low
+13,1855,Medium,Medium
+20,4668,Low,Medium
+48,6788,Low,Medium
+7,326,Medium,Medium
+134,8528,Medium,Medium
+67,2880,Medium,Medium
+21,2424,Medium,Low
+38,2353,Medium,Very Low
+49,5445,Very Low,Very Low
+15,1423,Medium,Low
+24,1677,Medium,Medium
+8,80,Medium,Medium
+9,2462,Medium,Medium
+56,5868,Very Low,Medium
+57,4921,Low,Medium
+6,2423,Medium,Medium
+161,1115,Medium,Medium
+32,1634,Medium,Medium
+37,2237,Medium,Very Low
+4,568,Medium,Medium
+1,20,Medium,Medium
+1,142,Medium,Medium
+3,423,Medium,Medium
+10,411,Medium,Medium
+1,10,Medium,Medium
+23,1237,Medium,Medium
+17,1052,Medium,Medium
+3,633,Medium,Medium
+2,121,Medium,Medium
+1,102,High,High
+5,1573,High,High
+9,4132,High,High
+13,770,High,High
+3,176,High,High
+4,218,High,High
+2,80,High,High
+2,71,High,High
+21,1399,High,High
+5,636,High,High
+1,38,High,High
+1,296,High,High
+7,1406,High,High
+1,100,High,High
+11,839,High,High
+17,753,Very High,Very High
+1,38,Very High,Very High
+1,24,Very High,Very High
+28,1500,Very High,Very High
+1,18,Very High,Very High
+1,6,Very High,Very High
+1,231,Very High,Very High
+17,1537,Very High,Very High
+32,3244,Low,Low
+74,6804,Low,Low
+191,19865,Low,Very Low
+42,5398,Low,Low
+33,3408,Very Low,Low
+39,2562,Very Low,Low
+16,1301,Low,Low
+39,4063,Low,Medium
+40,4762,Low,Medium
+51,5514,Very Low,Very Low
+271,18033,Low,Very Low
+19,1788,Low,Low
+13,2211,Low,Medium
+14,2172,Low,Medium
+45,3876,Very Low,Low
+32,6529,Medium,Medium
+45,4101,Low,Medium
+48,7427,Medium,Medium
+15,1024,Medium,Medium
+40,2621,Medium,Very Low
+31,4863,Very Low,Medium
+17,1165,Medium,Medium
+8,615,Medium,Medium
+21,3265,Medium,Low
+13,1840,Medium,Low
+21,4630,Medium,Medium
+51,6910,Low,Medium
+7,335,Medium,Medium
+135,8535,Medium,Very Low
+67,2886,Medium,Medium
+21,2494,Medium,Low
+40,2608,Low,Very Low
+52,5782,Very Low,Low
+15,1434,Medium,Medium
+24,1685,Medium,Medium
+8,80,Medium,Medium
+9,2462,Medium,Medium
+56,5934,Very Low,Low
+57,4915,Low,Low
+6,2423,Medium,Medium
+161,1115,Medium,Medium
+32,1634,Medium,Medium
+37,2241,Medium,Low
+4,568,Medium,Medium
+1,20,Medium,Medium
+1,142,Medium,Medium
+3,421,Medium,Medium
+10,411,Medium,Medium
+1,10,Medium,Medium
+23,1237,Medium,Medium
+17,1058,Medium,Very Low
+3,633,Medium,Medium
+2,121,Medium,Medium
+1,102,High,High
+5,1573,High,High
+9,4126,High,High
+13,770,High,High
+3,176,High,High
+4,218,High,High
+2,80,High,High
+2,71,High,High
+24,1574,High,High
+5,635,High,High
+1,38,High,High
+1,296,High,High
+7,1397,High,High
+1,100,High,High
+11,841,High,High
+17,753,Very High,Very High
+1,38,Very High,Very High
+1,24,Very High,Very High
+28,1500,Very High,Very High
+1,18,Very High,Very High
+1,6,Very High,Very High
+1,229,Very High,Very High
+17,1535,Very High,Very High
+32,3243,Low,Medium
+76,7161,Low,Very Low
+197,21359,Very Low,Very Low
+42,5425,Low,Low
+34,3494,Very Low,Very Low
+39,2561,Very Low,Medium
+17,1490,Low,Medium
+39,4063,Low,Medium
+6,250,Low,Medium
+40,4760,Low,Medium
+57,6044,Very Low,Low
+277,18245,Low,Very Low
+20,1883,Low,Low
+14,2244,Low,Medium
+22,3246,Low,Medium
+45,3884,Very Low,Low
+32,6530,Low,Medium
+45,4125,Low,Medium
+48,7431,Medium,Very Low
+15,1024,Medium,Medium
+42,2895,Medium,Low
+31,4910,Very Low,Medium
+18,1198,Medium,Medium
+8,623,Medium,Medium
+21,3247,Medium,Medium
+13,1840,Medium,Medium
+17,3879,Medium,Medium
+51,6935,Low,Very Low
+7,336,Medium,Medium
+136,8749,Medium,Medium
+67,2923,Medium,Medium
+22,2602,Medium,Low
+41,2880,Low,Low
+53,5872,Very Low,Low
+15,1429,Medium,Low
+24,1689,Medium,Low
+8,80,Medium,Medium
+1,321,Medium,Medium
+9,2493,Medium,Medium
+60,6313,Very Low,Low
+57,4930,Low,Medium
+6,2423,Medium,Medium
+161,1115,Medium,Medium
+32,1636,Medium,Medium
+37,2389,Medium,Medium
+4,568,Medium,Medium
+1,20,Medium,High
+1,142,Medium,High
+3,421,Medium,High
+10,411,Medium,High
+1,10,Medium,High
+5,780,Medium,Very Low
+23,1240,Medium,High
+17,1068,Medium,Low
+25,771,Medium,Medium
+3,633,Medium,High
+2,121,High,High
+1,102,High,High
+5,1582,High,High
+9,4133,High,Medium
+13,770,High,High
+3,176,High,Low
+14,1426,High,Very Low
+1,136,High,High
+4,218,High,High
+2,87,High,High
+2,78,High,High
+24,1637,High,Low
+5,647,High,High
+1,38,High,Very High
+7,1400,High,Low
+1,100,High,Very High
+11,845,Very High,Low
+17,753,Very High,Very High
+1,38,Very High,Medium
+1,24,Very High,Very High
+28,1498,Very High,Very High
+1,18,Very High,Very High
+1,6,Very High,Very High
+1,229,Very High,Very High
+17,1535,Very High,Very High
+298,24332,Very Low,Very Low
+23,2896,Low,Very Low
+33,3351,Low,Very Low
+163,18494,Low,Very Low
+297,34238,Very Low,Very Low
+76,7584,Low,Very Low
+43,5716,Low,Very Low
+37,3835,Very Low,Low
+39,2583,Very Low,Low
+17,1803,Low,Low
+39,4768,Low,Low
+11,606,Low,Low
+40,4828,Low,Low
+85,10077,Very Low,Low
+26,2163,Low,Low
+60,5241,Very Low,Low
+24,2852,Medium,Low
+7,312,Low,Low
+14,2263,Low,Low
+25,4180,Medium,Low
+45,3968,Very Low,Low
+11,488,Medium,Low
+45,4124,Low,Low
+48,7772,Medium,Low
+15,1051,Medium,Low
+43,2984,Medium,Medium
+28,4472,Medium,Medium
+20,1429,Medium,Medium
+8,621,Medium,Medium
+10,1065,Medium,Medium
+10,1957,Low,Medium
+63,8500,Low,Medium
+6,396,Low,Medium
+6,306,Medium,Medium
+137,9116,Medium,Medium
+67,2961,Medium,Medium
+22,2661,Medium,Medium
+43,3087,Medium,Medium
+54,6199,Very Low,Medium
+16,1558,Medium,Medium
+26,1764,Medium,Medium
+8,80,Medium,Medium
+9,2491,Medium,Medium
+3,649,Medium,Medium
+74,7680,Low,Medium
+61,4990,Low,Medium
+11,743,Medium,Medium
+6,2483,Medium,Medium
+12,532,Medium,Medium
+32,1664,Medium,Medium
+37,2463,Medium,Very Low
+4,568,Medium,Medium
+1,87,Medium,Medium
+1,20,Medium,Medium
+1,144,Medium,Medium
+13,1529,Medium,Medium
+20,2601,Medium,Medium
+3,447,Medium,Medium
+10,411,Medium,Medium
+1,10,Medium,Medium
+23,1274,High,High
+4,93,High,High
+3,633,High,High
+2,124,High,High
+1,105,High,High
+5,1570,High,High
+20,5218,High,High
+11,4260,High,High
+14,1428,High,High
+13,773,High,High
+4,313,High,High
+20,3192,High,High
+8,868,High,High
+4,303,High,High
+2,106,High,High
+2,97,High,High
+5,676,High,High
+1,38,High,High
+1,324,Very High,Very High
+15,3486,Very High,Very High
+8,770,Very High,Very High
+17,753,Very High,Very High
+3,182,Very High,Very High
+3,22,Very High,Very High
+1,38,Very High,Very High
+1,235,Very High,Very High
+17,1535,Very High,Very High
+188,6990,Very Low,Low
+248,19961,Low,Low
+15,348,Very Low,Low
+31,1142,Very Low,Low
+179,6542,Very Low,Low
+26,1067,Low,Low
+15,1364,Low,Low
+30,2079,Low,Low
+44,2433,Low,Low
+31,1145,Very Low,Low
+162,7197,Very Low,Low
+417,26524,Very Low,Low
+26,2393,Low,Low
+146,6050,Low,Very Low
+7,436,Low,Low
+82,4004,Very Low,Low
+152,8926,Very Low,Low
+9,416,Low,Low
+66,4092,Very Low,Low
+33,824,Very Low,Low
+7,126,Low,Low
+15,892,Low,Low
+12,593,Low,Low
+30,1529,Low,Low
+43,1940,Very Low,Very Low
+8,567,Low,Low
+8,626,Low,Low
+33,1105,Very Low,Low
+10,238,Low,Low
+13,534,Low,Low
+49,1800,Very Low,Low
+15,250,Low,Very Low
+6,287,Low,Low
+31,1207,Very Low,Low
+5,182,Medium,Low
+2,42,Medium,Low
+8,386,Medium,Low
+4,178,Medium,Low
+3,107,Medium,Low
+8,163,Medium,Low
+16,574,Medium,Low
+6,35,Medium,Medium
+9,427,Medium,Medium
+79,3282,Medium,Medium
+13,633,Very Low,Medium
+6,317,Medium,Medium
+14,430,Medium,Medium
+15,438,Very Low,Medium
+14,497,Medium,Medium
+31,2157,Medium,Medium
+108,8433,Medium,Very Low
+36,3165,Medium,Medium
+63,5499,Medium,Medium
+62,5262,Medium,Medium
+6,224,Low,Medium
+17,744,Medium,Medium
+15,1084,Medium,Medium
+55,3798,Medium,Medium
+58,3410,Medium,Medium
+10,528,Medium,Medium
+18,2972,Low,Medium
+14,1084,Medium,Medium
+45,3141,Medium,Medium
+14,323,Medium,Medium
+8,719,Medium,Medium
+4,507,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1307,Low,Medium
+14,1062,Medium,Medium
+26,1213,Low,Medium
+212,9797,Low,Very Low
+43,2235,Medium,Medium
+167,11371,Low,Very Low
+34,1586,Medium,Medium
+64,3902,Medium,Medium
+267,14277,Low,Medium
+112,5820,Medium,Medium
+6,228,Medium,Very Low
+84,3701,Medium,Very Low
+6,258,Medium,Medium
+32,1210,Low,Very Low
+9,469,Low,Medium
+20,1142,Low,Very Low
+4,563,Medium,Medium
+33,2142,Low,Medium
+9,254,Medium,Medium
+31,981,Medium,Medium
+7,234,Low,Medium
+142,8992,Medium,Medium
+17,666,Medium,Medium
+42,2984,Low,Medium
+38,2070,Medium,Very Low
+5,211,Medium,Medium
+10,406,Medium,Very Low
+14,412,Low,Medium
+7,302,Medium,Medium
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,191,Medium,Medium
+10,260,Medium,Medium
+37,2396,Low,Medium
+22,704,Medium,Medium
+5,197,Medium,Medium
+4,187,Medium,Medium
+26,1560,Low,Medium
+12,383,Low,Medium
+41,1547,Very Low,Medium
+31,1880,Low,Medium
+16,998,Medium,Medium
+7,356,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+7,314,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+3,90,Medium,Medium
+2,67,Medium,Medium
+7,273,Medium,Medium
+19,687,Medium,Medium
+5,90,Medium,Medium
+2,41,Medium,High
+27,755,Medium,High
+11,389,Medium,High
+2,55,Medium,High
+2,25,Medium,High
+4,120,Medium,High
+4,106,High,High
+3,68,High,High
+8,234,High,High
+7,257,High,High
+2,117,High,High
+11,437,High,Very Low
+7,169,High,High
+27,1219,High,High
+3,76,High,High
+4,388,High,High
+19,1093,High,High
+15,1462,High,Very Low
+13,562,High,High
+27,1686,High,High
+22,2058,High,Very Low
+1,7,High,High
+3,42,High,High
+1,24,High,High
+3,50,High,High
+28,3205,High,High
+1,8,High,High
+2,230,High,Very Low
+29,2613,High,High
+26,1598,High,High
+22,1373,High,High
+13,1155,High,High
+2,26,High,High
+26,2206,High,High
+12,842,High,High
+14,615,High,Very Low
+22,1495,High,High
+10,859,High,Very Low
+1,21,High,High
+1,21,High,High
+3,163,High,High
+5,143,High,High
+7,249,High,High
+12,866,High,High
+5,189,Very High,Very High
+24,3077,Very High,Very High
+2,116,Very High,Very High
+9,333,Very High,Very High
+11,978,Very High,Very High
+2,148,Very High,Very High
+6,621,Very High,Very High
+1,5,Very High,Very High
+16,665,Very High,Very High
+4,157,Very High,Very High
+9,427,Very High,Very High
+1,27,Very High,Very High
+29,2246,Very High,Very High
+6,150,Very High,Very High
+5,99,Very High,Very High
+2,16,Very High,Very High
+16,1028,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+188,7015,Very Low,Very Low
+249,19769,Low,Very Low
+15,348,Very Low,Very Low
+31,1142,Very Low,Very Low
+179,6542,Very Low,Very Low
+26,1067,Low,Very Low
+15,1364,Low,Very Low
+35,2313,Very Low,Very Low
+48,3117,Low,Very Low
+31,1145,Very Low,Very Low
+162,7200,Very Low,Very Low
+417,26546,Very Low,Very Low
+26,2393,Low,Low
+150,6244,Very Low,Low
+7,436,Low,Low
+82,4004,Very Low,Low
+152,8911,Very Low,Low
+9,416,Low,Low
+66,4139,Very Low,Low
+7,126,Low,Low
+15,892,Low,Low
+12,593,Low,Low
+30,1529,Low,Low
+43,2230,Very Low,Very Low
+8,578,Low,Very Low
+8,629,Low,Low
+33,1119,Very Low,Low
+11,260,Low,Low
+9,413,Low,Low
+50,1856,Very Low,Low
+15,259,Low,Low
+6,287,Low,Low
+31,1241,Very Low,Low
+6,240,Very Low,Low
+2,42,Low,Low
+8,393,Medium,Low
+4,178,Medium,Low
+3,107,Medium,Low
+8,184,Medium,Low
+16,574,Medium,Low
+6,35,Medium,Low
+9,427,Medium,Low
+82,3796,Medium,Low
+13,634,Very Low,Low
+6,317,Medium,Low
+16,478,Medium,Low
+12,458,Medium,Low
+15,438,Low,Low
+14,497,Medium,Low
+31,2157,Medium,Low
+116,9045,Medium,Very Low
+36,3165,Medium,Low
+63,5628,Medium,Low
+62,5262,Medium,Medium
+6,224,Low,Medium
+17,744,Medium,Medium
+15,1084,Medium,Medium
+55,3823,Medium,Medium
+60,3483,Medium,Medium
+10,528,Medium,Medium
+20,3040,Low,Medium
+14,1090,Medium,Medium
+45,3141,Medium,Medium
+14,264,Medium,Medium
+8,719,Medium,Medium
+4,507,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1310,Low,Medium
+14,1068,Medium,Medium
+26,1213,Low,Medium
+212,9809,Low,Very Low
+44,2389,Medium,Medium
+167,11357,Low,Medium
+34,1586,Medium,Medium
+64,3902,Medium,Medium
+267,14277,Low,Medium
+113,5841,Medium,Medium
+6,289,Medium,Medium
+87,3993,Medium,Medium
+6,258,Medium,Medium
+37,1496,Low,Medium
+9,469,Low,Medium
+19,1153,Low,Medium
+4,566,Medium,Medium
+33,2199,Low,Medium
+9,254,Medium,Medium
+31,981,Medium,Medium
+7,234,Low,Medium
+143,9061,Medium,Medium
+17,666,Medium,Medium
+42,2984,Low,Medium
+39,2316,Medium,Medium
+5,211,Medium,Medium
+10,411,Medium,Medium
+14,434,Low,Medium
+7,337,Medium,Medium
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,191,Medium,Medium
+10,260,Medium,Medium
+37,2400,Low,Medium
+22,705,Medium,Medium
+5,197,Medium,Medium
+4,187,Medium,Medium
+26,1560,Low,Medium
+12,383,Low,Medium
+37,1455,Very Low,Medium
+31,1891,Low,Medium
+16,1000,Medium,Medium
+7,356,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+18,847,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+5,228,Medium,Medium
+2,67,Medium,Medium
+7,273,Medium,Medium
+21,791,Medium,Medium
+5,90,Medium,Medium
+2,41,Medium,Medium
+27,755,Medium,Medium
+11,389,Medium,Medium
+2,55,Medium,Medium
+2,25,Medium,Medium
+4,123,Medium,High
+4,106,Medium,High
+3,68,Medium,High
+8,234,High,High
+4,121,High,Very Low
+7,257,High,High
+2,115,High,High
+9,380,High,High
+7,169,High,High
+27,1219,High,High
+3,76,High,High
+4,388,High,High
+19,1093,High,High
+15,1507,High,High
+17,735,High,High
+13,562,High,High
+27,1686,High,High
+27,2501,High,High
+1,7,High,High
+3,42,High,High
+1,24,High,High
+3,50,High,High
+28,3205,High,High
+1,8,High,High
+4,277,High,Very Low
+29,2613,High,High
+26,1598,High,High
+22,1373,High,High
+13,1155,High,High
+2,26,High,High
+22,1215,High,High
+26,2206,High,High
+12,842,High,High
+14,849,High,High
+22,1179,High,High
+10,859,High,High
+1,21,High,High
+1,21,High,High
+4,102,High,High
+7,249,High,High
+12,866,High,Very High
+5,189,Very High,Very High
+24,3077,Very High,Very High
+2,116,Very High,Very High
+9,333,Very High,Very High
+11,978,Very High,Very High
+2,148,Very High,Very High
+6,676,Very High,Very High
+1,5,Very High,Very High
+16,665,Very High,Very High
+4,157,Very High,Very High
+9,426,Very High,Very Low
+5,113,Very High,Very High
+29,2246,Very High,Very High
+2,31,Very High,Very High
+6,150,Very High,Very High
+5,99,Very High,Very High
+2,16,Very High,Very High
+16,1028,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+190,7233,Very Low,Very Low
+249,19801,Low,Very Low
+15,348,Very Low,Very Low
+31,1142,Very Low,Very Low
+181,6573,Very Low,Low
+29,1146,Low,Low
+15,1364,Low,Low
+36,2397,Very Low,Very Low
+42,2410,Low,Low
+48,3117,Low,Low
+31,1145,Very Low,Low
+163,7258,Very Low,Low
+417,26754,Very Low,Low
+26,2393,Low,Low
+150,6244,Very Low,Low
+7,418,Low,Low
+82,4004,Very Low,Low
+154,9036,Very Low,Low
+9,416,Low,Low
+66,4195,Very Low,Low
+7,126,Low,Low
+15,892,Low,Low
+12,593,Low,Low
+30,1529,Low,Low
+44,2275,Very Low,Low
+9,642,Low,Very Low
+8,614,Low,Low
+29,1023,Low,Low
+11,260,Medium,Low
+9,418,Medium,Low
+50,1875,Very Low,Very Low
+12,259,Medium,Low
+4,123,Medium,Low
+6,287,Medium,Very Low
+31,1239,Very Low,Very Low
+6,240,Very Low,Low
+2,42,Medium,Low
+8,393,Medium,Low
+8,249,Medium,Low
+4,178,Medium,Low
+8,184,Medium,Very Low
+16,574,Medium,Very Low
+6,35,Medium,Low
+9,427,Medium,Low
+87,3935,Medium,Low
+13,634,Very Low,Low
+6,317,Medium,Low
+17,486,Medium,Low
+12,458,Medium,Low
+15,438,Very Low,Low
+14,497,Medium,Low
+31,2157,Medium,Low
+125,9651,Medium,Low
+36,3165,Medium,Medium
+63,5628,Medium,Medium
+62,5262,Medium,Medium
+6,224,Very Low,Medium
+17,817,Medium,Very Low
+15,1084,Medium,Medium
+55,3823,Medium,Very Low
+60,3491,Medium,Medium
+10,528,Medium,Medium
+20,3040,Low,Very Low
+14,1090,Medium,Medium
+45,3141,Medium,Medium
+14,264,Medium,Medium
+8,719,Medium,Medium
+4,507,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1310,Low,Medium
+14,1068,Medium,Medium
+26,1213,Low,Medium
+217,10091,Low,Medium
+44,2403,Medium,Medium
+167,11355,Low,Medium
+34,1586,Medium,Medium
+64,3902,Medium,Medium
+267,14279,Low,Medium
+113,5841,Medium,Medium
+6,313,Medium,Medium
+88,4219,Medium,Medium
+6,258,Medium,Medium
+38,1569,Low,Very Low
+9,469,Low,Medium
+19,1151,Low,Very Low
+4,566,Medium,Very Low
+33,2205,Low,Medium
+9,254,Medium,Medium
+31,981,Medium,Medium
+7,234,Low,Medium
+148,9365,Medium,Very Low
+17,671,Medium,Medium
+42,2984,Low,Medium
+493,32466,Very Low,Medium
+38,2237,Low,Medium
+8,609,Low,Medium
+4,99,Medium,Medium
+45,3676,Low,Medium
+11,974,Medium,Medium
+9,203,Low,Medium
+69,3177,Low,Medium
+8,384,Medium,Medium
+108,6155,Low,Medium
+32,2773,Low,Medium
+8,392,Medium,Medium
+38,2322,Low,Medium
+5,211,Medium,Medium
+14,460,Low,Very Low
+7,337,Medium,Medium
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,191,Medium,Medium
+10,261,Low,Medium
+37,2400,Low,Medium
+5,197,Medium,Medium
+4,187,Medium,Medium
+26,1576,Low,Medium
+12,383,Low,Medium
+37,1467,Very Low,Medium
+31,1897,Low,Very Low
+17,1047,Medium,Medium
+7,356,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+5,228,Medium,Medium
+2,67,Medium,Medium
+7,273,Medium,Medium
+21,791,Medium,Medium
+5,90,Medium,Medium
+2,41,Medium,Medium
+27,755,Medium,Medium
+11,389,Medium,Medium
+2,55,Medium,Medium
+2,25,Medium,Medium
+4,106,Medium,Medium
+4,88,Medium,Medium
+8,234,Medium,Medium
+7,257,Medium,Medium
+2,115,Medium,Medium
+9,380,Medium,High
+7,169,High,High
+27,1219,High,High
+3,76,High,High
+4,388,High,High
+19,1093,High,High
+17,1535,High,High
+17,735,High,High
+13,562,High,High
+27,1686,High,High
+29,2642,High,Very Low
+2,14,High,High
+3,42,High,High
+1,24,High,High
+3,50,High,High
+29,3273,High,High
+1,8,High,High
+4,384,High,High
+29,2613,High,High
+26,1598,High,High
+22,1373,High,High
+13,1156,High,High
+2,26,High,High
+22,1215,High,High
+26,2206,High,High
+12,842,High,High
+16,993,High,High
+22,1189,High,High
+15,1127,High,High
+1,21,High,High
+1,21,High,High
+4,102,High,High
+7,249,High,High
+12,866,High,High
+5,189,High,High
+24,3077,High,High
+2,116,High,High
+9,333,High,High
+11,978,High,High
+2,148,High,High
+1,8,High,High
+5,30,High,High
+4,115,High,High
+15,513,Very High,Very High
+11,1487,Very High,Very High
+1,9,Very High,Very High
+7,328,Very High,Very High
+20,726,Very High,Very High
+5,269,Very High,Very High
+6,676,Very High,Very High
+24,1033,Very High,Very High
+1,5,Very High,Very High
+16,670,Very High,Very High
+4,157,Very High,Very High
+9,437,Very High,Very High
+5,113,Very High,Very High
+29,2211,Very High,Very High
+2,31,Very High,Very High
+6,150,Very High,Very High
+27,760,Very High,Very High
+5,99,Very High,Very High
+2,16,Very High,Very High
+16,1028,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+193,7361,Very Low,Low
+249,19801,Low,Very Low
+15,348,Very Low,Low
+31,1142,Very Low,Very Low
+182,6835,Very Low,Low
+29,1146,Low,Low
+15,1364,Low,Very Low
+36,2543,Very Low,Very Low
+64,3845,Low,Low
+64,3941,Low,Very Low
+31,1145,Very Low,Low
+164,7291,Very Low,Low
+417,26780,Very Low,Very Low
+26,2393,Low,Low
+150,6234,Very Low,Low
+6,413,Low,Very Low
+83,4057,Very Low,Low
+154,9047,Very Low,Low
+9,422,Low,Low
+67,4462,Very Low,Low
+11,237,Very Low,Low
+17,182,Low,Low
+120,4077,Very Low,Low
+13,325,Low,Low
+7,148,Low,Low
+6,157,Low,Low
+36,1047,Very Low,Low
+13,529,Low,Low
+7,174,Low,Low
+7,126,Low,Low
+15,892,Low,Low
+12,593,Low,Low
+30,1529,Medium,Low
+47,2424,Very Low,Low
+12,917,Medium,Very Low
+8,614,Medium,Low
+29,1024,Medium,Low
+11,260,Medium,Low
+9,418,Medium,Low
+51,1943,Very Low,Low
+13,274,Medium,Low
+11,471,Very Low,Low
+24,766,Medium,Low
+7,364,Very Low,Low
+6,254,Very Low,Low
+2,42,Medium,Low
+8,393,Medium,Low
+8,261,Medium,Low
+4,178,Medium,Low
+9,214,Medium,Low
+16,585,Medium,Low
+6,35,Medium,Medium
+9,427,Medium,Medium
+87,3981,Medium,Very Low
+13,634,Very Low,Medium
+6,317,Medium,Medium
+17,486,Medium,Medium
+12,458,Medium,Medium
+15,438,Low,Medium
+14,497,Medium,Medium
+31,2157,Medium,Medium
+125,9670,Medium,Low
+36,3165,Medium,Medium
+63,5628,Medium,Medium
+58,4745,Medium,Medium
+6,224,Medium,Medium
+17,836,Medium,Medium
+15,1090,Medium,Medium
+55,3824,Medium,Very Low
+60,3491,Medium,Low
+13,1122,Medium,Medium
+10,528,Medium,Medium
+25,3190,Low,Medium
+14,1090,Medium,Medium
+51,3327,Medium,Medium
+13,250,Medium,Medium
+8,719,Medium,Medium
+4,507,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1310,Low,Medium
+14,1068,Medium,Medium
+26,1213,Low,Medium
+217,10154,Low,Very Low
+44,2401,Medium,Medium
+167,11354,Low,Medium
+34,1586,Medium,Very Low
+64,3902,Medium,Medium
+267,14279,Low,Medium
+113,5829,Medium,Medium
+6,313,Medium,Medium
+91,4458,Low,Very Low
+6,258,Medium,Medium
+45,2100,Low,Medium
+9,469,Low,Medium
+20,1633,Low,Very Low
+5,608,Medium,Very Low
+33,2303,Low,Medium
+9,254,Medium,Medium
+31,981,Medium,Medium
+7,234,Low,Medium
+148,9390,Medium,Medium
+17,673,Medium,Medium
+42,3050,Low,Medium
+493,32528,Very Low,Very Low
+38,2237,Low,Medium
+8,750,Low,Medium
+4,99,Medium,Medium
+45,3672,Low,Very Low
+11,974,Medium,Medium
+9,203,Low,Medium
+66,2926,Low,Low
+8,384,Medium,Medium
+108,6155,Low,Medium
+32,2773,Low,Medium
+8,392,Medium,Medium
+38,2342,Low,Medium
+5,211,Medium,Medium
+14,460,Low,Medium
+7,349,Medium,Medium
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,191,Medium,Medium
+10,261,Low,Medium
+37,2400,Low,Very Low
+5,197,Medium,Medium
+4,187,Medium,Medium
+26,1572,Low,Medium
+13,397,Low,Medium
+37,1464,Very Low,Medium
+31,1869,Low,Medium
+20,1087,Medium,Medium
+9,440,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+6,183,Medium,Medium
+3,78,Medium,Medium
+4,264,Medium,Medium
+25,1577,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+17,768,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+5,228,Medium,Medium
+2,67,Medium,Medium
+7,273,Medium,Medium
+21,793,Medium,Medium
+5,90,Medium,Medium
+2,41,Medium,Medium
+27,755,Medium,Medium
+11,389,Medium,Medium
+2,55,Medium,Medium
+2,25,Medium,Medium
+4,123,Medium,High
+4,106,Medium,High
+4,88,Medium,High
+8,234,Medium,High
+7,257,Medium,High
+1,12,High,High
+9,385,High,High
+7,169,High,High
+5,156,High,High
+27,1219,High,High
+3,76,High,High
+4,389,High,High
+19,1099,High,High
+17,1535,High,High
+17,735,High,High
+13,562,High,High
+27,1686,High,Very Low
+29,2672,High,High
+2,14,High,High
+3,42,High,High
+1,24,High,High
+3,50,High,High
+29,3278,High,High
+1,8,High,High
+4,384,High,High
+29,2613,High,Very Low
+26,1598,High,High
+22,1373,High,High
+14,1367,High,High
+2,26,High,High
+22,1215,High,High
+26,2206,High,High
+12,887,High,High
+16,1041,High,High
+22,1189,High,High
+15,1127,High,Very Low
+1,21,High,High
+1,21,High,High
+13,336,High,High
+2,29,High,High
+4,102,High,High
+4,157,High,High
+7,249,High,High
+12,866,High,High
+11,613,High,High
+5,189,High,High
+25,3116,High,High
+2,116,High,High
+9,333,High,High
+11,978,High,Very High
+2,148,High,Very High
+1,8,Very High,Very High
+4,115,Very High,Very High
+15,515,Very High,Very High
+11,1528,Very High,Very Low
+1,9,Very High,Very High
+7,328,Very High,Very High
+20,726,Very High,Very High
+5,269,Very High,Very High
+6,676,Very High,Very High
+24,1033,Very High,Very High
+1,5,Very High,Very High
+16,670,Very High,Very High
+4,157,Very High,Very High
+9,437,Very High,Very High
+5,113,Very High,Very High
+29,2211,Very High,Very High
+2,31,Very High,Very High
+6,150,Very High,Very High
+27,760,Very High,Very Low
+5,99,Very High,Very High
+2,16,Very High,Very High
+16,1028,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+193,7417,Very Low,Very Low
+251,20401,Low,Very Low
+15,348,Very Low,Very Low
+33,1198,Very Low,Very Low
+181,6793,Very Low,Very Low
+29,1146,Low,Very Low
+15,1364,Low,Very Low
+64,3552,Very Low,Very Low
+55,3425,Low,Very Low
+75,5329,Low,Very Low
+31,1145,Very Low,Low
+166,7308,Very Low,Low
+425,27054,Very Low,Low
+26,2393,Low,Low
+150,6243,Very Low,Low
+11,578,Low,Low
+83,4057,Very Low,Low
+162,9289,Very Low,Low
+9,422,Low,Low
+67,4457,Very Low,Low
+11,237,Very Low,Low
+17,182,Low,Low
+120,4077,Very Low,Low
+13,325,Low,Low
+7,148,Low,Low
+6,157,Low,Low
+37,1087,Very Low,Low
+13,529,Low,Low
+7,174,Low,Low
+7,126,Low,Low
+15,897,Medium,Low
+12,611,Medium,Low
+30,1529,Medium,Low
+48,2446,Very Low,Low
+18,1398,Medium,Low
+9,412,Medium,Low
+57,2305,Very Low,Low
+13,274,Medium,Low
+11,468,Very Low,Low
+24,808,Medium,Low
+7,364,Very Low,Low
+4,201,Medium,Low
+2,42,Medium,Low
+8,393,Medium,Low
+8,272,Medium,Low
+4,178,Medium,Low
+9,214,Medium,Low
+16,585,Medium,Low
+6,35,Medium,Low
+9,427,Medium,Low
+88,4052,Medium,Low
+13,645,Very Low,Low
+10,611,Medium,Low
+17,486,Medium,Low
+12,458,Medium,Low
+32,1865,Medium,Very Low
+15,444,Low,Medium
+14,497,Medium,Medium
+31,2157,Medium,Medium
+125,9782,Medium,Very Low
+36,3165,Medium,Medium
+64,5797,Medium,Medium
+58,4745,Medium,Medium
+6,224,Low,Medium
+17,836,Medium,Medium
+59,4776,Medium,Medium
+15,1090,Medium,Medium
+61,4312,Medium,Medium
+60,3500,Medium,Medium
+13,1122,Medium,Medium
+2,71,Medium,Medium
+10,528,Medium,Medium
+25,3183,Low,Medium
+14,1090,Medium,Medium
+55,3584,Medium,Medium
+15,372,Medium,Medium
+8,719,Medium,Medium
+4,506,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1310,Low,Medium
+14,1068,Medium,Medium
+26,1213,Low,Medium
+219,10260,Low,Very Low
+44,2401,Medium,Medium
+167,11352,Low,Medium
+36,1778,Medium,Very Low
+64,3902,Medium,Medium
+267,14267,Low,Medium
+113,5828,Medium,Medium
+6,313,Medium,Medium
+102,5358,Low,Very Low
+9,435,Low,Medium
+45,2122,Low,Medium
+9,469,Low,Medium
+15,1614,Low,Medium
+15,795,Medium,Very Low
+9,249,Medium,Medium
+31,981,Medium,Medium
+7,238,Low,Medium
+148,9393,Medium,Medium
+17,678,Medium,Medium
+43,3063,Low,Medium
+493,32614,Very Low,Medium
+38,2237,Low,Medium
+8,755,Low,Medium
+4,99,Medium,Medium
+47,3953,Low,Medium
+11,974,Medium,Medium
+9,203,Low,Medium
+66,2926,Low,Medium
+8,384,Medium,Medium
+108,6153,Low,Medium
+32,2793,Low,Medium
+8,392,Medium,Medium
+38,2453,Low,Very Low
+5,220,Medium,Medium
+16,603,Medium,Medium
+7,349,Medium,Very Low
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,190,Medium,Medium
+10,263,Low,Medium
+38,2431,Low,Medium
+5,197,Medium,Medium
+7,281,Low,Medium
+26,1572,Low,Medium
+13,397,Low,Medium
+37,1482,Very Low,Very Low
+34,2059,Low,Very Low
+20,1087,Medium,Medium
+9,440,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+2,50,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+6,183,Medium,Medium
+3,78,Medium,Medium
+4,264,Medium,Medium
+25,1577,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+17,768,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+5,228,Medium,Medium
+2,67,Medium,Medium
+3,45,Medium,Medium
+4,131,Medium,Medium
+4,109,Medium,Medium
+4,88,Medium,Very Low
+8,236,Medium,Medium
+7,260,Medium,Medium
+1,12,Medium,Medium
+9,383,Medium,High
+7,169,High,High
+27,1219,High,High
+3,76,High,High
+4,389,High,High
+19,1099,High,High
+17,1535,High,High
+17,734,High,High
+13,562,High,High
+16,1207,High,High
+29,2750,High,High
+2,14,High,High
+3,42,High,High
+1,52,High,High
+3,50,High,High
+29,3278,High,High
+1,8,High,High
+4,437,High,High
+26,1593,High,High
+26,1598,High,High
+22,1377,High,High
+14,1366,High,High
+2,26,High,High
+22,1215,High,High
+27,2471,High,High
+12,887,High,High
+16,1041,High,High
+22,1189,High,High
+20,1296,High,High
+1,21,High,High
+1,21,High,High
+18,451,High,High
+2,26,High,High
+4,102,High,High
+5,168,High,Very Low
+7,249,High,High
+12,866,High,High
+11,613,High,High
+5,189,High,High
+29,2390,High,High
+25,3164,High,High
+2,120,High,High
+9,330,High,High
+11,978,High,High
+2,148,High,High
+1,8,High,High
+4,108,Very High,Very High
+13,1858,Very High,Very High
+1,9,Very High,Very High
+7,328,Very High,Very High
+20,726,Very High,Very High
+5,269,Very High,Very High
+6,676,Very High,Very High
+29,1198,Very High,Very High
+1,5,Very High,Very High
+16,670,Very High,Very High
+4,157,Very High,Very High
+10,504,Very High,Very High
+5,113,Very High,Very High
+29,2211,Very High,Very High
+2,44,Very High,Very High
+6,150,Very High,Very High
+2,32,Very High,Very High
+27,809,Very High,Very High
+5,97,Very High,Very High
+2,16,Very High,Very High
+16,1034,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+194,7521,Very Low,Very Low
+251,20481,Low,Very Low
+18,433,Low,Very Low
+34,1219,Very Low,Very Low
+182,6934,Very Low,Very Low
+29,1146,Low,Low
+15,1373,Low,Low
+68,3923,Very Low,Low
+66,3918,Low,Very Low
+76,5377,Low,Very Low
+31,1145,Very Low,Low
+165,7303,Very Low,Low
+425,27105,Very Low,Low
+26,2393,Low,Low
+150,6243,Very Low,Low
+11,578,Low,Low
+83,4057,Very Low,Low
+164,9440,Very Low,Low
+9,422,Low,Low
+67,4469,Very Low,Low
+11,237,Very Low,Low
+17,182,Low,Low
+120,4077,Very Low,Low
+13,325,Low,Low
+7,148,Low,Low
+6,157,Low,Low
+37,1087,Very Low,Low
+13,529,Low,Low
+7,174,Low,Low
+7,126,Low,Low
+16,928,Low,Low
+12,613,Low,Low
+30,1529,Medium,Low
+52,2688,Very Low,Low
+21,1498,Medium,Low
+9,426,Medium,Low
+57,2317,Very Low,Very Low
+13,274,Medium,Low
+11,468,Very Low,Low
+24,808,Medium,Low
+7,364,Very Low,Low
+4,201,Medium,Low
+2,42,Medium,Low
+4,106,Medium,Low
+8,393,Medium,Low
+8,272,Medium,Low
+4,178,Medium,Low
+9,214,Medium,Low
+16,585,Medium,Low
+6,35,Medium,Low
+9,427,Medium,Low
+87,4063,Medium,Low
+13,655,Very Low,Low
+16,903,Medium,Low
+17,486,Medium,Medium
+12,458,Medium,Medium
+32,1865,Medium,Very Low
+15,444,Very Low,Medium
+14,516,Medium,Medium
+31,2157,Medium,Very Low
+140,10906,Medium,Very Low
+36,3165,Medium,Medium
+64,5797,Medium,Medium
+58,4755,Medium,Medium
+6,224,Low,Medium
+17,840,Medium,Very Low
+59,4776,Medium,Medium
+61,4347,Medium,Medium
+60,3500,Medium,Medium
+13,1122,Medium,Medium
+2,71,Medium,Medium
+10,528,Medium,Medium
+21,609,Medium,Medium
+25,3183,Low,Medium
+14,1090,Medium,Medium
+55,3584,Medium,Medium
+15,372,Medium,Medium
+8,719,Medium,Medium
+4,506,Medium,Medium
+6,281,Medium,Medium
+21,942,Low,Medium
+31,1310,Low,Medium
+14,1068,Medium,Medium
+26,1213,Low,Medium
+226,10541,Low,Very Low
+44,2414,Medium,Very Low
+167,11352,Low,Medium
+54,2831,Medium,Very Low
+64,3902,Medium,Medium
+265,14251,Low,Medium
+111,5815,Medium,Medium
+7,375,Medium,Medium
+102,5417,Low,Very Low
+9,479,Low,Medium
+45,2122,Low,Medium
+9,469,Low,Medium
+15,1614,Low,Medium
+12,611,Medium,Medium
+9,249,Medium,Medium
+31,981,Medium,Medium
+7,238,Low,Medium
+147,9431,Medium,Medium
+17,678,Medium,Medium
+43,3063,Low,Medium
+496,32974,Very Low,Medium
+38,2237,Low,Medium
+8,755,Low,Medium
+4,99,Medium,Medium
+47,4000,Low,Medium
+11,973,Medium,Medium
+8,163,Low,Medium
+66,2929,Low,Medium
+8,384,Medium,Medium
+103,5663,Low,Medium
+33,3007,Low,Medium
+8,392,Medium,Medium
+40,2577,Low,Medium
+5,220,Medium,Medium
+16,604,Medium,Medium
+7,362,Medium,Very Low
+7,275,Medium,Medium
+3,47,Medium,Medium
+6,190,Medium,Medium
+14,544,Low,Medium
+40,2550,Low,Medium
+34,1155,Medium,Very Low
+5,197,Medium,Medium
+7,282,Low,Medium
+26,1572,Low,Medium
+13,397,Low,Medium
+37,1488,Very Low,Medium
+39,2400,Medium,Medium
+20,1087,Medium,Medium
+11,496,Medium,Medium
+2,30,Medium,Medium
+12,1381,Medium,Medium
+2,50,Medium,Medium
+18,1223,Medium,Medium
+9,202,Medium,Medium
+6,183,Medium,Medium
+3,78,Medium,Medium
+4,264,Medium,Medium
+25,1577,Medium,Medium
+4,655,Medium,Medium
+5,264,Medium,Medium
+5,443,Medium,Medium
+17,768,Medium,Medium
+8,577,Medium,Medium
+21,1111,Medium,Medium
+5,228,Medium,Medium
+2,67,Medium,Medium
+3,45,Medium,Medium
+4,131,Medium,Medium
+4,109,Medium,Medium
+4,123,Medium,High
+8,236,Medium,High
+7,260,Medium,High
+1,12,Medium,High
+9,383,High,High
+7,169,High,High
+27,1219,High,High
+3,76,High,High
+4,389,High,High
+19,1099,High,High
+17,1553,High,High
+17,734,High,High
+13,562,High,High
+16,1207,High,High
+29,2752,High,High
+2,14,High,High
+3,42,High,High
+1,52,High,High
+3,50,High,High
+29,3278,High,High
+1,8,High,High
+4,461,High,High
+26,1593,High,High
+26,1598,High,High
+18,1137,High,High
+2,138,High,High
+22,1377,High,Very Low
+14,1366,High,High
+2,26,High,High
+22,1215,High,High
+28,2473,High,Very Low
+12,887,High,High
+16,1047,High,High
+22,1189,High,High
+20,1296,High,High
+1,21,High,High
+1,21,High,High
+2,26,High,High
+4,102,High,High
+5,168,High,Very Low
+7,249,High,High
+12,866,High,High
+11,613,High,High
+5,189,High,High
+29,2427,High,Very Low
+20,2724,High,High
+2,120,High,High
+9,330,High,High
+11,978,High,High
+2,148,High,High
+1,8,Very High,Very High
+4,108,Very High,Very High
+23,2456,Very High,Very High
+1,9,Very High,Very High
+7,328,Very High,Very High
+20,726,Very High,Very High
+5,269,Very High,Very High
+6,676,Very High,Very High
+29,1198,Very High,Very High
+1,5,Very High,Very High
+16,670,Very High,Very High
+4,157,Very High,Very High
+10,504,Very High,Very High
+5,113,Very High,Very High
+29,2211,Very High,Very High
+2,44,Very High,Very High
+6,150,Very High,Very High
+2,32,Very High,Very High
+5,97,Very High,Very High
+2,16,Very High,Very High
+16,1034,Very High,Very High
+3,67,Very High,Very High
+3,327,Very High,Very High
+35,2105,Medium,Medium
+5,1265,Medium,Low
+6,867,Low,Medium
+10,527,Medium,Medium
+13,1501,Low,Very Low
+20,1637,Medium,Low
+13,1047,Low,Low
+25,2401,Medium,Medium
+6,411,Medium,Medium
+47,3387,Low,Very Low
+5,389,Medium,Medium
+3,812,Very Low,Medium
+6,1175,Very Low,Medium
+6,670,Medium,Medium
+14,1337,Low,Medium
+2,821,Medium,Medium
+8,916,Medium,Medium
+27,1698,Low,Low
+45,2696,Very Low,Low
+7,692,Medium,Medium
+13,1393,Low,Medium
+7,866,Medium,Medium
+79,7303,Low,Low
+8,1006,Medium,Medium
+15,732,Low,Medium
+29,6975,Very Low,Low
+15,1418,Medium,Medium
+31,2577,Very Low,Low
+9,903,Medium,Medium
+50,3103,Low,Very Low
+9,2784,Medium,Low
+1,91,Medium,High
+4,216,Medium,Very Low
+3,483,Medium,High
+6,508,Medium,High
+2,79,Medium,High
+1,23,High,High
+1,53,High,High
+12,1236,High,High
+10,509,High,High
+8,1599,High,High
+8,668,High,Medium
+6,982,High,Medium
+27,869,High,High
+3,296,High,Very High
+6,543,High,Very High
+21,752,Very High,Very High
+9,989,Very High,Very High
+1,1191,Very High,Very Low
+8,1079,Very High,Low
+6,809,Very High,Very High
+3,289,Very High,Very High
+36,2158,Medium,Low
+5,1281,Medium,Low
+6,867,Low,Low
+11,595,Medium,Low
+13,1580,Low,Very Low
+14,1208,Low,Low
+25,2397,Medium,Low
+8,545,Medium,Low
+49,3581,Very Low,Low
+5,389,Medium,Low
+3,816,Very Low,Medium
+7,1429,Very Low,Medium
+6,670,Medium,Medium
+18,1621,Low,Very Low
+2,849,Medium,Medium
+8,933,Medium,Medium
+28,1788,Low,Very Low
+45,2719,Very Low,Very Low
+7,695,Medium,Medium
+14,1427,Low,Medium
+7,870,Low,Medium
+88,8499,Low,Medium
+8,958,Medium,Low
+15,721,Low,Low
+35,9075,Very Low,Medium
+14,1422,Medium,Medium
+31,2584,Low,Very Low
+9,954,Medium,Medium
+53,3355,Low,Medium
+9,2795,Medium,Medium
+1,91,Medium,Medium
+21,1724,Medium,Medium
+4,189,Medium,Medium
+3,483,Medium,Medium
+6,508,Medium,Medium
+2,79,Medium,Medium
+1,23,Medium,Medium
+1,53,High,High
+12,1236,High,High
+10,509,High,High
+8,1599,High,High
+3,532,High,High
+8,671,High,High
+6,989,High,High
+27,890,High,High
+3,296,High,High
+6,560,High,High
+21,752,High,High
+9,1001,Very High,Very High
+1,1199,Very High,Very High
+9,1215,Very High,Very High
+6,809,Very High,Very High
+11,843,Very High,Very High
+3,289,Very High,Very High
+36,2158,Medium,Very Low
+6,1298,Medium,Very Low
+6,872,Low,Very Low
+11,595,Medium,Very Low
+13,1596,Low,Low
+14,1208,Low,Low
+25,2397,Medium,Low
+8,545,Medium,Low
+49,3570,Very Low,Low
+5,389,Medium,Low
+3,816,Very Low,Low
+7,1551,Very Low,Low
+6,670,Medium,Low
+18,1621,Low,Low
+2,847,Medium,Low
+8,935,Medium,Medium
+28,1790,Low,Very Low
+45,2719,Very Low,Medium
+7,695,Medium,Medium
+15,1556,Medium,Medium
+7,874,Low,Medium
+88,8530,Low,Medium
+8,976,Low,Medium
+15,713,Low,Medium
+33,8846,Very Low,Medium
+14,1422,Medium,Medium
+36,2967,Low,Medium
+9,954,Medium,Medium
+53,3355,Low,Medium
+9,2795,Medium,Medium
+1,91,Medium,Medium
+24,1881,Medium,Medium
+4,189,Medium,Medium
+3,483,Medium,Medium
+6,508,Medium,Medium
+2,79,Medium,Medium
+1,23,Medium,Medium
+1,53,High,High
+12,1236,High,High
+10,497,High,High
+8,1599,High,High
+3,535,High,High
+8,671,High,High
+6,989,High,High
+27,890,High,High
+3,296,High,High
+6,567,High,High
+21,739,High,High
+9,994,Very High,Very High
+1,1200,Very High,Very High
+9,1215,Very High,Very High
+6,809,Very High,Very High
+11,843,Very High,Very High
+3,289,Very High,Very High
+36,2146,Low,Low
+6,872,Low,Low
+11,595,Medium,Low
+13,1602,Low,Medium
+14,1209,Low,Low
+25,2383,Medium,Low
+9,560,Medium,Low
+49,3588,Very Low,Medium
+5,389,Medium,Medium
+3,816,Very Low,Medium
+7,1551,Very Low,Very Low
+6,672,Medium,Very Low
+18,1621,Low,Very Low
+2,849,Medium,Low
+8,953,Medium,Medium
+28,1790,Low,Medium
+45,2719,Very Low,Very Low
+7,695,Medium,Medium
+16,1738,Medium,Low
+7,874,Low,Medium
+88,8534,Low,Medium
+15,715,Low,Medium
+33,8936,Very Low,Medium
+14,1422,Medium,Medium
+39,3357,Low,Low
+9,957,Medium,Medium
+53,3383,Low,Medium
+9,2787,Medium,Medium
+6,1301,Medium,Medium
+1,91,Medium,Medium
+24,1905,Medium,Medium
+4,189,Medium,Medium
+3,483,Medium,Medium
+6,508,Medium,Medium
+2,79,Medium,Medium
+1,23,Medium,High
+1,53,Medium,Low
+12,1236,Medium,High
+10,497,High,High
+8,1599,High,High
+3,540,High,High
+1,62,High,High
+8,671,High,High
+6,992,High,High
+8,987,High,High
+27,879,High,High
+3,296,High,High
+6,571,High,Very High
+21,739,High,Very High
+9,999,Very High,Very High
+1,1200,Very High,Very Low
+9,1243,Very High,Low
+6,809,Very High,Very High
+11,856,Very High,Very High
+3,289,Very High,Very High
+156,28009,Very Low,Low
+44,5483,Medium,Medium
+31,3610,Medium,Low
+18,2308,Medium,Medium
+19,1661,High,Medium
+50,3191,Low,Very Low
+70,6848,Low,Medium
+16,1191,Medium,High
+45,7849,High,High
+146,16303,Very High,Medium
+40,2642,Medium,Very High
+29,2273,Very High,Very High
+124,22249,Low,Low
+14,782,Low,Low
+23,3687,Medium,Medium
+15,2131,Medium,High
+15,2004,Medium,High
+4,231,High,Medium
+14,1465,High,Very High
+12,502,Very High,Medium
+23,786,Low,Very Low
+15,935,Low,Low
+14,365,Low,Low
+13,458,Medium,Low
+6,197,Very Low,Low
+21,1266,Very Low,Low
+10,781,Medium,Low
+23,1389,Low,Medium
+11,467,Medium,Medium
+9,1694,Medium,Medium
+10,733,Medium,Medium
+16,688,Low,Medium
+45,3605,Low,Medium
+33,3173,Medium,Medium
+18,1576,Medium,Medium
+49,5511,Medium,Medium
+10,798,Medium,Medium
+5,225,Medium,High
+9,709,High,Very Low
+4,335,High,High
+3,56,High,High
+1,24,High,High
+2,29,High,High
+14,1083,High,High
+5,142,Very High,Very High
+4,352,Very High,Very High
+1,31,Very High,Very High
+23,886,Low,Very Low
+16,965,Low,Low
+16,398,Low,Low
+13,439,Low,Very Low
+6,207,Very Low,Low
+25,1391,Medium,Low
+10,857,Medium,Low
+24,1361,Very Low,Low
+11,471,Medium,Medium
+9,1664,Medium,Medium
+13,867,Medium,Medium
+17,675,Very Low,Medium
+31,2897,Medium,Medium
+56,4455,Low,Medium
+35,3168,Medium,Medium
+18,1817,Medium,Medium
+53,5617,Medium,Medium
+11,745,Medium,Medium
+11,519,Low,Medium
+66,12488,Medium,Very Low
+7,360,Medium,Medium
+4,250,Medium,Medium
+3,64,High,High
+4,150,High,High
+13,576,High,High
+2,29,High,High
+5,142,High,High
+16,1301,High,High
+3,249,Very High,Very High
+3,198,Very High,Very High
+1,37,Very High,Very High
+9,714,Very High,Very High
+23,886,Low,Low
+16,965,Low,Low
+16,398,Medium,Low
+6,231,Medium,Low
+13,439,Medium,Medium
+6,207,Very Low,Medium
+35,2740,Very Low,Very Low
+10,855,Medium,Very Low
+24,1361,Very Low,Medium
+11,476,Medium,Medium
+9,1664,Medium,Medium
+13,951,Medium,Medium
+17,675,Low,Medium
+31,2939,Low,Low
+57,4579,Low,Low
+36,3183,Medium,Very Low
+18,1817,Medium,Medium
+53,5617,Medium,Medium
+11,745,Medium,Medium
+11,519,Low,Medium
+70,12737,Medium,Medium
+7,360,Medium,Medium
+4,250,High,High
+3,64,High,High
+13,578,High,High
+2,29,High,High
+5,142,High,High
+16,1301,High,High
+3,249,Very High,Very High
+3,198,Very High,Very High
+1,37,Very High,Very High
+9,714,Very High,Very High
+22,845,Low,Very Low
+20,1256,Low,Low
+20,505,Low,Low
+24,1223,Low,Very Low
+7,266,Low,Low
+23,1794,Medium,Low
+17,2669,Very Low,Low
+28,1196,Medium,Low
+10,342,Medium,Low
+9,1725,Medium,Low
+10,605,Medium,Medium
+20,683,Very Low,Medium
+36,5188,Medium,Medium
+84,6866,Very Low,Medium
+53,4985,Medium,Very Low
+64,5742,Medium,Medium
+65,3825,Low,Medium
+8,340,Low,Medium
+13,645,Low,Medium
+94,16153,Medium,Medium
+7,392,Medium,Medium
+20,1099,Medium,Medium
+3,62,Medium,Medium
+5,534,Medium,Medium
+17,750,Medium,Medium
+14,597,Medium,Medium
+3,74,High,High
+25,2160,High,High
+2,31,High,High
+23,2526,High,High
+10,1413,High,High
+3,236,High,High
+16,832,High,High
+29,998,High,High
+1,27,Very High,Very High
+7,354,Very High,Very High
+1,36,Very High,Very High
+19,1274,Very High,Very High
+11,693,Medium,Medium
+46,1899,Very Low,Low
+23,1264,Medium,Low
+16,1709,Low,Medium
+8,802,Medium,Medium
+25,2391,Low,Medium
+7,169,Medium,Medium
+40,4278,Medium,Medium
+14,828,Medium,Medium
+37,3031,Low,Medium
+14,1999,Low,Low
+23,962,Low,Medium
+13,705,Medium,Medium
+10,724,Medium,Medium
+32,3049,Low,High
+31,3728,Very Low,Low
+16,417,Medium,High
+17,533,Medium,High
+37,4748,High,Very Low
+14,505,Medium,High
+12,896,High,High
+9,885,High,Low
+11,568,High,High
+5,113,High,Very High
+26,2712,High,Very High
+8,1128,Very High,Very Low
+2,347,Very High,Low
+3,137,Very High,Very High
+12,658,Low,Very Low
+10,516,Very Low,Very Low
+52,2350,Very Low,Very Low
+25,1906,Low,Low
+27,2328,Very Low,Low
+9,404,Low,Low
+38,3682,Low,Low
+9,186,Medium,Low
+44,4525,Medium,Low
+14,927,Medium,Low
+42,3645,Low,Medium
+21,2392,Medium,Medium
+18,1422,Medium,Medium
+31,3867,Low,Medium
+21,567,Medium,Medium
+74,8345,Medium,Medium
+15,524,Low,Medium
+14,1002,Medium,Medium
+17,1802,Medium,Medium
+13,788,Medium,Medium
+7,536,Medium,Medium
+18,1952,Medium,Medium
+9,1001,Medium,Medium
+2,670,High,High
+14,1134,High,High
+3,357,High,High
+30,3702,High,High
+29,2965,High,High
+6,286,High,High
+16,701,High,High
+3,124,Very High,Very High
+14,2124,Very High,Very High
+9,726,Very High,Very High
+2,127,Very High,Very High
+8,347,Low,Medium
+5,79,Low,High
+9,355,Low,Low
+9,652,Low,High
+11,289,Very Low,Very Low
+6,246,Very Low,Medium
+3,48,Medium,Medium
+7,762,Low,Low
+52,5824,Low,Medium
+30,1378,Very Low,Very Low
+13,1089,Medium,Low
+31,621,Medium,Medium
+6,129,Medium,Medium
+4,182,Medium,High
+15,227,Very Low,Medium
+9,441,Medium,High
+4,164,Medium,High
+6,1584,Low,Very Low
+32,2690,Very Low,Very Low
+12,303,Low,Low
+10,250,Medium,Low
+6,391,Medium,Low
+16,588,Low,Medium
+6,217,Low,High
+8,1493,Low,High
+6,243,Medium,High
+4,232,Medium,High
+9,635,Medium,Medium
+6,292,Medium,High
+15,410,Medium,Medium
+1,132,Medium,Low
+1,699,Medium,Very Low
+11,200,Medium,Low
+8,1369,Medium,Medium
+11,855,Medium,Medium
+6,350,Medium,High
+10,615,Medium,Medium
+3,288,Medium,Medium
+13,235,High,Medium
+5,139,High,Low
+1,516,High,Low
+10,301,High,Medium
+6,362,High,Medium
+12,776,High,Medium
+3,380,High,Medium
+4,66,High,Medium
+17,534,High,Medium
+7,472,High,Very High
+5,1354,High,Low
+7,554,Very High,Medium
+2,186,Very High,Very High
+4,183,Very High,Very High
+1,23,Very High,Very High
+9,563,Very High,Very High
+19,792,Very High,Very High
+8,345,Low,Medium
+7,202,Very Low,Medium
+12,447,Low,Low
+10,752,Low,Medium
+10,1896,Very Low,Very Low
+6,302,Very Low,Medium
+6,129,Low,Medium
+7,910,Low,Low
+47,5460,Very Low,Very Low
+10,151,Very Low,Medium
+15,713,Low,Medium
+23,1544,Low,Medium
+20,1534,Low,Low
+16,654,Medium,Low
+8,285,Medium,Medium
+9,779,Low,Medium
+14,1536,Very Low,Low
+6,215,Medium,Medium
+2,23,Medium,Medium
+9,1152,Medium,Medium
+21,468,Low,Medium
+9,391,Medium,High
+13,477,Low,Medium
+8,423,Medium,Low
+7,302,Medium,Low
+13,1994,Medium,Very Low
+12,499,Medium,Medium
+43,3377,Very Low,Very Low
+4,898,Medium,Medium
+18,957,Medium,Medium
+21,1318,Low,Medium
+4,62,Medium,Medium
+5,88,Medium,Medium
+9,753,Medium,Low
+7,435,Low,Low
+20,1988,Medium,Low
+14,1192,Low,Low
+4,299,Medium,Medium
+9,781,Medium,High
+2,247,Medium,High
+4,278,Medium,High
+6,1163,Medium,Low
+5,191,Medium,High
+4,118,Medium,High
+1,9,Medium,Medium
+1,42,Medium,High
+3,321,Medium,High
+1,38,Medium,High
+11,972,Medium,Medium
+6,370,Medium,Low
+10,626,Medium,High
+1,37,High,Medium
+7,146,High,Medium
+8,875,High,Medium
+14,467,High,High
+7,163,High,High
+1,207,High,Very Low
+4,145,High,High
+12,313,High,Low
+6,345,High,High
+12,836,High,Medium
+5,470,High,Medium
+8,349,High,Very High
+4,112,High,Medium
+5,354,High,Very High
+6,344,Very High,Very High
+8,610,Very High,Very Low
+16,3519,Very High,Very Low
+1,5,Very High,Very High
+2,194,Very High,Very High
+8,437,Very High,Very High
+2,154,Very High,Very High
+4,187,Very High,Very High
+8,363,Low,Medium
+8,247,Very Low,Medium
+7,281,Low,Medium
+3,249,Low,Medium
+12,2823,Very Low,Medium
+6,244,Very Low,Medium
+7,143,Low,Low
+10,1048,Very Low,Very Low
+59,7694,Very Low,Low
+10,151,Very Low,Medium
+15,720,Low,Medium
+30,2168,Very Low,Very Low
+10,738,Low,Medium
+30,2349,Low,Low
+18,738,Low,Medium
+11,348,Low,Medium
+9,793,Low,Medium
+19,1857,Very Low,Low
+7,316,Low,Medium
+2,23,Low,Medium
+9,1184,Medium,Medium
+13,1715,Medium,Medium
+21,456,Low,Medium
+9,391,Medium,Low
+17,671,Medium,Medium
+12,726,Medium,Medium
+11,510,Medium,Medium
+9,1116,Medium,Low
+17,2644,Medium,Low
+14,548,Low,Low
+6,1178,Low,Medium
+40,3579,Low,Medium
+6,1015,Medium,Low
+22,1407,Medium,Medium
+27,1827,Medium,Medium
+7,197,Medium,Low
+8,245,Medium,Very Low
+10,801,Medium,Medium
+9,548,Medium,Very Low
+8,467,Medium,Medium
+11,1171,Medium,Medium
+11,792,Low,Medium
+4,318,Medium,Low
+9,808,Medium,Medium
+4,248,Medium,Low
+4,266,Medium,Medium
+9,353,Medium,Low
+8,883,Medium,Medium
+3,124,Medium,Medium
+8,1676,Medium,Very Low
+10,651,Medium,High
+1,22,Medium,High
+8,1280,Medium,Medium
+11,910,Medium,High
+2,20,Medium,High
+5,191,Medium,High
+4,107,Medium,High
+1,42,Medium,High
+3,387,High,High
+1,40,High,High
+12,462,High,High
+1,44,High,High
+11,680,High,Very Low
+1,41,High,High
+8,172,High,High
+17,818,High,High
+7,165,High,High
+7,236,High,High
+10,466,High,High
+4,270,High,Very High
+6,110,High,Low
+6,307,High,Very High
+6,187,High,Very High
+6,318,High,Very High
+11,778,High,Very Low
+8,386,Very High,Low
+5,170,Very High,Very High
+5,373,Very High,Very High
+6,352,Very High,Low
+4,470,Very High,Low
+10,861,Very High,Very High
+19,3897,Very High,Very High
+1,5,Very High,Very High
+2,200,Very High,Very Low
+8,371,Low,Medium
+8,265,Very Low,Medium
+7,281,Low,Low
+3,267,Low,Medium
+12,3117,Very Low,Medium
+13,2003,Low,Medium
+6,244,Very Low,Medium
+12,1143,Low,Low
+11,921,Low,Low
+60,7917,Very Low,Very Low
+10,151,Very Low,Medium
+15,724,Low,Medium
+34,2124,Very Low,Very Low
+10,853,Low,Medium
+32,2688,Very Low,Medium
+18,740,Low,Low
+11,367,Low,Medium
+9,795,Very Low,Medium
+22,2255,Very Low,Medium
+7,316,Low,Low
+9,1184,Medium,Medium
+13,1773,Medium,Very Low
+21,457,Medium,Medium
+9,403,Medium,Medium
+11,830,Medium,Medium
+17,673,Medium,Low
+12,860,Medium,Very Low
+11,519,Medium,Low
+10,1133,Low,Low
+11,513,Medium,Low
+11,2736,Low,Low
+18,724,Low,Low
+7,1208,Low,Medium
+41,3683,Low,Very Low
+6,1103,Medium,Medium
+22,1412,Low,Medium
+27,2151,Medium,Very Low
+8,277,Medium,Very Low
+10,465,Medium,Medium
+10,929,Medium,Medium
+7,422,Medium,Medium
+11,657,Medium,Low
+10,866,Medium,Medium
+8,470,Medium,Medium
+11,1195,Medium,Medium
+16,1377,Low,Very Low
+5,356,Medium,Medium
+9,829,Medium,Medium
+4,256,Medium,Low
+4,385,Medium,Very Low
+9,417,Medium,Medium
+8,926,Medium,Medium
+3,124,Medium,Medium
+10,664,Medium,Medium
+1,22,Medium,Medium
+12,1000,Medium,Medium
+11,1581,Medium,Low
+2,20,Medium,High
+5,188,Medium,High
+4,107,Medium,High
+2,23,Medium,High
+1,62,Medium,High
+3,387,Medium,High
+1,40,High,High
+12,552,High,Low
+1,44,High,High
+1,242,High,High
+1,41,High,High
+8,172,High,Medium
+3,156,High,High
+17,818,High,Low
+7,165,High,High
+7,236,High,Low
+10,507,High,High
+4,281,High,High
+3,760,High,High
+6,307,High,High
+6,197,High,High
+6,347,High,High
+9,268,High,Very High
+8,461,High,Very High
+5,181,Very High,Very High
+5,367,Very High,Very High
+6,396,Very High,Low
+4,511,Very High,Very High
+19,3925,Very High,Medium
+1,5,Very High,Very High
+3,231,Very High,Very High
+4,363,Very High,Very High
+3,145,Very High,Very High
+12,500,Low,Very Low
+23,1396,Very Low,Very Low
+6,636,Very Low,Very Low
+8,362,Low,Low
+8,255,Very Low,Low
+9,286,Very Low,Low
+3,262,Low,Low
+10,1009,Very Low,Low
+12,3110,Very Low,Low
+13,1982,Low,Low
+6,244,Very Low,Low
+13,1309,Low,Low
+63,7893,Low,Low
+10,154,Low,Low
+15,696,Low,Low
+34,2075,Very Low,Low
+10,798,Low,Low
+32,2674,Very Low,Very Low
+18,721,Medium,Low
+9,797,Low,Low
+24,2555,Low,Very Low
+7,326,Medium,Low
+2,23,Medium,Low
+8,1153,Medium,Medium
+16,2177,Medium,Medium
+21,458,Medium,Medium
+9,395,Medium,Medium
+19,862,Medium,Medium
+12,685,Low,Medium
+11,510,Medium,Medium
+11,1162,Medium,Medium
+12,560,Low,Medium
+11,2880,Low,Very Low
+14,681,Low,Very Low
+7,1218,Low,Medium
+41,3799,Low,Medium
+6,1157,Medium,Medium
+10,479,Medium,Medium
+28,2205,Medium,Medium
+12,590,Medium,Medium
+9,268,Medium,Medium
+10,465,Medium,Medium
+10,917,Medium,Medium
+7,417,Medium,Medium
+11,765,Medium,Medium
+10,845,Medium,Medium
+10,1164,Medium,Medium
+17,1433,Low,Medium
+21,4216,Medium,Very Low
+5,356,Medium,Medium
+9,818,Medium,Medium
+4,258,Medium,Medium
+4,295,Medium,Medium
+9,417,Medium,Medium
+3,124,Medium,Medium
+10,650,Medium,Medium
+1,22,Medium,Medium
+12,996,Medium,Medium
+11,1513,Medium,Medium
+3,75,Medium,Medium
+11,888,Medium,Medium
+2,20,Medium,Medium
+5,179,Medium,High
+4,107,High,High
+1,62,High,High
+6,684,High,High
+1,41,High,High
+12,540,High,High
+1,44,High,High
+1,272,High,High
+11,831,High,High
+1,41,High,High
+8,171,High,High
+3,156,High,High
+17,817,High,High
+7,165,High,High
+7,216,High,High
+4,273,High,Very Low
+3,755,High,High
+6,307,High,High
+6,197,High,High
+6,347,Very High,Very High
+8,447,Very High,Very High
+5,181,Very High,Very High
+5,367,Very High,Very High
+6,420,Very High,Very High
+1,5,Very High,Very High
+3,231,Very High,Very High
+8,470,Very High,Very High
+4,363,Very High,Very High
+3,145,Very High,Very High
+31,2730,Low,Low
+7,226,Very Low,Low
+6,358,Low,Low
+29,2002,Very Low,Very Low
+10,831,Very Low,Low
+17,705,Low,Low
+12,501,Low,Low
+10,732,Very Low,Medium
+26,2478,Very Low,Very Low
+10,762,Low,Low
+8,505,Low,Low
+7,328,Low,Low
+10,600,Very Low,Very Low
+11,514,Low,Low
+8,170,Low,Medium
+16,767,Very Low,Low
+6,1332,Low,Medium
+29,2932,Very Low,Medium
+27,1565,Very Low,Low
+7,510,Low,Medium
+8,1188,Low,Medium
+8,478,Medium,Medium
+7,323,Very Low,Medium
+23,1594,Low,Low
+8,280,Low,Medium
+3,268,Medium,Medium
+9,975,Medium,Medium
+11,2229,Medium,Low
+6,244,Low,Medium
+13,1350,Low,Medium
+6,353,Medium,Medium
+31,2874,Very Low,Medium
+2,23,Medium,Medium
+8,1136,Medium,Medium
+26,3315,Medium,Medium
+25,602,Low,Low
+19,1047,Medium,Medium
+14,622,Medium,Very Low
+14,3384,Low,Very Low
+16,868,Medium,Medium
+9,269,Medium,Medium
+10,483,Medium,Medium
+10,945,Medium,Medium
+21,1903,Low,Low
+7,277,Medium,Medium
+7,415,Medium,Low
+11,515,Medium,Medium
+11,784,Medium,Low
+14,964,Medium,Medium
+11,1274,Medium,Medium
+4,180,Medium,Medium
+9,538,Medium,Medium
+10,524,Medium,Very Low
+15,1674,Medium,Medium
+11,1265,Medium,Medium
+10,154,Low,Medium
+15,697,Medium,Medium
+6,1494,Low,Medium
+41,6293,Low,Very Low
+7,1283,Low,Medium
+1,87,Medium,Low
+6,680,Medium,Medium
+3,221,Medium,Medium
+9,404,Medium,Very Low
+14,2069,Medium,Medium
+10,625,Medium,Very Low
+7,272,Medium,Medium
+6,529,Medium,Very Low
+12,584,Medium,Medium
+6,183,Medium,Medium
+9,457,Medium,Medium
+3,476,Medium,Medium
+4,933,Medium,Low
+5,207,Medium,Low
+6,431,Medium,Low
+5,257,Medium,Medium
+6,516,Medium,Medium
+1,78,Medium,Medium
+25,4375,Medium,High
+5,383,Medium,High
+8,393,High,High
+9,783,High,High
+3,124,High,High
+1,13,High,High
+1,22,High,High
+12,1008,High,High
+3,75,High,High
+2,23,High,High
+4,72,High,High
+1,62,High,High
+6,721,High,High
+1,41,High,High
+1,45,High,High
+1,325,High,High
+12,1273,High,Very Low
+1,40,High,High
+6,308,High,High
+6,198,High,High
+6,356,High,High
+1,71,High,High
+5,183,High,High
+5,412,High,High
+4,242,High,Very High
+8,504,Very High,Very High
+1,34,Very High,Very High
+3,150,Very High,Very High
+4,274,Very High,Very High
+3,282,Very High,Very High
+9,463,Very High,Very High
+3,163,Very High,Very High
+5,179,Very High,Very High
+4,107,Very High,Very High
+17,842,Very High,Very High
+7,165,Very High,Very High
+3,793,Very High,Low
+6,236,Low,Very Low
+14,1437,Low,Very Low
+8,375,Low,Very Low
+16,712,Very Low,Low
+18,1117,Low,Low
+8,397,Low,Low
+11,361,Low,Low
+68,6118,Low,Low
+6,815,Very Low,Low
+20,1665,Low,Low
+4,403,Low,Low
+37,6073,Very Low,Low
+1,234,Low,Low
+8,639,Low,Low
+3,910,Medium,Low
+11,1296,Medium,Medium
+6,499,Medium,Medium
+15,3108,Medium,Medium
+16,866,Medium,Medium
+6,607,Very Low,Medium
+30,3741,Very Low,Medium
+60,4043,Low,Medium
+8,624,Medium,Medium
+11,725,Medium,Medium
+8,1342,Medium,Medium
+6,1556,Medium,Medium
+16,1220,Medium,Medium
+6,216,Medium,Very Low
+1,85,Medium,Medium
+5,187,Medium,Medium
+3,84,Medium,Medium
+1,34,Medium,Medium
+2,192,Medium,Medium
+1,25,Medium,Medium
+3,195,Medium,Medium
+3,120,Medium,Medium
+21,2786,Medium,Medium
+4,330,Medium,Medium
+3,142,Medium,Medium
+6,425,Medium,High
+5,531,High,High
+4,243,High,High
+5,274,High,High
+5,692,High,High
+5,532,High,Very Low
+1,62,High,High
+1,27,High,High
+2,174,High,High
+3,304,High,High
+5,1117,High,High
+3,70,High,High
+3,243,High,High
+2,91,Very High,Very High
+5,204,Very High,Very High
+3,139,Very High,Very High
+1,16,Very High,Very High
+3,171,Very High,Very High
+1,43,Very High,Very High
+6,236,Low,Very Low
+14,1437,Low,Very Low
+8,375,Low,Very Low
+16,718,Very Low,Low
+18,1117,Low,Low
+8,397,Low,Low
+11,361,Low,Low
+68,6118,Low,Very Low
+6,815,Very Low,Low
+20,1665,Low,Low
+4,403,Low,Low
+37,6073,Very Low,Low
+1,234,Low,Low
+10,862,Low,Low
+3,996,Low,Low
+14,1691,Medium,Low
+6,499,Medium,Medium
+15,3126,Medium,Medium
+16,866,Medium,Medium
+6,607,Very Low,Very Low
+31,3882,Very Low,Very Low
+60,4043,Very Low,Medium
+8,624,Medium,Medium
+11,725,Medium,Medium
+8,1344,Medium,Medium
+6,1556,Medium,Medium
+16,1220,Medium,Medium
+6,216,Medium,Medium
+1,85,Medium,Medium
+5,187,Medium,Medium
+3,84,Medium,Medium
+1,34,Medium,Medium
+2,192,Medium,Medium
+1,25,Medium,Medium
+3,195,Medium,Medium
+3,120,Medium,Medium
+21,2787,Medium,Medium
+4,330,Medium,Medium
+3,142,Medium,Medium
+7,513,Medium,Medium
+5,534,Medium,Medium
+4,243,Medium,Medium
+5,274,High,High
+5,692,High,High
+5,520,High,High
+1,62,High,High
+1,27,High,High
+2,174,High,High
+3,304,High,High
+1,57,High,High
+2,155,High,High
+3,191,High,High
+5,1117,High,High
+3,70,High,High
+3,243,Very High,Very High
+2,91,Very High,Very High
+5,204,Very High,Very High
+3,139,Very High,Very High
+1,16,Very High,Very High
+3,246,Very High,Very High
+1,43,Very High,Very High
+6,236,Low,Very Low
+14,1437,Low,Very Low
+8,375,Low,Very Low
+16,718,Very Low,Very Low
+18,1117,Low,Very Low
+8,397,Low,Low
+11,361,Low,Low
+68,6118,Low,Low
+6,815,Very Low,Low
+20,1665,Low,Low
+4,403,Low,Low
+37,6073,Very Low,Low
+1,234,Low,Low
+10,862,Low,Low
+3,996,Low,Low
+14,1691,Medium,Low
+6,499,Medium,Low
+15,3138,Medium,Medium
+16,866,Medium,Medium
+6,607,Very Low,Medium
+31,3865,Very Low,Very Low
+60,4043,Very Low,Medium
+8,624,Medium,Medium
+11,725,Medium,Medium
+8,1344,Medium,Medium
+6,1556,Medium,Medium
+16,1258,Medium,Medium
+6,216,Medium,Medium
+1,85,Medium,Medium
+5,187,Medium,Medium
+3,84,Medium,Medium
+1,34,Medium,Medium
+2,192,Medium,Medium
+1,25,Medium,Medium
+3,195,Medium,Medium
+3,120,Medium,Medium
+21,2787,Medium,Medium
+4,330,Medium,Medium
+3,142,Medium,Medium
+7,513,Medium,Medium
+5,534,Medium,Medium
+4,243,Medium,Medium
+5,274,Medium,Medium
+5,692,High,High
+5,512,High,High
+4,493,High,High
+1,62,High,High
+1,27,High,High
+2,174,High,High
+3,304,High,High
+1,57,High,High
+2,155,High,High
+3,191,High,High
+5,1117,High,High
+3,70,High,High
+3,243,Very High,Very High
+2,91,Very High,Very High
+5,204,Very High,Very High
+3,139,Very High,Very High
+1,16,Very High,Very High
+3,246,Very High,Very High
+1,43,Very High,Very High
+11,188,Low,Low
+8,293,Low,Low
+6,197,Low,Low
+6,342,Medium,Low
+18,739,Medium,Medium
+4,332,Medium,Medium
+99,7741,Very Low,Low
+7,575,Very Low,Medium
+11,885,Medium,Medium
+111,9597,Very Low,Very Low
+11,1425,Medium,Low
+89,9307,Low,Very Low
+7,346,Low,Medium
+141,11055,Low,Very Low
+21,1936,Medium,Medium
+1,35,Medium,Medium
+2,30,Medium,Medium
+10,1441,Medium,Medium
+8,816,Medium,Medium
+1,29,Medium,Medium
+1,228,Medium,Medium
+18,1372,High,High
+19,1666,High,High
+7,1786,High,High
+4,204,High,High
+3,186,High,High
+6,879,High,High
+2,129,Very High,Very High
+23,2461,Very High,Very High
+5,405,Very High,Very High
+3,258,Low,Very Low
+11,188,Low,Low
+8,299,Low,Low
+6,197,Low,Low
+6,342,Medium,Low
+18,739,Medium,Low
+4,332,Medium,Low
+103,8390,Very Low,Very Low
+6,486,Medium,Medium
+139,11499,Very Low,Very Low
+11,1469,Medium,Medium
+115,12809,Very Low,Medium
+8,462,Low,Medium
+144,12064,Low,Medium
+21,1949,Medium,Medium
+1,35,Medium,Medium
+2,30,Medium,Medium
+10,1441,Medium,Medium
+8,841,Medium,Medium
+1,29,Medium,Medium
+1,228,Medium,Medium
+19,1382,Medium,Medium
+19,1666,Medium,Medium
+7,1786,High,High
+5,532,High,High
+4,207,High,High
+11,885,High,High
+18,1675,High,High
+3,187,High,High
+6,879,Very High,Very High
+2,130,Very High,Very High
+23,2479,Very High,Very High
+5,405,Very High,Very High
+3,258,Low,Low
+11,188,Low,Low
+8,299,Low,Low
+6,197,Medium,Low
+6,342,Medium,Low
+18,739,Medium,Medium
+4,332,Medium,Medium
+105,8542,Very Low,Medium
+6,490,Medium,Medium
+7,612,Very Low,Medium
+139,11532,Very Low,Medium
+11,1470,Medium,Very Low
+118,13040,Low,Very Low
+8,462,Low,Low
+142,12070,Low,Very Low
+21,1949,Medium,Medium
+1,35,Medium,Medium
+2,30,Medium,Medium
+10,1441,Medium,Medium
+8,841,Medium,Medium
+1,29,Medium,Medium
+1,228,Medium,Medium
+19,1382,Medium,Medium
+19,1710,High,High
+7,1786,High,High
+4,207,High,High
+11,885,High,High
+18,1664,High,High
+3,189,High,High
+6,867,Very High,Very High
+2,130,Very High,Very High
+23,2487,Very High,Very High
+5,405,Very High,Very High
+3,258,Low,Low
+11,188,Low,Medium
+8,299,Low,Medium
+6,197,Medium,Medium
+6,342,Medium,Medium
+18,739,Medium,Medium
+4,332,Medium,Medium
+105,8548,Very Low,Low
+6,490,Medium,Low
+7,612,Very Low,Low
+139,11556,Very Low,Very Low
+16,1691,Medium,Low
+119,13275,Low,Very Low
+8,462,Low,Low
+144,11981,Low,Very Low
+21,1949,Medium,Medium
+1,35,Medium,Medium
+2,30,Medium,Medium
+10,1441,Medium,Medium
+8,841,Medium,Medium
+1,29,Medium,Medium
+1,228,Medium,Medium
+19,1382,Medium,Medium
+19,1710,High,High
+7,1786,High,High
+4,207,High,High
+11,885,High,High
+18,1664,High,High
+3,189,High,High
+6,867,Very High,Very High
+2,130,Very High,Very High
+23,2487,Very High,Very High
+5,405,Very High,Very High
+3,258,Low,Low
+11,188,Low,Low
+8,299,Low,Low
+6,197,Medium,Low
+6,342,Medium,Medium
+18,739,Medium,Medium
+4,332,Medium,Medium
+111,8739,Very Low,Very Low
+7,538,Medium,Medium
+7,612,Very Low,Low
+141,11884,Very Low,Very Low
+23,2179,Medium,Medium
+124,13694,Low,Very Low
+9,544,Low,Medium
+145,12133,Low,Low
+21,1949,Medium,Medium
+1,35,Medium,Medium
+2,30,Medium,Medium
+10,1441,Medium,Medium
+8,841,Medium,Medium
+1,29,Medium,Medium
+1,228,Medium,Medium
+23,2487,Medium,Medium
+19,1382,High,High
+19,1710,High,High
+7,1786,High,High
+5,414,High,High
+4,207,High,High
+11,885,High,High
+24,2320,Very High,Very High
+3,189,Very High,Very High
+6,869,Very High,Very High
+2,130,Very High,Very High

@@ -1,0 +1,107 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell
+commons-exec-1.2,org.apache.commons.exec,CommandLine,translateCommandline,Complex Method,Cyclomatic complexity of the method is 13
+commons-exec-1.2,org.apache.commons.exec,CommandLine,translateCommandline,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLine,translateCommandline,Missing default,The following switch statement is missing a default case: switch (state) {
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutor,executeInternal,Complex Method,Cyclomatic complexity of the method is 8
+commons-exec-1.2,org.apache.commons.exec,LogOutputStream,LogOutputStream,Magic Number,The method contains a magic number: 999
+commons-exec-1.2,org.apache.commons.exec,OS,isOs,Complex Conditional,The conditional expression family != null || name != null || arch != null || version != null is complex.
+commons-exec-1.2,org.apache.commons.exec,OS,isOs,Complex Method,Cyclomatic complexity of the method is 17
+commons-exec-1.2,org.apache.commons.exec,OS,isOs,Long Statement,The length of the statement "isFamily=isFamily(FAMILY_WINDOWS) && (OS_NAME.indexOf("95") >= 0 || OS_NAME.indexOf("98") >= 0 || OS_NAME.indexOf("me") >= 0 || OS_NAME.indexOf("ce") >= 0);" is 156.
+commons-exec-1.2,org.apache.commons.exec,ShutdownHookProcessDestroyer,removeShutdownHook,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,ShutdownHookProcessDestroyer,removeShutdownHook,Magic Number,The method contains a magic number: 20000
+commons-exec-1.2,org.apache.commons.exec,StreamPumper,run,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,Watchdog,run,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testExecutableZeroLengthString,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testExecutableWhitespaceString,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testNullExecutable,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testAddArgumentWithBothQuotes,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testParseCommandLineWithUnevenQuotes,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testParseCommandLineWithNull,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testParseCommandLineWithOnlyWhitespace,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testParseComplexCommandLine2,Long Statement,The length of the statement "final String commandline="./script/jrake cruise:publish_installers " + "INSTALLER_VERSION=unstable_2_1 " + "INSTALLER_PATH=\"/var/lib/ cruise-agent/installers\" "+ "INSTALLER_DOWNLOAD_SERVER=\'something\' "+ "WITHOUT_HELP_DOC=true";" is 232.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testParseComplexCommandLine2,Magic Number,The method contains a magic number: 4
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testComplexAddArgument,Long Statement,The length of the statement "assertEquals(new String[]{"runMemorySud.cmd"`"10"`"30"`"-XX:+UseParallelGC"`"\"-XX:ParallelGCThreads=2\""}`cmdl.toStrings());" is 125.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testComplexAddArguments1,Long Statement,The length of the statement "assertEquals(new String[]{"runMemorySud.cmd"`"10"`"30"`"-XX:+UseParallelGC"`"\"-XX:ParallelGCThreads=2\""}`cmdl.toStrings());" is 125.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testComplexAddArguments2,Long Statement,The length of the statement "assertEquals(new String[]{"runMemorySud.cmd"`"10"`"30"`"-XX:+UseParallelGC"`"\"-XX:ParallelGCThreads=2\""}`cmdl.toStrings());" is 125.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion2,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion2,Magic Number,The method contains a magic number: 3
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion2,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion2,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion2,Magic Number,The method contains a magic number: 3
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion3,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,testCommandLineParsingWithExpansion3,Magic Number,The method contains a magic number: 3
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_1,Long Statement,The length of the statement "final String line="./script/jrake " + "cruise:publish_installers " + "INSTALLER_VERSION=unstable_2_1 "+ "INSTALLER_PATH=\"/var/lib/cruise-agent/installers\" "+ "INSTALLER_DOWNLOAD_SERVER='something'"+ "WITHOUT_HELP_DOC=true";" is 225.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_1,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_1,Magic Number,The method contains a magic number: 3
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_1,Magic Number,The method contains a magic number: 4
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_1,Magic Number,The method contains a magic number: 5
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_2,Long Statement,The length of the statement "final String line="dotnetfx.exe" + " /q:a " + "/c:\"install.exe /l \"\"c:\\Documents and Settings\\myusername\\Local Settings\\Temp\\netfx.log\"\" /q\"";" is 153.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_2,Long Statement,The length of the statement "assertEquals("/c:\"install.exe /l \"\"c:\\Documents and Settings\\myusername\\Local Settings\\Temp\\netfx.log\"\" /q\""`args[2]);" is 129.
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_2,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,CommandLineTest,_testExec36_3,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsync,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithError,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithTimelyUserTermination,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithTooLateUserTermination,Magic Number,The method contains a magic number: 3000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithTooLateUserTermination,Magic Number,The method contains a magic number: 6000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogSync,Long Statement,The length of the statement "System.out.println("The test 'testExecuteWatchdogSync' currently hangs on the following OS : " + System.getProperty("os.name"));" is 128.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogSync,Magic Number,The method contains a magic number: 10000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogSync,Magic Number,The method contains a magic number: 5
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogSync,Magic Number,The method contains a magic number: 11
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogAsync,Magic Number,The method contains a magic number: 10000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogAsync,Magic Number,The method contains a magic number: 5
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWatchdogAsync,Magic Number,The method contains a magic number: 11
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithNonExistingApplication,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteAsyncWithProcessDestroyer,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWithRedirectedStreams,Long Statement,The length of the statement "System.err.println("The test 'testExecuteWithRedirectedStreams' does not support the following OS : " + System.getProperty("os.name"));" is 135.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWithRedirectedStreams,Long Statement,The length of the statement "System.err.println("The test 'testExecuteWithRedirectedStreams' does not support the following OS : " + System.getProperty("os.name"));" is 135.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExecuteWithComplexArguments,Long Statement,The length of the statement "cl.addArgument("HDF5:\"/home/kk/grass/data/4404.he5\"://HDFEOS/GRIDS/OMI_Column_Amount_O3/Data_Fields/ColumnAmountO3/home/kk/4.tif"`false);" is 139.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec34_2,Magic Number,The method contains a magic number: 5000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec36_1,Long Statement,The length of the statement "final String expected="./script/jrake\n" + "cruise:publish_installers\n" + "INSTALLER_VERSION=unstable_2_1\n"+ "INSTALLER_PATH=\"/var/lib/ cruise-agent/installers\"\n"+ "INSTALLER_DOWNLOAD_SERVER='something'\n"+ "WITHOUT_HELP_DOC=true";" is 236.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec36_2,Long Statement,The length of the statement "expected="dotnetfx.exe\n" + "/q:a\n" + "/c:\"install.exe /l \"\"\\Documents and Settings\\myusername\\Local Settings\\Temp\\netfx.log\"\" /q\"";" is 144.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec36_2,Long Statement,The length of the statement "expected="dotnetfx.exe\n" + "/q:a\n" + "/c:\"install.exe /l \"\"/Documents and Settings/myusername/Local Settings/Temp/netfx.log\"\" /q\"";" is 139.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithStreams,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithStreams,Long Statement,The length of the statement "System.err.println("The test 'testExec41WithStreams' does not support the following OS : " + System.getProperty("os.name"));" is 124.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithStreams,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithStreams,Magic Number,The method contains a magic number: 1000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithStreams,Magic Number,The method contains a magic number: 9000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithoutStreams,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithoutStreams,Magic Number,The method contains a magic number: 1000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec41WithoutStreams,Magic Number,The method contains a magic number: 9000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec44,Magic Number,The method contains a magic number: 5000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_57,Long Statement,The length of the statement "System.err.println("The test 'testSyncInvocationOfBackgroundProcess' does not support the following OS : " + System.getProperty("os.name"));" is 140.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_57,Magic Number,The method contains a magic number: 2000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_60,Long Statement,The length of the statement "System.out.println("Processes terminated: " + processTerminatedCounter + " killed: "+ watchdogKilledProcessCounter+ " Multiplier: "+ offsetMultiplier+ " MaxRetries: "+ maxRetries+ " Elapsed (avg ms): "+ avg);" is 208.
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_60,Magic Number,The method contains a magic number: 180
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_60,Magic Number,The method contains a magic number: 1000
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,testExec_60,Magic Number,The method contains a magic number: 5
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,_testExecuteStability,Magic Number,The method contains a magic number: 100
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,_testExecuteStability,Magic Number,The method contains a magic number: 100
+commons-exec-1.2,org.apache.commons.exec,DefaultExecutorTest,_testExecuteStability,Magic Number,The method contains a magic number: 500
+commons-exec-1.2,org.apache.commons.exec,TestUtilTest,testAssertArrayNotEquals,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,TestUtilTest,testAssertArrayNotOrderEquals,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,TestUtilTest,testAssertArrayEqualsActualNull,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,TestUtilTest,testAssertArrayEqualsExpectedNull,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec,TutorialTest,testTutorialExample,Magic Number,The method contains a magic number: 15000
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,createProcEnvironment,Complex Method,Cyclomatic complexity of the method is 8
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,createProcEnvironment,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,createProcEnvironment,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,createProcEnvironment,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,getProcEnvCommand,Complex Method,Cyclomatic complexity of the method is 9
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,toString,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.environment,DefaultProcessingEnvironment,toString,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.environment,EnvironmentUtils,getProcEnvironment,Long Identifier,The length of the field PROCESSING_ENVIRONMENT_IMPLEMENTATION is 37.
+commons-exec-1.2,org.apache.commons.exec.environment,EnvironmentUtils,parseEnvironmentVariable,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec.launcher,VmsCommandLauncher,isFailure,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec.launcher,VmsCommandLauncher,createCommandFile,Complex Method,Cyclomatic complexity of the method is 10
+commons-exec-1.2,org.apache.commons.exec.launcher,VmsCommandLauncher,createCommandFile,Magic Number,The method contains a magic number: 2
+commons-exec-1.2,org.apache.commons.exec.util,StringUtils,stringSubstitution,Complex Conditional,The conditional expression ch == '_' || ch == '.' || ch == '-' || ch == '+' || Character.isLetterOrDigit(ch) is complex.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtils,stringSubstitution,Complex Method,Cyclomatic complexity of the method is 13
+commons-exec-1.2,org.apache.commons.exec.util,StringUtils,stringSubstitution,Missing default,The following switch statement is missing a default case: switch (ch) {
+commons-exec-1.2,org.apache.commons.exec.util,StringUtils,isQuoted,Long Statement,The length of the statement "return argument.startsWith(SINGLE_QUOTE) && argument.endsWith(SINGLE_QUOTE) || argument.startsWith(DOUBLE_QUOTE) && argument.endsWith(DOUBLE_QUOTE);" is 148.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testNoStringSubstitution,Long Statement,The length of the statement "assertEquals("This is a FOO & BAR test"`StringUtils.stringSubstitution("This is a FOO & BAR test"`vars`true).toString());" is 121.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testDefaultStringSubstitution,Long Statement,The length of the statement "assertEquals("This is a FOO & BAR test"`StringUtils.stringSubstitution("This is a ${foo} & ${bar} test"`vars`true).toString());" is 127.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testDefaultStringSubstitution,Long Statement,The length of the statement "assertEquals("This is a FOO & BAR test"`StringUtils.stringSubstitution("This is a ${foo} & ${bar} test"`vars`false).toString());" is 128.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testIncompleteSubstitution,Empty catch clause,The method has an empty catch block.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testIncompleteSubstitution,Long Statement,The length of the statement "assertEquals("This is a FOO & ${bar} test"`StringUtils.stringSubstitution("This is a ${foo} & ${bar} test"`vars`true).toString());" is 130.
+commons-exec-1.2,org.apache.commons.exec.util,StringUtilTest,testErroneousTemplate,Long Statement,The length of the statement "assertEquals("This is a FOO & ${}} test"`StringUtils.stringSubstitution("This is a ${foo} & ${}} test"`vars`true).toString());" is 126.

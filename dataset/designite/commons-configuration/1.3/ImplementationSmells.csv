@@ -1,0 +1,856 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,AbstractConfiguration,getList,Long Statement,The length of the statement "throw new ConversionException('\'' + key + "' doesn't map to a List object: "+ value+ "` a "+ value.getClass().getName());" is 122.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,AbstractConfiguration,resolveContainerStore,Complex Method,Cyclomatic complexity of the method is 11
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,AbstractFileConfiguration,getPath,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,CombinedConfiguration,addConfiguration,Long Statement,The length of the statement "throw new ConfigurationRuntimeException("A configuration with the name '" + name + "' already exists in this combined configuration!");" is 135.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,CombinedConfiguration,clone,Long Statement,The length of the statement "copy.addConfiguration((AbstractConfiguration)ConfigurationUtils.cloneConfiguration(cd.getConfiguration())`cd.getName()`cd.getAt());" is 131.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationFactory,initDigesterSectionRules,Long Statement,The length of the statement "setupDigesterInstance(digester`matchString + "xml"`new FileConfigurationFactory(XMLConfiguration.class)`null`additional);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationFactory,initDigesterSectionRules,Long Statement,The length of the statement "setupDigesterInstance(digester`matchString + "hierarchicalXml"`new FileConfigurationFactory(XMLConfiguration.class)`null`additional);" is 133.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationFactory,setupDigesterInstance,Long Parameter List,The method has 5 parameters. 
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationFactory,createObject,Long Statement,The length of the statement "if (attributes.getValue(ATTR_OPTIONAL) != null && PropertyConverter.toBoolean(attributes.getValue(ATTR_OPTIONAL)).booleanValue()) {" is 131.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,FileConfigurationFactory,createObject,Long Statement,The length of the statement "if (attributes.getValue(ATTR_OPTIONAL) != null && PropertyConverter.toBoolean(attributes.getValue(ATTR_OPTIONAL)).booleanValue()) {" is 131.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationKey,append,Complex Conditional,The conditional expression keyBuffer.length() > 0 && !hasDelimiter() && !isAttributeKey(property) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationKey,hasDelimiter,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationKey,partsEqual,Long Statement,The length of the statement "return it1.nextKey().equals(it2.nextKey()) && it1.getIndex() == it2.getIndex() && it1.isAttribute() == it2.isAttribute();" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationUtils,constructFile,Complex Conditional,The conditional expression StringUtils.isEmpty(basePath) || (absolute != null && absolute.isAbsolute()) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationUtils,constructFile,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationUtils,locate,Complex Method,Cyclomatic complexity of the method is 13
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DatabaseConfiguration,DatabaseConfiguration,Long Parameter List,The method has 6 parameters. 
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DatabaseConfiguration,getProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DatabaseConfiguration,containsKey,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DatabaseConfiguration,clearProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getBooleanList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getBooleanArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getByteList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getByteArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getShortList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getShortArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getIntegerList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getIntArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getLongList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getLongArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getFloatList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getFloatArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getDoubleList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getDoubleArray,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getBigIntegerList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getBigDecimalList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getURLList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getDateList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getCalendarList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getLocaleList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DataConfiguration,getColorList,Complex Conditional,The conditional expression value == null || (value instanceof String && StringUtils.isEmpty((String)value)) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,DefaultConfigurationBuilder,isReservedNode,Long Statement,The length of the statement "return nd.isAttribute() && ((ATTR_ATNAME.equals(nd.getName()) && nd.getParentNode().getAttributeCount(RESERVED_PREFIX + ATTR_ATNAME) == 0) || (ATTR_OPTIONALNAME.equals(nd.getName()) && nd.getParentNode().getAttributeCount(RESERVED_PREFIX + ATTR_OPTIONALNAME) == 0));" is 266.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,ConfigurationDeclaration,isReservedNode,Long Statement,The length of the statement "return nd.isAttribute() && ((ATTR_ATNAME.equals(nd.getName()) && nd.getParentNode().getAttributeCount(RESERVED_PREFIX + ATTR_ATNAME) == 0) || (ATTR_OPTIONALNAME.equals(nd.getName()) && nd.getParentNode().getAttributeCount(RESERVED_PREFIX + ATTR_OPTIONALNAME) == 0));" is 266.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,HierarchicalConfiguration,visit,Long Statement,The length of the statement "key.append(StringUtils.replace(isAttribute() ? ConfigurationKey.constructAttributeKey(getName()) : getName()`String.valueOf(ConfigurationKey.PROPERTY_DELIMITER)`ConfigurationKey.ESCAPED_DELIMITER));" is 198.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,HierarchicalConfiguration,visitBeforeChildren,Complex Method,Cyclomatic complexity of the method is 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,Node,visit,Long Statement,The length of the statement "key.append(StringUtils.replace(isAttribute() ? ConfigurationKey.constructAttributeKey(getName()) : getName()`String.valueOf(ConfigurationKey.PROPERTY_DELIMITER)`ConfigurationKey.ESCAPED_DELIMITER));" is 198.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BuilderVisitor,visitBeforeChildren,Complex Method,Cyclomatic complexity of the method is 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,checkCombineLines,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfiguration,unescapeJava,Complex Method,Cyclomatic complexity of the method is 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,checkCombineLines,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesReader,parseProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfigurationLayout,load,Long Statement,The length of the statement "PropertiesConfiguration.PropertiesReader reader=new PropertiesConfiguration.PropertiesReader(in`getConfiguration().getListDelimiter());" is 135.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfigurationLayout,save,Long Statement,The length of the statement "PropertiesConfiguration.PropertiesWriter writer=new PropertiesConfiguration.PropertiesWriter(out`getConfiguration().getListDelimiter());" is 136.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesConfigurationLayout,checkHeaderComment,Complex Conditional,The conditional expression loadCounter == 1 && getHeaderComment() == null && layoutData.isEmpty() is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toLocale,Complex Conditional,The conditional expression size >= 1 && (((String)elements.get(0)).length() == 2 || ((String)elements.get(0)).length() == 0) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toLocale,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toLocale,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toLocale,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toLocale,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toColor,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,toIterator,Complex Method,Cyclomatic complexity of the method is 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,interpolateHelper,Complex Method,Cyclomatic complexity of the method is 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,interpolateHelper,Long Statement,The length of the statement "while (((begin=base.indexOf(AbstractConfiguration.START_TOKEN`prec + AbstractConfiguration.END_TOKEN.length())) > -1) && ((end=base.indexOf(AbstractConfiguration.END_TOKEN`begin)) > -1)) {" is 188.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertyConverter,interpolateHelper,Long Statement,The length of the statement "throw new IllegalStateException("infinite loop in property interpolation of " + initialBase + ": "+ priorVariableSb.toString());" is 128.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,XMLConfiguration,setRootElementName,Long Statement,The length of the statement "throw new UnsupportedOperationException("The name of the root element " + "cannot be changed when loaded from an XML document!");" is 129.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,XMLConfiguration,insert,Long Statement,The length of the statement "elem.appendChild(document.createTextNode(PropertyConverter.escapeDelimiters(newNode.getValue().toString()`listDelimiter)));" is 123.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,XMLBuilderVisitor,insert,Long Statement,The length of the statement "elem.appendChild(document.createTextNode(PropertyConverter.escapeDelimiters(newNode.getValue().toString()`listDelimiter)));" is 123.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testBooleanArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testByteArrayValue,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testByteArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testDoubleArrayValue,Magic Number,The method contains a magic number: 10.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testDoubleArrayValue,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testDoubleArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testFloatArrayValue,Magic Number,The method contains a magic number: 20.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testFloatArrayValue,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testFloatArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testIntegerArrayValue,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testIntegerArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testLongArrayValue,Magic Number,The method contains a magic number: 1000000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testLongArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,BaseNonStringProperties,testShortArrayValue,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testByte,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testDouble,Magic Number,The method contains a magic number: 10.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testDouble,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testDoubleDefaultValue,Magic Number,The method contains a magic number: 10.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testDoubleDefaultValue,Magic Number,The method contains a magic number: 10.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testDoubleDefaultValue,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testFloat,Magic Number,The method contains a magic number: 20.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testFloat,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testFloatDefaultValue,Magic Number,The method contains a magic number: 20.25
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testFloatDefaultValue,Magic Number,The method contains a magic number: 0.01
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testInteger,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testIntegerDefaultValue,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testIntegerDefaultValue,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testLong,Magic Number,The method contains a magic number: 1000000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testLongDefaultValue,Magic Number,The method contains a magic number: 1000000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,NonStringTestHolder,testLongDefaultValue,Magic Number,The method contains a magic number: 1000000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestAbstractConfiguration,testList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetByte,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetShort,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetLong,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetFloat,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetDouble,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testAddProperty,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetHexadecimalValue,Magic Number,The method contains a magic number: 0xFF
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetHexadecimalValue,Magic Number,The method contains a magic number: 0xFFFF
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testGetHexadecimalValue,Magic Number,The method contains a magic number: 0xFFFFFFFF
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42.0f
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 0.01f
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42.0
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 0.001
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testNumberConversions,Magic Number,The method contains a magic number: 42L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfiguration,testClone,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfigurationXMLReader,setUp,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfigurationXMLReader,testParseSAXException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfigurationXMLReader,testParseIOException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseConfigurationXMLReader,checkDocument,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetByte,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetShort,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetLong,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetFloat,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetDouble,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestBaseNullConfiguration,testGetList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testAddConfigurationWithNameTwice,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testAddNullConfiguration,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testAccessPropertyMulti,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,checkRemoveConfig,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testUpdateContainedConfiguration,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testSetNullNodeCombiner,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testClone,Long Statement,The length of the statement "assertEquals("Wrong number of contained configurations"`config.getNumberOfConfigurations()`cc2.getNumberOfConfigurations());" is 124.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testClear,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCombinedConfiguration,testClear,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testMultipleTypesOfConfigs,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testAddingProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testGettingSubset,Long Statement,The length of the statement "assertEquals("Make sure the initial loaded configs subset overrides any later add configs subset"`"1"`subset.getString("short"));" is 129.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testGettingSubset,Long Statement,The length of the statement "assertEquals("Make sure the initial loaded configs subset overrides any later add configs subset"`"43"`subset.getString("short"));" is 130.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testStringArray,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testGetList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testGetList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testGetStringWithDefaults,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testStringArrayInterpolation,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testStringArrayInterpolation,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testInstanciateWithCollection,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestCompositeConfiguration,testCloneNotSupported,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationConverter,testExtendedPropertiesToConfiguration,Magic Number,The method contains a magic number: 123
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationConverter,testPropertiesToConfiguration,Magic Number,The method contains a magic number: 123
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationConverter,testConfigurationToExtendedProperties,Magic Number,The method contains a magic number: 123
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,setUp,Long Statement,The length of the statement "System.setProperty("java.naming.factory.initial"`"org.apache.commons.configuration.MockStaticMemoryInitialContextFactory");" is 123.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingConfiguration,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingConfiguration,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingConfigurationWithRulesXML,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingConfigurationWithRulesXML,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingConfigurationNamespaceAware,Long Identifier,The length of the field testDigesterFileNamespaceAware is 30.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testLoadingURL,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,testOptionalConfigurations,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,checkUnionConfig,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,checkUnionConfig,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,checkUnionConfig,Magic Number,The method contains a magic number: 17
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactory,checkCompositeConfiguration,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationKey,testIterate,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationKey,testIterate,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationKey,testCommonKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationSet,testIterator,Long Statement,The length of the statement "assertTrue("Entry set iterator did not return EntrySet object` returned " + object.getClass().getName()`object instanceof Map.Entry);" is 133.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testToString,Long Statement,The length of the statement "assertEquals("String representation of a configuration"`"one=1" + lineSeparator + "two=2"`ConfigurationUtils.toString(config));" is 127.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testToString,Long Statement,The length of the statement "assertEquals("String representation of a configuration"`"two=2" + lineSeparator + "one=1"`ConfigurationUtils.toString(config));" is 127.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testGetURL,Long Statement,The length of the statement "assertEquals("http://localhost:8080/webapp/config/config.xml"`ConfigurationUtils.getURL("http://localhost:8080/webapp/config/baseConfig.xml"`"config.xml").toString());" is 167.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testGetURL,Long Statement,The length of the statement "assertEquals("http://localhost:8080/webapp/config/config.xml"`ConfigurationUtils.getURL("http://localhost:8080/webapp/baseConfig.xml"`"config/config.xml").toString());" is 167.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testGetURL,Long Statement,The length of the statement "assertEquals("http://localhost:8080/webapp/config/config.xml"`ConfigurationUtils.getURL("ftp://ftp.server.com/downloads/baseConfig.xml"`"http://localhost:8080/webapp/config/config.xml").toString());" is 198.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testGetURL,Long Statement,The length of the statement "assertEquals("http://localhost:8080/webapp/config/config.xml"`ConfigurationUtils.getURL(null`"http://localhost:8080/webapp/config/config.xml").toString());" is 155.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testGetURL,Long Statement,The length of the statement "assertEquals(absFile.toURL()`ConfigurationUtils.getURL("http://localhost:8080/webapp/config/baseConfig.xml"`absFile.getAbsolutePath()));" is 136.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testConvertToHierarchical,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationUtils,testCloneConfigurationNotSupported,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDatabaseConfiguration,testGetList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,setUp,Long Method,The method has 213 lines of code.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testGetColor,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testGetColor,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testGetColor,Magic Number,The method contains a magic number: 7
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDataConfiguration,testConversionException,Long Method,The method has 340 lines of code.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,setUp,Long Statement,The length of the statement "System.setProperty("java.naming.factory.initial"`"org.apache.commons.configuration.MockStaticMemoryInitialContextFactory");" is 123.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationDeclarationIsReserved,Long Statement,The length of the statement "DefaultConfigurationBuilder.ConfigurationDeclaration decl=new DefaultConfigurationBuilder.ConfigurationDeclaration(factory`factory);" is 132.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,checkOldReservedAttribute,Long Statement,The length of the statement "DefaultConfigurationBuilder.ConfigurationDeclaration decl=new DefaultConfigurationBuilder.ConfigurationDeclaration(factory`factory);" is 132.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationDeclarationGetAttributes,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationDeclarationGetAttributes,Long Statement,The length of the statement "DefaultConfigurationBuilder.ConfigurationDeclaration decl=new DefaultConfigurationBuilder.ConfigurationDeclaration(factory`factory.configurationAt("xml"));" is 155.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testAddConfigurationProviderNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testAddConfigurationProviderNullTag,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationBeanFactoryCreateBean,Long Statement,The length of the statement "factory.addConfigurationProvider("test"`new DefaultConfigurationBuilder.ConfigurationProvider(PropertiesConfiguration.class));" is 126.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationBeanFactoryCreateBean,Long Statement,The length of the statement "DefaultConfigurationBuilder.ConfigurationDeclaration decl=new DefaultConfigurationBuilder.ConfigurationDeclaration(factory`factory.configurationAt("test"));" is 156.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationBeanFactoryCreateUnknownTag,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testConfigurationBeanFactoryCreateUnknownTag,Long Statement,The length of the statement "DefaultConfigurationBuilder.ConfigurationDeclaration decl=new DefaultConfigurationBuilder.ConfigurationDeclaration(factory`factory.configurationAt("test"));" is 156.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,checkConfiguration,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,checkConfiguration,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testLoadAdditional,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testLoadAdditional,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testLoadAdditional,Magic Number,The method contains a magic number: 17
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testLoadOptionalWithException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testComplexInitialization,Long Statement,The length of the statement "assertEquals("Refresh delay was not set"`10000`((FileChangedReloadingStrategy)c1.getReloadingStrategy()).getRefreshDelay());" is 124.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testComplexInitialization,Magic Number,The method contains a magic number: 10000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testCombinedConfiguration,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testCombinedConfiguration,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestDefaultConfigurationBuilder,testCombinedConfigurationListNodes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testSaveInvalidURL,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testSaveInvalidURL,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testSaveWithoutFileName,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testSaveWithoutFileName,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testSaveWithoutFileName,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testLoadDirectory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testLoadDirectory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testLoadDirectory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestFileConfiguration,testLoadDirectory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetRoot,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetRootNodeNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetProperty,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetProperty,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetProperty,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testClearTree,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testClearTree,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetKeys,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetKeysString,Long Statement,The length of the statement "checkKeys("tables.table(0)"`new String[]{"name"`"fields.field.name"`"tables.table(0)[@type]"`"size"`"fields.field.type"`"fields.field.size"});" is 142.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddProperty,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetMaxIndex,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testGetMaxIndex,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSubset,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSubset,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testConfigurationAtUnknownSubTree,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testConfigurationAtMultipleNodes,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddNodes,Magic Number,The method contains a magic number: 7
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testAddNodesWithAttributeKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testNodeRemove,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testNodeVisitor,Magic Number,The method contains a magic number: 28
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetExpressionEngine,Long Statement,The length of the statement "assertSame("Default engine is not used"`HierarchicalConfiguration.getDefaultExpressionEngine()`config.getExpressionEngine());" is 125.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,testSetDefaultExpressionEngineNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,checkAlternativeSyntax,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,checkAlternativeSyntax,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,checkAlternativeSyntax,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfiguration,checkAlternativeSyntax,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfigurationXMLReader,testParse,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalConfigurationXMLReader,testParse,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,configTest,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,configTest,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,configTest,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testXmlNodeTypes,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testSave,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testSaveModified,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testSaveModified,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testSaveModified,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestHierarchicalXMLConfiguration,testRootElement,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testAddRemoveConfigurations,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testMultipleTypesOfConfigs,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testDefaultValueWhenKeyMissing,Magic Number,The method contains a magic number: 1.4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testAddingProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testGettingSubset,Long Statement,The length of the statement "assertEquals("Make sure the initial loaded configs subset overrides any later add configs subset"`"1"`subset.getString("short"));" is 129.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testGettingSubset,Long Statement,The length of the statement "assertEquals("Make sure the initial loaded configs subset overrides any later add configs subset"`"43"`subset.getString("short"));" is 130.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testStringArray,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testGetList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestNullCompositeConfiguration,testGetList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testSave,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testInMemoryCreatedSave,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testSaveMissingFilename,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testLoadUnexistingFile,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testMixedArray,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testMixedArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testMixedArray,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testMultilines,Long Statement,The length of the statement "String property="This is a value spread out across several adjacent " + "natural lines by escaping the line terminator with " + "a backslash character.";" is 153.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testChangingDefaultListDelimiter,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testChangingDefaultListDelimiter,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testChangingListDelimiter,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testChangingListDelimiter,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testDisableListDelimiter,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testDisableListDelimiter,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testNewLineEscaping,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testNewLineEscaping,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfiguration,testPropertyLoadedInclude,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testInitNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testBlancLines,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testIsSingleLine,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testIsSingleLineMulti,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testEventAdd,Long Statement,The length of the statement "ConfigurationEvent event=new ConfigurationEvent(this`AbstractConfiguration.EVENT_ADD_PROPERTY`TEST_KEY`TEST_VALUE`false);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testEventAddMultiple,Long Statement,The length of the statement "ConfigurationEvent event=new ConfigurationEvent(this`AbstractConfiguration.EVENT_ADD_PROPERTY`TEST_KEY`TEST_VALUE`false);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testEventAddExisting,Long Statement,The length of the statement "ConfigurationEvent event=new ConfigurationEvent(this`AbstractConfiguration.EVENT_ADD_PROPERTY`TEST_KEY`TEST_VALUE`false);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testEventSetNonExisting,Long Statement,The length of the statement "ConfigurationEvent event=new ConfigurationEvent(this`AbstractConfiguration.EVENT_SET_PROPERTY`TEST_KEY`TEST_VALUE`false);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testEventDelete,Long Statement,The length of the statement "ConfigurationEvent event=new ConfigurationEvent(this`AbstractConfiguration.EVENT_ADD_PROPERTY`TEST_KEY`TEST_VALUE`false);" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testRecursiveLoadCall,Long Statement,The length of the statement "assertEquals("Wrong comment for property"`TEST_COMMENT + CR + "A nested header comment."+ CR+ "With multiple lines"+ CR+ CR+ "Second comment"`layout.getCanonicalComment(TEST_KEY`false));" is 186.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testSave,Long Statement,The length of the statement "checkLayoutString("# A header comment" + CR + "# for my properties"+ CR+ CR+ "# "+ TEST_COMMENT+ CR+ TEST_KEY+ " = "+ TEST_VALUE+ CR+ TEST_KEY+ " = "+ TEST_VALUE+ "2"+ CR+ CR+ CR+ "# AnotherComment"+ CR+ "AnotherProperty = AnotherValue`3rdValue"+ CR);" is 251.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testSave,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testSaveForceSingleLine,Long Statement,The length of the statement "checkLayoutString("# " + TEST_COMMENT + CR+ TEST_KEY+ " = "+ TEST_VALUE+ ';'+ TEST_VALUE+ "2"+ CR+ "AnotherProperty = value1;value2;value3"+ CR);" is 145.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testTrimComment,Long Statement,The length of the statement "assertEquals("Wrong trimmed comment"`"This is a comment" + CR + "that spans multiple"+ CR+ "lines in a"+ CR+ " complex way."`PropertiesConfigurationLayout.trimComment(" # This is a comment" + CR + "that spans multiple"+ CR+ "!lines in a"+ CR+ " complex way."`false));" is 267.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testTrimCommentTrainlingCR,Long Statement,The length of the statement "assertEquals("Wrong trimmed comment"`"Comment with" + CR + "trailing CR"+ CR`PropertiesConfigurationLayout.trimComment("Comment with" + CR + "! trailing CR"+ CR`false));" is 169.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testTrimCommentFalse,Long Statement,The length of the statement "assertEquals("Wrong trimmed comment"`"# Comment with" + CR + " ! some mixed "+ CR+ "#comment"+ CR+ "# lines"`PropertiesConfigurationLayout.trimComment("Comment with" + CR + " ! some mixed "+ CR+ "#comment"+ CR+ "lines"`true));" is 226.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,testGetNullLayouttData,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesConfigurationLayout,addComment,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,PropertiesBuilder,addComment,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Complex Conditional,The conditional expression (keyParts.length == 3) && keyParts[0].equals("prefix") && keyParts[2].equals("postfix") is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Complex Conditional,The conditional expression (keyParts.length == 3) && keyParts[0].equals("prefix") && keyParts[2].equals("postfix") is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertiesSequence,testMappingInSameOrder,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplit,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplit,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplitWithEscapedSeparator,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplitEmptyValues,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplitEmptyValues,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testSplitWithEndingSlash,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToIterator,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToIterator,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolateString,Long Statement,The length of the statement "assertEquals("Wrong interpolation"`"The quick brown fox jumps over the lazy dog."`PropertyConverter.interpolate("The ${animal} jumps over the ${target}."`config));" is 163.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolateObject,Long Statement,The length of the statement "assertEquals("Object was not correctly interpolated"`new Integer(42)`PropertyConverter.interpolate(new Integer(42)`new PropertiesConfiguration()));" is 147.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolateObject,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolateObject,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolateRecursive,Long Statement,The length of the statement "assertEquals("Wrong complex interpolation"`"The quick brown fox jumps over the lazy dog."`PropertyConverter.interpolate("The ${animal} jumps over the ${target}."`config));" is 171.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testCyclicInterpolation,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testInterpolationUnknownVariable,Long Statement,The length of the statement "assertEquals("Wrong interpolation"`"The quick brown fox jumps over ${target}."`PropertyConverter.interpolate("The ${animal} jumps over ${target}."`config));" is 156.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberDirect,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromString,Long Statement,The length of the statement "assertEquals("Incorrect Short value"`new Short((short)10)`PropertyConverter.toNumber(new StringBuffer("10")`Short.class));" is 122.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromString,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromString,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromHexString,Magic Number,The method contains a magic number: 16
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromInvalidHexString,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberFromInvalidString,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestPropertyConverter,testToNumberWithInvalidClass,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestStrictConfigurationComparator,testCompare,Long Statement,The length of the statement "assertFalse("Compare our configuration with another that has an additional key mapping"`comparator.compare(configuration`other));" is 129.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubnodeConfiguration,testInitSubNodeConfigWithNullParent,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubnodeConfiguration,testInitSubNodeConfigWithNullNode,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubnodeConfiguration,testGetKeys,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubnodeConfiguration,testSetThrowExceptionOnMissing,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubnodeConfiguration,testSetExpressionEngine,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubsetConfiguration,testGetList,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubsetConfiguration,testThrowtExceptionOnMissing,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSubsetConfiguration,testThrowtExceptionOnMissing,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestSystemConfiguration,testSystemConfiguration,Magic Number,The method contains a magic number: 123
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestThreesomeConfiguration,testList1,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestThreesomeConfiguration,testList2,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestThreesomeConfiguration,testList3,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testgetProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testgetProperty,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testgetProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testgetProperty,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testgetProperty,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testAddAttribute,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testAddList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testLoadInvalidXML,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSave,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSave,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 100
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 1000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 1000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testReloading,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testCustomDocBuilder,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSplitLists,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSplitLists,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testValidating,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSaveWithDoctype,Long Statement,The length of the statement "String content="<?xml version=\"1.0\"?>" + DOCTYPE + "properties"+ DOCTYPE_DECL+ "<properties version=\"1.0\"><entry key=\"test\">value</entry></properties>";" is 158.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestXMLConfiguration,testSaveWithInvalidTransformerFactory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactoryWithJNDI,testLoadingWithDigester,Long Statement,The length of the statement "assertEquals("Make sure the JNDI config overwrites everything else!"`"80"`compositeConfiguration.getString("test.overwrite"));" is 126.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactoryWithJNDI,testLoadingWithDigester,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactoryWithJNDI,testLoadingWithDigester,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactoryWithJNDI,testLoadingWithDigester,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration,TestConfigurationFactoryWithJNDI,testGetKeysWithString2,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,ConfigurationDynaBean,set,Complex Method,Cyclomatic complexity of the method is 23
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,ConfigurationDynaClass,getDynaProperty,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testRegisterBeanFactoryNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testRegisterBeanFactoryNullName,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testSetDefaultBeanFactoryNull,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testInitBeanWithInvalidProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithNullDeclaration,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithNoClass,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithInvalidClass,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithUnknownFactory,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithException,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,testCreateBeanWithParameter,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,setUpBeanDeclaration,Magic Number,The method contains a magic number: 100
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,checkBean,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestBeanHelper,checkBean,Magic Number,The method contains a magic number: 100
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetDescriptorArguments,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetDescriptorArguments,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetIndexedValues,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetIndexedValues,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetIndexedValues,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetSimpleDouble,Magic Number,The method contains a magic number: 0.005
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testGetSimpleFloat,Magic Number,The method contains a magic number: 0.005f
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 11
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 11
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetIndexedValues,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetSimpleDouble,Magic Number,The method contains a magic number: 0.005
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestConfigurationDynaBean,testSetSimpleFloat,Magic Number,The method contains a magic number: 0.005f
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromNullNode,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromNullConfiguration,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromNullConfigurationAndKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromNullConfigurationAndNode,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromUndefinedKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.beanutils,TestXMLBeanDeclaration,testInitFromMultiValueKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,ConfigurationEvent,ConfigurationEvent,Long Parameter List,The method has 5 parameters. 
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,AbstractTestConfigurationEvents,testAddPropertyEventWithDetails,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,AbstractTestConfigurationEvents,testClearPropertyEventWithDetails,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,AbstractTestConfigurationEvents,testSetPropertyEventWithDetails,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,AbstractTestConfigurationEvents,testClearEventWithDetails,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,AbstractTestFileConfigurationEvents,testReloadEventWithDetails,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,TestEventSource,testAddNullConfigurationListener,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.event,TestEventSource,testGetConfigurationListenersUpdate,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,getMessage,Complex Method,Cyclomatic complexity of the method is 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Magic Number,The method contains a magic number: 0x20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Magic Number,The method contains a magic number: 0x7e
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Magic Number,The method contains a magic number: 16
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,ParseException,add_escapes,Missing default,The following switch statement is missing a default case: switch (str.charAt(i)) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,printNode,Complex Conditional,The conditional expression child.getValue() == null && (child.getChildren() == null || child.getChildren().isEmpty()) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,printNode,Complex Conditional,The conditional expression value != null && !(value instanceof Map) && !(value instanceof Configuration) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,printNode,Complex Conditional,The conditional expression it.hasNext() && (value == null || value instanceof List) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,printNode,Complex Method,Cyclomatic complexity of the method is 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,printValue,Complex Method,Cyclomatic complexity of the method is 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,quoteString,Complex Conditional,The conditional expression s.indexOf(' ') != -1 || s.indexOf('\t') != -1 || s.indexOf('\r') != -1 || s.indexOf('\n') != -1 || s.indexOf('"') != -1 || s.indexOf('(') != -1 || s.indexOf(')') != -1 || s.indexOf('{') != -1 || s.indexOf('}') != -1 || s.indexOf('=') != -1 || s.indexOf('`') != -1 || s.indexOf(';') != -1 is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListConfiguration,quoteString,Long Statement,The length of the statement "if (s.indexOf(' ') != -1 || s.indexOf('\t') != -1 || s.indexOf('\r') != -1 || s.indexOf('\n') != -1 || s.indexOf('"') != -1 || s.indexOf('(') != -1 || s.indexOf(')') != -1 || s.indexOf('{') != -1 || s.indexOf('}') != -1 || s.indexOf('=') != -1 || s.indexOf('`') != -1 || s.indexOf(';') != -1) {" is 294.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,removeQuotes,Complex Conditional,The conditional expression s.startsWith("\"") && s.endsWith("\"") && s.length() >= 2 is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,removeQuotes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,filterData,Complex Conditional,The conditional expression s.startsWith("<") && s.endsWith(">") && s.length() >= 2 is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,filterData,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,filterData,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Dictionary,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Property,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Element,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Element,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Array,Complex Method,Cyclomatic complexity of the method is 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Array,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Array,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Array,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,Array,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,String,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,String,Missing default,The following switch statement is missing a default case: switch ((jj_ntk == -1) ? jj_ntk() : jj_ntk) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,PropertyListParser,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,PropertyListParser,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Complex Method,Cyclomatic complexity of the method is 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Magic Number,The method contains a magic number: 22
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Magic Number,The method contains a magic number: 22
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Magic Number,The method contains a magic number: 32
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParser,generateParseException,Magic Number,The method contains a magic number: 22
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 0x4000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 0x1000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 0x2000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 0x200000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjStopStringLiteralDfa_0,Missing default,The following switch statement is missing a default case: switch (pos) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 14
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 40
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 41
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 44
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 7
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 59
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 60
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 61
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 11
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 62
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 13
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 92
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 0x200000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 123
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 125
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa0_0,Missing default,The following switch statement is missing a default case: switch (curChar) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa1_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa1_0,Magic Number,The method contains a magic number: 0x200000L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa1_0,Magic Number,The method contains a magic number: 21
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveStringLiteralDfa1_0,Missing default,The following switch statement is missing a default case: switch (curChar) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Complex Method,Cyclomatic complexity of the method is 64
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Long Method,The method has 140 lines of code.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 64
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x3ff000100002600L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 62
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 60
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x3ff000100002600L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 62
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 34
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 128
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 077
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 92
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7e0000007eL
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7e0000007eL
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 7
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 92
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0xff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 077
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Missing default,The following switch statement is missing a default case: switch (jjstateSet[--i]) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Missing default,The following switch statement is missing a default case: switch (jjstateSet[--i]) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,jjMoveNfa_0,Missing default,The following switch statement is missing a default case: switch (jjstateSet[--i]) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,PropertyListParserTokenManager,Long Statement,The length of the statement "if (SimpleCharStream.staticFlag) throw new Error("ERROR: Cannot use a static CharStream class with a non-static lexical analyzer.");" is 132.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,ReInitRounds,Magic Number,The method contains a magic number: 0x80000001
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,ReInitRounds,Magic Number,The method contains a magic number: 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,ReInitRounds,Magic Number,The method contains a magic number: 0x80000000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Complex Method,Cyclomatic complexity of the method is 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 32
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 0x100002600L
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 0x7fffffff
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 6
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,PropertyListParserTokenManager,getNextToken,Magic Number,The method contains a magic number: 077
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,ExpandBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,ExpandBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,ExpandBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,ExpandBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,FillBuff,Complex Method,Cyclomatic complexity of the method is 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,FillBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,FillBuff,Magic Number,The method contains a magic number: 2048
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,UpdateLineColumn,Magic Number,The method contains a magic number: 8
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,UpdateLineColumn,Magic Number,The method contains a magic number: 07
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,UpdateLineColumn,Missing default,The following switch statement is missing a default case: switch (c) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,SimpleCharStream,Magic Number,The method contains a magic number: 4096
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,SimpleCharStream,Magic Number,The method contains a magic number: 4096
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,SimpleCharStream,Magic Number,The method contains a magic number: 4096
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,SimpleCharStream,Magic Number,The method contains a magic number: 4096
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,SimpleCharStream,SimpleCharStream,Magic Number,The method contains a magic number: 4096
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,Token,newToken,Missing default,The following switch statement is missing a default case: switch (ofKind) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Complex Method,Cyclomatic complexity of the method is 12
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Magic Number,The method contains a magic number: 0x20
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Magic Number,The method contains a magic number: 0x7e
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Magic Number,The method contains a magic number: 16
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,addEscapes,Missing default,The following switch statement is missing a default case: switch (str.charAt(i)) {
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,LexicalError,Long Parameter List,The method has 6 parameters. 
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,LexicalError,Long Statement,The length of the statement "return ("Lexical error at line " + errorLine + "` column "+ errorColumn+ ". Encountered: "+ (EOFSeen ? "<EOF> " : ("\"" + addEscapes(String.valueOf(curChar)) + "\"") + " (" + (int)curChar+ ")` ")+ "after : \""+ addEscapes(errorAfter)+ "\"");" is 241.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TokenMgrError,TokenMgrError,Long Parameter List,The method has 7 parameters. 
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,XMLPropertyListConfiguration,printValue,Complex Conditional,The conditional expression value instanceof Double || value instanceof Float || value instanceof BigDecimal is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,XMLPropertyListConfiguration,printValue,Complex Method,Cyclomatic complexity of the method is 15
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testNestedArrays,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testNestedArrays,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testNestedArrays,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testDictionaryArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestPropertyListConfiguration,testSave,Long Statement,The length of the statement "assertTrue("The dictionnary at index " + i + " for the key '"+ key+ "' doesn't match"`comparator.compare((Configuration)value1`(Configuration)value2));" is 151.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testInteger,Magic Number,The method contains a magic number: 12345
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testReal,Magic Number,The method contains a magic number: 12.345
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testArray,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testNestedArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testNestedArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testNestedArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testDictionaryArray,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.plist,TestXMLPropertyListConfiguration,testSave,Long Statement,The length of the statement "assertTrue("The dictionnary at index " + i + " for the key '"+ key+ "' doesn't match"`comparator.compare((Configuration)value1`(Configuration)value2));" is 151.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testAutomaticReloading,Magic Number,The method contains a magic number: 500
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testAutomaticReloading,Magic Number,The method contains a magic number: 2000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testNewFileReloading,Magic Number,The method contains a magic number: 500
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testNewFileReloading,Magic Number,The method contains a magic number: 2000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testGetRefreshDelay,Magic Number,The method contains a magic number: 500
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.reloading,TestFileChangedReloadingStrategy,testGetRefreshDelay,Magic Number,The method contains a magic number: 500
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,append,Complex Conditional,The conditional expression keyBuffer.length() > 0 && !isAttributeKey(property) && key.length() > 0 is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,isAttributeKey,Long Statement,The length of the statement "return key.startsWith(getExpressionEngine().getAttributeStart()) && (getExpressionEngine().getAttributeEnd() == null || key.endsWith(getExpressionEngine().getAttributeEnd()));" is 175.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,hasTrailingDelimiter,Long Statement,The length of the statement "return key.endsWith(getExpressionEngine().getPropertyDelimiter()) && (getExpressionEngine().getEscapedDelimiter() == null || !key.endsWith(getExpressionEngine().getEscapedDelimiter()));" is 185.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,hasLeadingDelimiter,Long Statement,The length of the statement "return key.startsWith(getExpressionEngine().getPropertyDelimiter()) && (getExpressionEngine().getEscapedDelimiter() == null || !key.startsWith(getExpressionEngine().getEscapedDelimiter()));" is 189.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,removeAttributeMarkers,Long Statement,The length of the statement "return key.substring(getExpressionEngine().getAttributeStart().length()`key.length() - ((getExpressionEngine().getAttributeEnd() != null) ? getExpressionEngine().getAttributeEnd().length() : 0));" is 195.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,unescapeDelimiters,Long Statement,The length of the statement "return (getExpressionEngine().getEscapedDelimiter() == null) ? key : StringUtils.replace(key`getExpressionEngine().getEscapedDelimiter()`getExpressionEngine().getPropertyDelimiter());" is 183.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,escapeDelimiters,Long Statement,The length of the statement "return (getExpressionEngine().getEscapedDelimiter() == null || key.indexOf(getExpressionEngine().getPropertyDelimiter()) < 0) ? key : StringUtils.replace(key`getExpressionEngine().getPropertyDelimiter()`getExpressionEngine().getEscapedDelimiter());" is 248.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationKey,isAttributeEmulatingMode,Long Statement,The length of the statement "return getExpressionEngine().getAttributeEnd() == null && StringUtils.equals(getExpressionEngine().getPropertyDelimiter()`getExpressionEngine().getAttributeStart());" is 165.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,KeyIterator,isAttributeEmulatingMode,Long Statement,The length of the statement "return getExpressionEngine().getAttributeEnd() == null && StringUtils.equals(getExpressionEngine().getPropertyDelimiter()`getExpressionEngine().getAttributeStart());" is 165.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultConfigurationNode,removeNode,Complex Conditional,The conditional expression nodes != null && node != null && nodes.contains(node) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,SubNodes,removeNode,Complex Conditional,The conditional expression nodes != null && node != null && nodes.contains(node) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,DefaultExpressionEngine,processSubNodes,Long Statement,The length of the statement "findNodesForKey((DefaultConfigurationKey.KeyIterator)keyPart.clone()`(ConfigurationNode)subNodes.get(keyPart.getIndex())`nodes);" is 128.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,OverrideCombiner,canCombine,Complex Conditional,The conditional expression node2.getChildrenCount(child.getName()) == 1 && node1.getChildrenCount(child.getName()) == 1 && !isListNode(child) is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,OverrideCombiner,canCombine,Long Statement,The length of the statement "if (node2.getChildrenCount(child.getName()) == 1 && node1.getChildrenCount(child.getName()) == 1 && !isListNode(child)) {" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,UnionCombiner,findCombineNode,Complex Conditional,The conditional expression child.getValue() == null && !isListNode(child) && node1.getChildrenCount(child.getName()) == 1 && node2.getChildrenCount(child.getName()) == 1 is complex.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,UnionCombiner,findCombineNode,Long Statement,The length of the statement "if (child.getValue() == null && !isListNode(child) && node1.getChildrenCount(child.getName()) == 1 && node2.getChildrenCount(child.getName()) == 1) {" is 149.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationKey,testSetNullExpressionEngine,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationKey,testIsAttributeKeyWithoutEndMarkers,Long Statement,The length of the statement "assertTrue("Attribute key not detected"`key.isAttributeKey(DefaultExpressionEngine.DEFAULT_PROPERTY_DELIMITER + "test"));" is 121.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationKey,testAppendIndex,Magic Number,The method contains a magic number: 42
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationKey,testIterate,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationKey,testIterateWithRemove,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testNewNode,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testAddUndefinedChild,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testAddUndefinedChild,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testRemoveChild,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testGetChild,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testGetChild,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testGetChildInvalidIndex,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testGetChildInvalidIndex,Magic Number,The method contains a magic number: 4724
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testGetAttributesByName,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testRemoveAttributeByName,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testChangeAttributeState,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testVisit,Magic Number,The method contains a magic number: 19
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testVisitWithTerminate,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultConfigurationNode,testVisitWithNullVisitor,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 5
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryKeys,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testQueryAttributeEmulation,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testNodeKey,Long Statement,The length of the statement "assertEquals("Full parent key not taken into account"`"a.full.parent.key.tables"`engine.nodeKey(node`"a.full.parent.key"));" is 123.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testNodeKeyWithEscapedDelimiters,Long Statement,The length of the statement "assertEquals("Wrong complex escaped key"`"connection..settings.usr..name"`engine.nodeKey(node.getChild(0)`engine.nodeKey(node`"")));" is 132.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testPrepareAddInvalidKeys,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testPrepareAddInvalidKeys,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testPrepareAddInvalidKeys,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestDefaultExpressionEngine,testPrepareAddInvalidKeys,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestOverrideCombiner,testAttributes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestOverrideCombiner,testListFromSecondStructure,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestOverrideCombiner,checkTable,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testSimpleValuesWithAttributes,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testSimpleValuesWithAttributes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testAttributes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testLists,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testLists,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testLists,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestUnionCombiner,testTableList,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestViewNode,testAddNullChild,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestViewNode,testAddNullAttribute,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree,TestViewNode,testAppendChildren,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,ConfigurationNodeIteratorChildren,createSubNodeList,Complex Method,Cyclomatic complexity of the method is 9
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,ConfigurationNodePointerFactory,getOrder,Long Identifier,The length of the field CONFIGURATION_NODE_POINTER_FACTORY_ORDER is 40.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,XPathExpressionEngine,initNodeAddData,Complex Method,Cyclomatic complexity of the method is 10
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationIteratorAttributes,testIterateAllAttributes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodeIteratorChildren,testIterateStartsWith,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodeIteratorChildren,testIterateStartsWith,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodeIteratorChildren,testIterateStartsWith,Magic Number,The method contains a magic number: 4
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodeIteratorChildren,testIterateStartsWithReverse,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodeIteratorChildren,testIterateStartsWithReverse,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointer,testCompareChildNodePointersChildren,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointer,testCompareChildNodePointersChildAndAttribute,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointer,testCompareChildNodePointersInvalidChildren,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testSimpleXPath,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testSimpleXPath,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testSimpleXPath,Magic Number,The method contains a magic number: 18
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testIndices,Long Statement,The length of the statement "assertEquals("Incorrect value"`"1.2.3"`context.getValue("/" + CHILD_NAME2 + "[1]/"+ CHILD_NAME1+ "[1]/"+ CHILD_NAME2+ "[2]"));" is 126.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testAttributes,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testPrecedingSiblingAxis,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestConfigurationNodePointerFactory,testPrecedingSiblingAxis,Magic Number,The method contains a magic number: 3
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidParent,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidFormat,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddEmptyPath,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddNullKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddEmptyKey,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidPath,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidAttributePath,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidAttributePath2,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidPathWithSlash,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,TestXPathExpressionEngine,testPrepareAddInvalidPathMultipleAttributes,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.tree.xpath,XPathTest,createLevel,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestAppletConfiguration,testAddPropertyDirect,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestAppletConfiguration,testClearProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletConfiguration,testAddPropertyDirect,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletConfiguration,testClearProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletContextConfiguration,testAddPropertyDirect,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletContextConfiguration,testClearProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletFilterConfiguration,testAddPropertyDirect,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletFilterConfiguration,testClearProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletRequestConfiguration,testAddPropertyDirect,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.web,TestServletRequestConfiguration,testClearProperty,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.test,HsqlDB,close,Empty catch clause,The method has an empty catch block.
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.test,HsqlDB,loadSqlFile,Magic Number,The method contains a magic number: 2
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.test,HsqlDB,getFileContents,Magic Number,The method contains a magic number: 1024
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.test,HsqlDB,getFileContents,Magic Number,The method contains a magic number: 1000
+commons-configuration-CONFIGURATION_1_3,org.apache.commons.configuration.test,HsqlDB,getFileContents,Magic Number,The method contains a magic number: 1024

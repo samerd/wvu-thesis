@@ -1,0 +1,3 @@
+Project Name,Package Name,Architecture Smell,Cause of the Smell
+commons-exec-1.2,org.apache.commons.exec,Unstable Dependency,The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): org.apache.commons.exec.launcher; org.apache.commons.exec.environment
+commons-exec-1.2,org.apache.commons.exec.util,Unstable Dependency,The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): org.apache.commons.exec.environment

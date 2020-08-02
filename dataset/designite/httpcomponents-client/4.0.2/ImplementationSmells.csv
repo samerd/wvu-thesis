@@ -1,0 +1,1129 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell
+4.0.2,org.apache.http.examples.client,ClientAuthentication,main,Long Statement,The length of the statement "httpclient.getCredentialsProvider().setCredentials(new AuthScope("localhost"`443)`new UsernamePasswordCredentials("username"`"password"));" is 138.
+4.0.2,org.apache.http.examples.client,ClientAuthentication,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.client,ClientCustomSSL,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,main,Long Statement,The length of the statement "String[] urisToGet={"http://jakarta.apache.org/"`"http://jakarta.apache.org/commons/"`"http://jakarta.apache.org/commons/httpclient/"`"http://svn.apache.org/viewvc/jakarta/httpcomponents/"};" is 190.
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,main,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,main,Magic Number,The method contains a magic number: 20000
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,run,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.examples.client,ClientEvictExpiredConnections,run,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.examples.client,IdleConnectionEvictor,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.examples.client,IdleConnectionEvictor,run,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.examples.client,IdleConnectionEvictor,run,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.examples.client,ClientExecuteDirect,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientExecuteDirect,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientExecuteProxy,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.client,ClientExecuteProxy,main,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.examples.client,ClientExecuteProxy,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientExecuteProxy,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.client,ClientFormLogin,main,Long Statement,The length of the statement "HttpPost httpost=new HttpPost("https://portal.sun.com/amserver/UI/Login?" + "org=self_registered_users&" + "goto=/portal/dt&"+ "gotoOnFail=/portal/dt?error=true");" is 163.
+4.0.2,org.apache.http.examples.client,ClientMultiThreadedExecution,main,Long Statement,The length of the statement "String[] urisToGet={"http://hc.apache.org/"`"http://hc.apache.org/httpcomponents-core/"`"http://hc.apache.org/httpcomponents-client/"`"http://svn.apache.org/viewvc/httpcomponents/"};" is 182.
+4.0.2,org.apache.http.examples.client,ClientMultiThreadedExecution,main,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.examples.client,ClientMultiThreadedExecution,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientPreemptiveBasicAuthentication,main,Long Statement,The length of the statement "httpclient.getCredentialsProvider().setCredentials(new AuthScope("localhost"`80)`new UsernamePasswordCredentials("username"`"password"));" is 137.
+4.0.2,org.apache.http.examples.client,ClientPreemptiveBasicAuthentication,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientPreemptiveBasicAuthentication,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientPreemptiveBasicAuthentication,main,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.examples.client,ClientPreemptiveDigestAuthentication,main,Long Statement,The length of the statement "httpclient.getCredentialsProvider().setCredentials(new AuthScope("localhost"`80)`new UsernamePasswordCredentials("username"`"password"));" is 137.
+4.0.2,org.apache.http.examples.client,ClientPreemptiveDigestAuthentication,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientPreemptiveDigestAuthentication,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.client,ClientPreemptiveDigestAuthentication,main,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.examples.client,ClientProxyAuthentication,main,Long Statement,The length of the statement "httpclient.getCredentialsProvider().setCredentials(new AuthScope("localhost"`8080)`new UsernamePasswordCredentials("username"`"password"));" is 139.
+4.0.2,org.apache.http.examples.client,ClientProxyAuthentication,main,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.examples.client,ClientProxyAuthentication,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.client,ClientProxyAuthentication,main,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.examples.conn,ManagerConnectDirect,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,ManagerConnectDirect,setup,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,main,Magic Number,The method contains a magic number: 8666
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,main,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,main,Magic Number,The method contains a magic number: 299
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,setup,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,ManagerConnectProxy,setup,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,OperatorConnectDirect,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,OperatorConnectDirect,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 8666
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.examples.conn,OperatorConnectProxy,main,Magic Number,The method contains a magic number: 299
+4.0.2,org.apache.http.auth,AuthScope,match,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.auth,AuthScope,match,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.auth,AuthScope,match,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.auth,AuthScope,match,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.auth,AuthScope,equals,Long Statement,The length of the statement "return LangUtils.equals(this.host`that.host) && this.port == that.port && LangUtils.equals(this.realm`that.realm) && LangUtils.equals(this.scheme`that.scheme);" is 159.
+4.0.2,org.apache.http.auth,NTCredentials,NTCredentials,Long Statement,The length of the statement "this.principal=new NTUserPrincipal(username.substring(0`atSlash).toUpperCase(Locale.ENGLISH)`username.substring(atSlash + 1));" is 126.
+4.0.2,org.apache.http.client.entity,UrlEncodedFormEntity,UrlEncodedFormEntity,Long Statement,The length of the statement "setContentType(URLEncodedUtils.CONTENT_TYPE + HTTP.CHARSET_PARAM + (encoding != null ? encoding : HTTP.DEFAULT_CONTENT_CHARSET));" is 129.
+4.0.2,org.apache.http.client.methods,HttpRequestBase,abort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.client.methods,TestHttpOptions,testMultipleAllows,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.client.methods,TestHttpRequestBase,testCloneEntityEnclosingRequests,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.client.protocol,RequestAddCookies,process,Complex Method,Cyclomatic complexity of the method is 24
+4.0.2,org.apache.http.client.protocol,RequestAddCookies,process,Long Method,The method has 101 lines of code.
+4.0.2,org.apache.http.client.protocol,RequestClientConnControl,process,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.client.protocol,RequestClientConnControl,process,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.protocol,RequestDefaultHeaders,process,Long Statement,The length of the statement "@SuppressWarnings("unchecked") Collection<Header> defHeaders=(Collection<Header>)request.getParams().getParameter(ClientPNames.DEFAULT_HEADERS);" is 144.
+4.0.2,org.apache.http.client.protocol,RequestProxyAuthentication,process,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.client.protocol,RequestTargetAuthentication,process,Complex Method,Cyclomatic complexity of the method is 10
+4.0.2,org.apache.http.client.protocol,TestCookie2Support,testCookieVersionSupportHeader2,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.protocol,TestRedirects,testMaxRedirectCheck,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.client.protocol,TestRedirects,testRejectBogusRedirectLocation,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.client.utils,Rfc3492Idn,adapt,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,Rfc3492Idn,adapt,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,Rfc3492Idn,digit,Magic Number,The method contains a magic number: 26
+4.0.2,org.apache.http.client.utils,Rfc3492Idn,toUnicode,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.client.utils,Rfc3492Idn,decode,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.client.utils,URIUtils,createURI,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.client.utils,URIUtils,createURI,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.client.utils,URIUtils,rewriteURI,Long Statement,The length of the statement "return URIUtils.createURI(target.getSchemeName()`target.getHostName()`target.getPort()`uri.getRawPath()`uri.getRawQuery()`dropFragment ? null : uri.getRawFragment());" is 166.
+4.0.2,org.apache.http.client.utils,URLEncodedUtils,parse,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,URLEncodedUtils,parse,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,TestRfc3492Idn,testDecode,Long Statement,The length of the statement "assertEquals("\u0644\u064A\u0647\u0645\u0627\u0628\u062A\u0643\u0644" + "\u0645\u0648\u0634\u0639\u0631\u0628\u064A\u061F"`idn.decode("egbpdaj6bu4bxfgehfvwxn"));" is 161.
+4.0.2,org.apache.http.client.utils,TestRfc3492Idn,testDecode,Long Statement,The length of the statement "assertEquals("\u043F\u043E\u0447\u0435\u043C\u0443\u0436\u0435\u043E" + "\u043D\u0438\u043D\u0435\u0433\u043E\u0432\u043E\u0440" + "\u044F\u0442\u043F\u043E\u0440\u0443\u0441\u0441\u043A"+ "\u0438"`idn.decode("b1abfaaepdrnnbgefbaDotcwatmq2g4l"));" is 246.
+4.0.2,org.apache.http.client.utils,TestRfc3492Idn,testDecode,Long Statement,The length of the statement "assertEquals("\u004D\u0061\u006A\u0069\u3067\u004B\u006F\u0069\u3059" + "\u308B\u0035\u79D2\u524D"`idn.decode("MajiKoi5-783gue6qz075azm5e"));" is 141.
+4.0.2,org.apache.http.client.utils,TestRfc3492Idn,testToUnicode,Long Statement,The length of the statement "assertEquals("\u0644\u064A\u0647\u0645\u0627\u0628\u062A\u0643\u0644" + "\u0645\u0648\u0634\u0639\u0631\u0628\u064A\u061F"`idn.toUnicode("xn--egbpdaj6bu4bxfgehfvwxn"));" is 168.
+4.0.2,org.apache.http.client.utils,TestURLEncodedUtils,testParseURI,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,TestURLEncodedUtils,testParseURI,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.client.utils,TestURLEncodedUtils,testParseURI,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.utils,TestURLEncodedUtils,testParseUTF8Entity,Long Statement,The length of the statement "assertEquals("russian=%D0%92%D1%81%D0%B5%D0%BC_%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82" + "&swiss=Gr%C3%BCezi_z%C3%A4m%C3%A4"`s);" is 126.
+4.0.2,org.apache.http.client.utils,TestURLEncodedUtils,testParseUTF8Entity,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn,ClientConnectionOperator,openConnection,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.conn,MultihomePlainSocketFactory,connectSocket,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.conn,MultihomePlainSocketFactory,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityConsumeContent,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityConsumeContent,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityConsumeContent,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityWriteTo,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityWriteTo,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnEntityWriteTo,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnAbort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnAbort,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnAbort,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Long Statement,The length of the statement "public void handle( final HttpRequest request` final HttpResponse response` final HttpContext context) throws HttpException` IOException {" is 138.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,testReleaseOnIOException,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,handle,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,handle,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,writeTo,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestConnectionAutoRelease,writeTo,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfPersistentConnections,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfClosedConnections,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn,TestConnectionReuse,testReuseOfAbortedConnections,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.conn,TestConnectionReuse,testKeepAliveHeaderRespected,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestConnectionReuse,testKeepAliveHeaderRespected,Magic Number,The method contains a magic number: 1100
+4.0.2,org.apache.http.conn,TestConnectionReuse,testKeepAliveHeaderRespected,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn,TestConnectionReuse,testKeepAliveHeaderRespected,Magic Number,The method contains a magic number: 500
+4.0.2,org.apache.http.conn,TestConnectionReuse,testKeepAliveHeaderRespected,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn,TestConnectionReuse,WorkerThread,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.conn,WorkerThread,WorkerThread,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testConstructor,Magic Number,The method contains a magic number: 70000
+4.0.2,org.apache.http.conn,TestScheme,testRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testRegisterUnregister,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testRegisterUnregister,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testRegisterUnregister,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testIterator,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testIterator,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testIllegalRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testIllegalRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testIllegalRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testIllegalRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testIllegalRegisterUnregister,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn,TestScheme,testResolvePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testResolvePort,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.conn,TestScheme,testResolvePort,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.conn,TestScheme,testResolvePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testHashCode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testHashCode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testHashCode,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testEquals,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testEquals,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn,TestScheme,testEquals,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn,TestScheme,testToString,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn.params,ConnPerRouteBean,ConnPerRouteBean,Long Identifier,The length of the field DEFAULT_MAX_CONNECTIONS_PER_ROUTE is 33.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.params,TestRouteParams,testBadArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,BasicRouteDirector,proxiedStep,Complex Conditional,The conditional expression (fact.isTunnelled() && !plan.isTunnelled()) || (fact.isLayered() && !plan.isLayered()) is complex.
+4.0.2,org.apache.http.conn.routing,BasicRouteDirector,proxiedStep,Complex Method,Cyclomatic complexity of the method is 11
+4.0.2,org.apache.http.conn.routing,HttpRoute,HttpRoute,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.routing,HttpRoute,HttpRoute,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.routing,HttpRoute,HttpRoute,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.routing,HttpRoute,HttpRoute,Long Statement,The length of the statement "this(local`target`toChain(proxy)`secure`secure ? TunnelType.TUNNELLED : TunnelType.PLAIN`secure ? LayerType.LAYERED : LayerType.PLAIN);" is 135.
+4.0.2,org.apache.http.conn.routing,HttpRoute,equals,Long Statement,The length of the statement "equal&=(this.localAddress == that.localAddress) || ((this.localAddress != null) && this.localAddress.equals(that.localAddress));" is 128.
+4.0.2,org.apache.http.conn.routing,HttpRoute,hashCode,Magic Number,The method contains a magic number: 0x11111111
+4.0.2,org.apache.http.conn.routing,HttpRoute,toString,Magic Number,The method contains a magic number: 50
+4.0.2,org.apache.http.conn.routing,HttpRoute,toString,Magic Number,The method contains a magic number: 30
+4.0.2,org.apache.http.conn.routing,RouteTracker,toRoute,Long Statement,The length of the statement "return !this.connected ? null : new HttpRoute(this.targetHost`this.localAddress`this.proxyChain`this.secure`this.tunnelled`this.layered);" is 137.
+4.0.2,org.apache.http.conn.routing,RouteTracker,equals,Long Statement,The length of the statement "equal&=(this.localAddress == that.localAddress) || ((this.localAddress != null) && this.localAddress.equals(that.localAddress));" is 128.
+4.0.2,org.apache.http.conn.routing,RouteTracker,equals,Long Statement,The length of the statement "equal&=(this.proxyChain == that.proxyChain) || ((this.proxyChain != null) && (that.proxyChain != null) && (this.proxyChain.length == that.proxyChain.length));" is 158.
+4.0.2,org.apache.http.conn.routing,RouteTracker,equals,Long Statement,The length of the statement "equal&=(this.connected == that.connected) && (this.secure == that.secure) && (this.tunnelled == that.tunnelled)&& (this.layered == that.layered);" is 145.
+4.0.2,org.apache.http.conn.routing,RouteTracker,hashCode,Magic Number,The method contains a magic number: 0x11111111
+4.0.2,org.apache.http.conn.routing,RouteTracker,hashCode,Magic Number,The method contains a magic number: 0x22222222
+4.0.2,org.apache.http.conn.routing,RouteTracker,toString,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.conn.routing,RouteTracker,toString,Magic Number,The method contains a magic number: 50
+4.0.2,org.apache.http.conn.routing,RouteTracker,toString,Magic Number,The method contains a magic number: 30
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullRoute,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullRoute,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullRoute,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullFlags,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullFlags,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstrFullFlags,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testInvalidArguments,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testInvalidArguments,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testInvalidArguments,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testInvalidArguments,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testEqualsHashcodeClone,Long Method,The method has 100 lines of code.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testEqualsHashcodeClone,Magic Number,The method contains a magic number: 11
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testEqualsHashcodeClone,Magic Number,The method contains a magic number: 11
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testHopping,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testCstr4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestHttpRoute,testImmutable,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteDirector,testIllegal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testCstrTargetLocal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testCstrRoute,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalArgs,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testIllegalStates,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testDirectRoutes,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testDirectRoutes,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyRoutes,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyRoutes,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyRoutes,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyRoutes,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyChainRoutes,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyChainRoutes,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyChainRoutes,Magic Number,The method contains a magic number: 6
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testProxyChainRoutes,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,testEqualsHashcodeCloneToString,Long Method,The method has 100 lines of code.
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,checkCTLS,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,checkVia,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,checkVia,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.routing,TestRouteTracker,checkVia,Missing default,The following switch statement is missing a default case: switch (action) {
+4.0.2,org.apache.http.conn.scheme,PlainSocketFactory,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.scheme,Scheme,Scheme,Magic Number,The method contains a magic number: 0xffff
+4.0.2,org.apache.http.conn.scheme,Scheme,equals,Long Statement,The length of the statement "return (name.equals(s.name) && defaultPort == s.defaultPort && layered == s.layered && socketFactory.equals(s.socketFactory));" is 126.
+4.0.2,org.apache.http.conn.scheme,SocketFactory,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 80808080
+4.0.2,org.apache.http.conn.scheme,TestScheme,testPortResolution,Magic Number,The method contains a magic number: 80808080
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,verify,Complex Conditional,The conditional expression cns != null && cns.length > 0 && cns[0] != null is complex.
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,verify,Complex Method,Cyclomatic complexity of the method is 12
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,verify,Long Statement,The length of the statement "boolean doWildcard=cn.startsWith("*.") && cn.lastIndexOf('.') >= 0 && acceptableCountryWildcard(cn) && !isIPAddress(host);" is 122.
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,acceptableCountryWildcard,Magic Number,The method contains a magic number: 7
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,acceptableCountryWildcard,Magic Number,The method contains a magic number: 9
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,acceptableCountryWildcard,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,acceptableCountryWildcard,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,acceptableCountryWildcard,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,getCNs,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,getSubjectAlts,Magic Number,The method contains a magic number: 7
+4.0.2,org.apache.http.conn.ssl,AbstractVerifier,getSubjectAlts,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.ssl,SSLSocketFactory,SSLSocketFactory,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.ssl,SSLSocketFactory,connectSocket,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.ssl,SSLSocketFactory,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.conn.ssl,TestHostnameVerifier,testVerify,Long Method,The method has 109 lines of code.
+4.0.2,org.apache.http.conn.ssl,TestHostnameVerifier,testSubjectAlt,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.ssl,TestHostnameVerifier,testSubjectAlt,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.ssl,TestHostnameVerifier,exceptionPlease,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Long Statement,The length of the statement "k=new RSAPrivateCrtKeySpec(new BigInteger(CertificatesToPlayWith.RSA_PUBLIC_MODULUS`16)`new BigInteger(CertificatesToPlayWith.RSA_PUBLIC_EXPONENT`10)`new BigInteger(CertificatesToPlayWith.RSA_PRIVATE_EXPONENT`16)`new BigInteger(CertificatesToPlayWith.RSA_PRIME1`16)`new BigInteger(CertificatesToPlayWith.RSA_PRIME2`16)`new BigInteger(CertificatesToPlayWith.RSA_EXPONENT1`16)`new BigInteger(CertificatesToPlayWith.RSA_EXPONENT2`16)`new BigInteger(CertificatesToPlayWith.RSA_COEFFICIENT`16));" is 490.
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.conn.ssl,TestSSLSocketFactory,testCreateSocket,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.cookie,CookieIdentityComparator,compare,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testConstructor,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNullHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNullHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testEmptyHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testEmptyHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNegativePort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNegativePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNullPath,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testNullPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testEmptyPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookieOrigin,testEmptyPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testRegisterUnregisterCookieSpecFactory,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testRegisterUnregisterCookieSpecFactory,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testGetNewCookieSpec,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testGetNewCookieSpec,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.cookie,TestCookiePolicy,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,AuthSchemeBase,processChallenge,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.auth,BasicScheme,authenticate,Magic Number,The method contains a magic number: 32
+4.0.2,org.apache.http.impl.auth,DigestScheme,processChallenge,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigest,Complex Method,Cyclomatic complexity of the method is 11
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigest,Long Statement,The length of the statement "StringBuilder tmp2=new StringBuilder(hasha1.length() + nonce.length() + NC.length()+ cnonce.length()+ qopOption.length()+ hasha2.length()+ 5);" is 142.
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigest,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigest,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigest,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigestHeader,Magic Number,The method contains a magic number: 128
+4.0.2,org.apache.http.impl.auth,DigestScheme,createDigestHeader,Magic Number,The method contains a magic number: 20
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 0x0f
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 0xf0
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.auth,DigestScheme,encode,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.auth,NTLMEngine,generateType3Msg,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.auth,NTLMScheme,authenticate,Long Statement,The length of the statement "throw new InvalidCredentialsException("Credentials cannot be used for NTLM authentication: " + credentials.getClass().getName());" is 129.
+4.0.2,org.apache.http.impl.auth,NTLMScheme,authenticate,Long Statement,The length of the statement "response=this.engine.generateType3Msg(ntcredentials.getUserName()`ntcredentials.getPassword()`ntcredentials.getDomain()`ntcredentials.getWorkstation()`this.challenge);" is 167.
+4.0.2,org.apache.http.impl.auth,NTLMScheme,authenticate,Magic Number,The method contains a magic number: 32
+4.0.2,org.apache.http.impl.auth,TestBasicScheme,testBasicAuthenticationWithNoRealm,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestBasicScheme,testBasicAuthentication,Long Statement,The length of the statement "String expected="Basic " + EncodingUtils.getAsciiString(Base64.encodeBase64(EncodingUtils.getAsciiBytes("testuser:testpass")));" is 127.
+4.0.2,org.apache.http.impl.auth,TestBasicScheme,testBasicProxyAuthentication,Long Statement,The length of the statement "String expected="Basic " + EncodingUtils.getAsciiString(Base64.encodeBase64(EncodingUtils.getAsciiBytes("testuser:testpass")));" is 127.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationWithNoRealm,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationWithNoRealm2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationMD5Sess,Long Statement,The length of the statement "String challenge="Digest realm=\"" + realm + "\"` "+ "nonce=\""+ nonce+ "\"` "+ "opaque=\"SomeString\"` "+ "stale=false` "+ "algorithm=MD5-sess` "+ "qop=\"auth`auth-int\"";" is 172.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationMD5Sess,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationMD5SessNoQop,Long Statement,The length of the statement "String challenge="Digest realm=\"" + realm + "\"` "+ "nonce=\""+ nonce+ "\"` "+ "opaque=\"SomeString\"` "+ "stale=false` "+ "algorithm=MD5-sess";" is 145.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationMD5SessInvalidQop,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,testDigestAuthenticationMD5SessInvalidQop,Long Statement,The length of the statement "String challenge="Digest realm=\"" + realm + "\"` "+ "nonce=\""+ nonce+ "\"` "+ "opaque=\"SomeString\"` "+ "stale=false` "+ "algorithm=MD5-sess` "+ "qop=\"jakarta\"";" is 166.
+4.0.2,org.apache.http.impl.auth,TestDigestScheme,parseAuthResponse,Magic Number,The method contains a magic number: 7
+4.0.2,org.apache.http.impl.auth,TestRFC2617Scheme,testProcessChallenge,Long Statement,The length of the statement "Header header=new BasicHeader(AUTH.WWW_AUTH`"Test realm=\"realm1\"` test` test1 = stuff` test2 = \"stuff` stuff\"` test3=\"crap");" is 130.
+4.0.2,org.apache.http.impl.auth,TestRFC2617Scheme,testProcessChallengeWithLotsOfBlanks,Magic Number,The method contains a magic number: 32
+4.0.2,org.apache.http.impl.auth,TestRFC2617Scheme,testInvalidHeader,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestRFC2617Scheme,testEmptyHeader,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.auth,TestRFC2617Scheme,testInvalidHeaderValue,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.client,AbstractAuthenticationHandler,selectScheme,Complex Method,Cyclomatic complexity of the method is 10
+4.0.2,org.apache.http.impl.client,AbstractAuthenticationHandler,selectScheme,Long Statement,The length of the statement "@SuppressWarnings("unchecked") Collection<String> authPrefs=(Collection<String>)context.getAttribute(ClientContext.AUTH_SCHEME_PREF);" is 133.
+4.0.2,org.apache.http.impl.client,AbstractHttpClient,execute,Long Statement,The length of the statement "director=createClientRequestDirector(getRequestExecutor()`getConnectionManager()`getConnectionReuseStrategy()`getConnectionKeepAliveStrategy()`getRoutePlanner()`getHttpProcessor().copy()`getHttpRequestRetryHandler()`getRedirectHandler()`getTargetAuthenticationHandler()`getProxyAuthenticationHandler()`getUserTokenHandler()`determineParams(request));" is 350.
+4.0.2,org.apache.http.impl.client,AbstractHttpClient,createClientRequestDirector,Long Parameter List,The method has 12 parameters. 
+4.0.2,org.apache.http.impl.client,AbstractHttpClient,createClientRequestDirector,Long Statement,The length of the statement "return new DefaultRequestDirector(log`requestExec`conman`reustrat`kastrat`rouplan`httpProcessor`retryHandler`redirectHandler`targetAuthHandler`proxyAuthHandler`stateHandler`params);" is 181.
+4.0.2,org.apache.http.impl.client,BasicResponseHandler,handleResponse,Magic Number,The method contains a magic number: 300
+4.0.2,org.apache.http.impl.client,ClientParamsStack,ClientParamsStack,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.client,ClientParamsStack,ClientParamsStack,Long Statement,The length of the statement "this((aparams != null) ? aparams : stack.getApplicationParams()`(cparams != null) ? cparams : stack.getClientParams()`(rparams != null) ? rparams : stack.getRequestParams()`(oparams != null) ? oparams : stack.getOverrideParams());" is 230.
+4.0.2,org.apache.http.impl.client,DefaultConnectionKeepAliveStrategy,getKeepAliveDuration,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.client,DefaultConnectionKeepAliveStrategy,getKeepAliveDuration,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.impl.client,DefaultHttpClient,createHttpParams,Magic Number,The method contains a magic number: 8192
+4.0.2,org.apache.http.impl.client,DefaultHttpClient,createClientConnectionManager,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,DefaultHttpClient,createClientConnectionManager,Magic Number,The method contains a magic number: 443
+4.0.2,org.apache.http.impl.client,DefaultHttpRequestRetryHandler,DefaultHttpRequestRetryHandler,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.client,DefaultHttpRequestRetryHandler,retryRequest,Complex Method,Cyclomatic complexity of the method is 11
+4.0.2,org.apache.http.impl.client,DefaultRedirectHandler,isRedirectRequested,Missing default,The following switch statement is missing a default case: switch (statusCode) {
+4.0.2,org.apache.http.impl.client,DefaultRedirectHandler,getLocationURI,Complex Method,Cyclomatic complexity of the method is 11
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,DefaultRequestDirector,Complex Method,Cyclomatic complexity of the method is 14
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,DefaultRequestDirector,Long Parameter List,The method has 13 parameters. 
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,DefaultRequestDirector,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,DefaultRequestDirector,Long Parameter List,The method has 12 parameters. 
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,DefaultRequestDirector,Long Statement,The length of the statement "this(LogFactory.getLog(DefaultRequestDirector.class)`requestExec`conman`reustrat`kastrat`rouplan`httpProcessor`retryHandler`redirectHandler`targetAuthHandler`proxyAuthHandler`userTokenHandler`params);" is 200.
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,execute,Complex Conditional,The conditional expression (response == null) || (response.getEntity() == null) || !response.getEntity().isStreaming() is complex.
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,execute,Complex Method,Cyclomatic complexity of the method is 31
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,execute,Long Method,The method has 190 lines of code.
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,execute,Long Statement,The length of the statement "throw new NonRepeatableRequestException("Cannot retry request " + "with a non-repeatable request entity. The cause lists the " + "reason the original request failed."`retryReason);" is 180.
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,establishRoute,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,establishRoute,Missing default,The following switch statement is missing a default case: switch (step) {
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,createTunnelToTarget,Complex Method,Cyclomatic complexity of the method is 12
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,createTunnelToTarget,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,createTunnelToTarget,Magic Number,The method contains a magic number: 299
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,createConnectRequest,Magic Number,The method contains a magic number: 6
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,handleResponse,Complex Method,Cyclomatic complexity of the method is 14
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,processChallenges,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.client,DefaultRequestDirector,updateAuthState,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.impl.client,DefaultUserTokenHandler,getAuthPrincipal,Complex Conditional,The conditional expression scheme != null && scheme.isComplete() && scheme.isConnectionBased() is complex.
+4.0.2,org.apache.http.impl.client,TestBasicCookieStore,testBasics,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.client,TestBasicCookieStore,testExpiredCookie,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testScopeMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testScopeMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testScopeMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testScopeMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testCredentialsMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testCredentialsMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestBasicCredentialsProvider,testCredentialsMatching,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortInAllocate,Long Statement,The length of the statement "assertTrue("cause should be InterruptedException` was: " + throwableRef.get().getCause()`throwableRef.get().getCause() instanceof InterruptedException);" is 152.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortAfterAllocateBeforeRequest,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortAfterAllocateBeforeRequest,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortBeforeExecute,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortAfterRedirectedRoute,Long Statement,The length of the statement "assertTrue("cause should be InterruptedException` was: " + throwableRef.get().getCause()`throwableRef.get().getCause() instanceof InterruptedException);" is 152.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testAbortAfterRedirectedRoute,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testSocketConnectFailureReleasesConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testRequestFailureReleasesConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testRequestFailureReleasesConnection,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,handle,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 137.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit unit) throws InterruptedException` ConnectionPoolTimeoutException {" is 136.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,getSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 137.
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,getSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultClientRequestDirector,testDefaultHostAtRequestLevel,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,BasicService,handle,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.client,ConnMan4,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 137.
+4.0.2,org.apache.http.impl.client,ConnMan2,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit unit) throws InterruptedException` ConnectionPoolTimeoutException {" is 136.
+4.0.2,org.apache.http.impl.client,ConnMan2,getSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,ConMan,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 137.
+4.0.2,org.apache.http.impl.client,ConMan,getSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.client,TestDefaultConnKeepAliveStrategy,testIllegalResponseArg,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.client,TestDefaultConnKeepAliveStrategy,testKeepAliveHeader,Magic Number,The method contains a magic number: 300000
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testStatefulConnections,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testStatefulConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testStatefulConnections,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testStatefulConnections,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testStatefulConnections,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testRouteSpecificPoolRecylcing,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testRouteSpecificPoolRecylcing,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.client,TestStatefulConnManagement,testRouteSpecificPoolRecylcing,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,AbstractClientConnAdapter,abortConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,AbstractPoolEntry,open,Long Statement,The length of the statement "connOperator.openConnection(this.connection`(proxy != null) ? proxy : route.getTargetHost()`route.getLocalAddress()`context`params);" is 132.
+4.0.2,org.apache.http.impl.conn,DefaultClientConnection,createSessionInputBuffer,Magic Number,The method contains a magic number: 8192
+4.0.2,org.apache.http.impl.conn,DefaultClientConnection,createSessionOutputBuffer,Magic Number,The method contains a magic number: 8192
+4.0.2,org.apache.http.impl.conn,DefaultClientConnectionOperator,openConnection,Complex Method,Cyclomatic complexity of the method is 12
+4.0.2,org.apache.http.impl.conn,DefaultClientConnectionOperator,openConnection,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.conn,DefaultResponseParser,DefaultResponseParser,Magic Number,The method contains a magic number: 128
+4.0.2,org.apache.http.impl.conn,SingleClientConnManager,releaseConnection,Complex Conditional,The conditional expression sca.isOpen() && (this.alwaysShutDown || !sca.isMarkedReusable()) is complex.
+4.0.2,org.apache.http.impl.conn,SingleClientConnManager,releaseConnection,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.conn,Wire,wire,Magic Number,The method contains a magic number: 13
+4.0.2,org.apache.http.impl.conn,Wire,wire,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn,Wire,wire,Magic Number,The method contains a magic number: 32
+4.0.2,org.apache.http.impl.conn,Wire,wire,Magic Number,The method contains a magic number: 127
+4.0.2,org.apache.http.impl.conn,Helper,execute,Long Parameter List,The method has 7 parameters. 
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithSomeGarbage,Long Statement,The length of the statement "String s="garbage\r\n" + "garbage\r\n" + "more garbage\r\n"+ "HTTP/1.1 200 OK\r\n"+ "header1: value1\r\n"+ "header2: value2\r\n"+ "\r\n";" is 137.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithSomeGarbage,Long Statement,The length of the statement "HttpMessageParser parser=new DefaultResponseParser(inbuffer`BasicLineParser.DEFAULT`new DefaultHttpResponseFactory()`params);" is 125.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithSomeGarbage,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithSomeGarbage,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithTooMuchGarbage,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithTooMuchGarbage,Long Statement,The length of the statement "String s="garbage\r\n" + "garbage\r\n" + "more garbage\r\n"+ "HTTP/1.1 200 OK\r\n"+ "header1: value1\r\n"+ "header2: value2\r\n"+ "\r\n";" is 137.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithTooMuchGarbage,Long Statement,The length of the statement "HttpMessageParser parser=new DefaultResponseParser(inbuffer`BasicLineParser.DEFAULT`new DefaultHttpResponseFactory()`params);" is 125.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingWithTooMuchGarbage,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingNoResponse,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingNoResponse,Long Statement,The length of the statement "HttpMessageParser parser=new DefaultResponseParser(inbuffer`BasicLineParser.DEFAULT`new DefaultHttpResponseFactory()`params);" is 125.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingOnlyGarbage,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestDefaultResponseParser,testResponseParsingOnlyGarbage,Long Statement,The length of the statement "HttpMessageParser parser=new DefaultResponseParser(inbuffer`BasicLineParser.DEFAULT`new DefaultHttpResponseFactory()`params);" is 125.
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,testIdleConnectionEviction,Magic Number,The method contains a magic number: 50
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,testIdleConnectionEviction,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,testIdleConnectionEviction,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,testIdleConnectionEviction,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,testIdleConnectionEviction,Magic Number,The method contains a magic number: 2000
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,run,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestIdleConnectionEviction,run,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.impl.conn,WorkerThread,run,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.conn,IdleConnectionMonitor,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,IdleConnectionMonitor,run,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,createSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testDirect,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 127
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 11111
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 22222
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestProxySelRoutePlanner,testProxy,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 150
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testCloseExpiredConnections,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testCloseExpiredConnections,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testCloseExpiredConnections,Magic Number,The method contains a magic number: 150
+4.0.2,org.apache.http.impl.conn,TestSCMWithServer,testAlreadyLeased,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,createSchemeRegistry,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testGetConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testGetConnection,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Magic Number,The method contains a magic number: 100L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnTotal,Magic Number,The method contains a magic number: 100L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testMaxConnPerHost,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testDeleteClosedConnections,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testShutdown,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testShutdown,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testShutdown,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testShutdown,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testInterruptThread,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 1000L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 1000L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testReusePreference,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortAfterRequestStarts,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMNoServer,testAbortBeforeRequestStarts,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 5000L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testParallelRequests,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnection,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnection,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnection,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 10L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionWithTimeLimits,Magic Number,The method contains a magic number: 150
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testCloseExpiredConnections,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testCloseExpiredConnections,Magic Number,The method contains a magic number: 150
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionOnAbort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionOnAbort,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionOnAbort,Magic Number,The method contains a magic number: 100L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testReleaseConnectionOnAbort,Magic Number,The method contains a magic number: 5L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testConnectionManagerGC,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testConnectionManagerGC,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortDuringConnecting,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortDuringConnecting,Long Statement,The length of the statement "final StallingSocketFactory stallingSocketFactory=new StallingSocketFactory(connectLatch`WaitPolicy.BEFORE_CONNECT`PlainSocketFactory.getSocketFactory());" is 154.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortDuringConnecting,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortDuringConnecting,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortDuringConnecting,Magic Number,The method contains a magic number: 5L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortBeforeSocketCreate,Long Statement,The length of the statement "final StallingSocketFactory stallingSocketFactory=new StallingSocketFactory(connectLatch`WaitPolicy.BEFORE_CREATE`PlainSocketFactory.getSocketFactory());" is 153.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortBeforeSocketCreate,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortBeforeSocketCreate,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortBeforeSocketCreate,Magic Number,The method contains a magic number: 5L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Long Statement,The length of the statement "final StallingSocketFactory stallingSocketFactory=new StallingSocketFactory(connectLatch`WaitPolicy.AFTER_CONNECT`PlainSocketFactory.getSocketFactory());" is 153.
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterSocketConnect,Magic Number,The method contains a magic number: 5L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterOperatorOpen,Magic Number,The method contains a magic number: 5000
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterOperatorOpen,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterOperatorOpen,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,testAbortAfterOperatorOpen,Magic Number,The method contains a magic number: 5L
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,openConnection,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.conn,TestTSCCMWithServer,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.impl.conn,StallingOperator,openConnection,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.conn,StallingSocketFactory,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,requestPoolEntry,Long Statement,The length of the statement "public BasicPoolEntry getPoolEntry( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 127.
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,getEntryBlocking,Complex Conditional,The conditional expression !success && (deadline != null) && (deadline.getTime() <= System.currentTimeMillis()) is complex.
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,getEntryBlocking,Complex Method,Cyclomatic complexity of the method is 12
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,getEntryBlocking,Long Parameter List,The method has 5 parameters. 
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,getEntryBlocking,Long Statement,The length of the statement "log.debug("[" + route + "] kept alive: "+ freeConnections.size()+ "` issued: "+ leasedConnections.size()+ "` allocated: "+ numConnections+ " out of "+ maxTotalConnections);" is 172.
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,getEntryBlocking,Long Statement,The length of the statement "log.debug("Available capacity: " + rospl.getCapacity() + " out of "+ rospl.getMaxEntries()+ " ["+ route+ "]["+ state+ "]");" is 123.
+4.0.2,org.apache.http.impl.conn.tsccm,ConnPoolByRoute,freeEntry,Long Statement,The length of the statement "log.debug("Pooling connection" + " [" + route + "]["+ entry.getState()+ "]"+ "; keep alive for "+ validDuration+ " "+ timeUnit.toString());" is 139.
+4.0.2,org.apache.http.impl.conn.tsccm,RefQueueWorker,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn.tsccm,RouteSpecificPool,createdEntry,Long Statement,The length of the statement "throw new IllegalArgumentException("Entry not planned for this pool." + "\npool: " + route + "\nplan: "+ entry.getPlannedRoute());" is 130.
+4.0.2,org.apache.http.impl.conn.tsccm,ThreadSafeClientConnManager,requestConnection,Long Statement,The length of the statement "public ManagedClientConnection getConnection( long timeout` TimeUnit tunit) throws InterruptedException` ConnectionPoolTimeoutException {" is 137.
+4.0.2,org.apache.http.impl.conn.tsccm,ThreadSafeClientConnManager,releaseConnection,Complex Method,Cyclomatic complexity of the method is 8
+4.0.2,org.apache.http.impl.conn.tsccm,WaitingThread,await,Long Statement,The length of the statement "throw new IllegalStateException("A thread is already waiting on this object." + "\ncaller: " + Thread.currentThread() + "\nwaiter: "+ this.waiter);" is 147.
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 250
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatelessConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.impl.conn.tsccm,TestConnPoolByRoute,testStatefullConnections,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestSpuriousWakeup,testSpuriousWakeup,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.conn.tsccm,TestSpuriousWakeup,testSpuriousWakeup,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestSpuriousWakeup,testSpuriousWakeup,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.conn.tsccm,TestSpuriousWakeup,testSpuriousWakeup,Magic Number,The method contains a magic number: 333
+4.0.2,org.apache.http.impl.conn.tsccm,TestSpuriousWakeup,testSpuriousWakeup,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testConstructor,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testConstructor,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testAwaitWakeup,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testAwaitWakeup,Magic Number,The method contains a magic number: 500
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testAwaitWakeup,Magic Number,The method contains a magic number: 10000
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testInterrupt,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testInterrupt,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testIllegal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testIllegal,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.conn.tsccm,TestWaitingThread,testIllegal,Magic Number,The method contains a magic number: 100
+4.0.2,org.apache.http.impl.cookie,AbstractCookieSpec,AbstractCookieSpec,Magic Number,The method contains a magic number: 10
+4.0.2,org.apache.http.impl.cookie,BasicDomainHandler,validate,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.cookie,BasicMaxAgeHandler,parse,Magic Number,The method contains a magic number: 1000L
+4.0.2,org.apache.http.impl.cookie,BasicPathHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Illegal path attribute \"" + cookie.getPath() + "\". Path of origin: \""+ origin.getPath()+ "\"");" is 134.
+4.0.2,org.apache.http.impl.cookie,BestMatchSpec,parse,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.cookie,BrowserCompatSpec,parse,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.cookie,BrowserCompatSpec,parse,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,BrowserCompatSpec,formatCookies,Magic Number,The method contains a magic number: 20
+4.0.2,org.apache.http.impl.cookie,DateUtils,parseDate,Complex Conditional,The conditional expression dateValue.length() > 1 && dateValue.startsWith("'") && dateValue.endsWith("'") is complex.
+4.0.2,org.apache.http.impl.cookie,DateUtils,parseDate,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,NetscapeDomainHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + domain + "\" violates the Netscape cookie specification for "+ "special domains");" is 141.
+4.0.2,org.apache.http.impl.cookie,NetscapeDomainHandler,validate,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,NetscapeDomainHandler,validate,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.cookie,NetscapeDomainHandler,isSpecialDomain,Long Statement,The length of the statement "return ucDomain.endsWith(".COM") || ucDomain.endsWith(".EDU") || ucDomain.endsWith(".NET")|| ucDomain.endsWith(".GOV")|| ucDomain.endsWith(".MIL")|| ucDomain.endsWith(".ORG")|| ucDomain.endsWith(".INT");" is 203.
+4.0.2,org.apache.http.impl.cookie,NetscapeDraftSpec,formatCookies,Magic Number,The method contains a magic number: 20
+4.0.2,org.apache.http.impl.cookie,PublicSuffixFilter,isForPublicSuffix,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.impl.cookie,PublicSuffixFilter,isForPublicSuffix,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,PublicSuffixListParser,parse,Magic Number,The method contains a magic number: 256
+4.0.2,org.apache.http.impl.cookie,RFC2109DomainHandler,validate,Complex Method,Cyclomatic complexity of the method is 10
+4.0.2,org.apache.http.impl.cookie,RFC2109DomainHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + domain + "\" violates RFC 2109: domain must start with a dot");" is 122.
+4.0.2,org.apache.http.impl.cookie,RFC2109DomainHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + domain + "\" violates RFC 2109: domain must contain an embedded dot");" is 129.
+4.0.2,org.apache.http.impl.cookie,RFC2109DomainHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + domain + "\" violates RFC 2109: host minus domain may not contain any dots");" is 136.
+4.0.2,org.apache.http.impl.cookie,RFC2109Spec,doFormatOneHeader,Magic Number,The method contains a magic number: 40
+4.0.2,org.apache.http.impl.cookie,RFC2109Spec,doFormatManyHeaders,Magic Number,The method contains a magic number: 40
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Complex Conditional,The conditional expression ((dotIndex < 0) || (dotIndex == cookieDomain.length() - 1)) && (!cookieDomain.equals(".local")) is complex.
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Complex Method,Cyclomatic complexity of the method is 10
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + cookie.getDomain() + "\" violates RFC 2109: domain must start with a dot");" is 134.
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + cookie.getDomain() + "\" violates RFC 2965: the value contains no embedded dots "+ "and the value is not .local");" is 173.
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + cookie.getDomain() + "\" violates RFC 2965: effective host name does not "+ "domain-match domain attribute.");" is 169.
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Domain attribute \"" + cookie.getDomain() + "\" violates RFC 2965: "+ "effective host minus domain may not contain any dots");" is 162.
+4.0.2,org.apache.http.impl.cookie,RFC2965DomainAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Illegal domain attribute: \"" + cookie.getDomain() + "\"."+ "Domain of origin: \""+ host+ "\"");" is 132.
+4.0.2,org.apache.http.impl.cookie,RFC2965PortAttributeHandler,validate,Long Statement,The length of the statement "throw new MalformedCookieException("Port attribute violates RFC 2965: " + "Request port not found in cookie's port list.");" is 123.
+4.0.2,org.apache.http.impl.cookie,RFC2965Spec,getVersionHeader,Magic Number,The method contains a magic number: 40
+4.0.2,org.apache.http.impl.cookie,TestAbstractCookieSpec,testInvalidHandler,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestAbstractCookieSpec,testBasicPathInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestAbstractCookieSpec,testBasicPathInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainValidate4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch5,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch6,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathMatch7,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathValidate,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathValidate,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicPathInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicMaxAgeParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicMaxAgeParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicMaxAgeInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicCommentInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicSecureMatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicSecureMatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicSecureInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicSecureInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicSecureInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicExpiresParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicExpiresParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicExpiresInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testBasicExpiresInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testPublicSuffixFilter,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testPublicSuffixFilter,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testPublicSuffixFilter,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testPublicSuffixFilter,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBasicCookieAttribHandlers,testPublicSuffixFilter,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testDomainCaseInsensitivity,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse1,Long Statement,The length of the statement "String headerValue="custno = 12345; comment=test; version=1`" + " name=John; version=1; max-age=600; secure; domain=.apache.org";" is 129.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse1,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse2,Long Statement,The length of the statement "String headerValue="custno=12345;comment=test; version=1`" + "name=John;version=1;max-age=600;secure;domain=.apache.org";" is 121.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse2,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParse3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testQuotedExpiresAttribute,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecurityError,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecurityError,Long Statement,The length of the statement "String headerValue="custno=12345;comment=test; version=1`" + "name=John;version=1;max-age=600;secure;domain=jakarta.apache.org";" is 128.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecurityError,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseSimple,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseSimple2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseNoName,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseNoName,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseNoValue,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithWhiteSpace,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithQuotes,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithSecure,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithComment,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithExpires,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithExpires,Magic Number,The method contains a magic number: 10000L
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithAll,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"cookie-name=cookie-value;Version=1;Path=/commons;Domain=.apache.org;" + "Comment=This is a comment.;secure;Expires=Thu` 01-Jan-1970 00:00:10 GMT");" is 191.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithAll,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithAll,Magic Number,The method contains a magic number: 10000L
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseMultipleDifferentPaths,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"name1=value1;Version=1;Path=/commons`name1=value2;Version=1;" + "Path=/commons/httpclient;Version=1");" is 146.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseMultipleDifferentPaths,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseMultipleDifferentPaths,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseRelativePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithWrongDomain,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithWrongDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithPathMismatch,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithPathMismatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithPathMismatch2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testParseWithPathMismatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieNameWithBlanks,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieNameBlank,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieNameBlank,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieNameStartingWithDollarSign,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieWithComma,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieWithComma,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testDateFormats,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,checkDate,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecondDomainLevelCookie,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecondDomainLevelCookieMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecondDomainLevelCookieMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testSecondDomainLevelCookieMatch3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidSecondDomainLevelCookieMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidSecondDomainLevelCookieMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testMatchBlankPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testMatchNullCookieDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testMatchNullCookiePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMatch3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMatch4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMismatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMismatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMismatch3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMismatch4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMatch5,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testCookieMismatch6,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidMatchDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testGenericCookieFormatting,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testFormatSeveralCookies,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"name1=value1; path=/; domain=.mydomain.com` name2 = value2 ; path=/; domain=.mydomain.com");" is 136.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testFormatSeveralCookies,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestBrowserCompatSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieBrowserCompatParsing,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testNetscapeCookieParsing,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testNetscapeCookieParsing,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"name=value; path=/; domain=.mydomain.com; expires=Thu` 01-Jan-2070 00:00:10 GMT; comment=no_comment");" is 146.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testNetscapeCookieParsing,Long Statement,The length of the statement "header=new BasicHeader("Set-Cookie"`"name=value; path=/; domain=.mydomain.com; expires=Thu` 01-Jan-2070 00:00:10 GMT; version=1");" is 130.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantParsing,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantParsing,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantParsingLocalHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantParsingLocalHost2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieBrowserCompatMatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantMatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testCookieStandardCompliantFormatting,Long Statement,The length of the statement "assertEquals("$Version=1; name1=\"value1\"; $Path=\"/\"; $Domain=\".domain.com\"; " + "name2=\"value2\"; $Path=\"/\"; $Domain=\".domain.com\""`header.getValue());" is 162.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieBestMatchSpec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseAbsPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseAbsPath2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseRelativePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseWithIllegalNetscapeDomain1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseWithIllegalNetscapeDomain1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseWithWrongNetscapeDomain2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testParseWithWrongNetscapeDomain2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieFormatting,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttribute,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttribute,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"name=value; path=/; domain=.mydomain.com; expires=Thu` 01-Jan-2070 00:00:10 GMT; comment=no_comment");" is 146.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttribute,Long Statement,The length of the statement "header=new BasicHeader("Set-Cookie"`"name=value; path=/; domain=.mydomain.com; expires=Thu 01-Jan-2070 00:00:10 GMT; comment=no_comment");" is 138.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttribute,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttributeNoTimeZone,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testNetscapeCookieExpireAttributeNoTimeZone,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testCookieWithComma,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieNetscapeDraft,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseVersion,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookiesomainEqualsHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithIllegalDomain4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testSecondDomainLevelCookie,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testSecondDomainLevelCookie,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testSecondDomainLevelCookieMatch,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithWrongPath,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testParseWithWrongPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieNameWithBlanks,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieNameWithBlanks,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieNameStartingWithDollarSign,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieNameStartingWithDollarSign,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidDomainWithSimpleHostName,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidDomainWithSimpleHostName,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidDomainWithSimpleHostName,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidDomainWithSimpleHostName,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieWithComma,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieWithComma,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookieFormatting,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie"`"name1=value1; path=/; domain=.mydomain.com` " + "name2=\"value2\"; version=\"1\"; path=\"/\"; domain=\".mydomain.com\"");" is 165.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Long Statement,The length of the statement "assertEquals("$Version=0; name1=value1; $Path=/; $Domain=.mydomain.com; " + "name2=value2; $Path=/; $Domain=.mydomain.com"`headers.get(0).getValue());" is 150.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Long Statement,The length of the statement "header=new BasicHeader("Set-Cookie"`"name1=value1; version=1; path=/; domain=.mydomain.com` " + "name2=\"value2\"; version=\"1\"; path=\"/\"; domain=\".mydomain.com\"");" is 169.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Long Statement,The length of the statement "assertEquals("$Version=1; name1=\"value1\"; $Path=\"/\"; $Domain=\".mydomain.com\"; " + "name2=\"value2\"; $Path=\"/\"; $Domain=\".mydomain.com\""`headers.get(0).getValue());" is 174.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testRFC2109CookiesFormatting,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testCookieOrderingByPath,Long Statement,The length of the statement "assertEquals("$Version=0; name1=value1; $Path=/a/b/c; " + "name2=value2; $Path=/a/b; " + "name3=value3; $Path=/a; "+ "name4=value4; $Path=/"`headers.get(0).getValue());" is 168.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2109Spec,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePathDefault,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseBlankPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseDomainDefaultValue,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullDomain,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseBlankDomain,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseBlankDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 800
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 8000
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePort,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParsePortDefault,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullPort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullPort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseBlankPort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseBlankPort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseInvalidPort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseInvalidPort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativePort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNameValue,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseVersion,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullVersion,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullVersion,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativeVersion,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativeVersion,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseMaxage,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseMaxageDefault,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullMaxage,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNullMaxage,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativeMaxage,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseNegativeMaxage,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseSecure,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseDiscard,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseOtherAttributes,Long Statement,The length of the statement "Header header=new BasicHeader("Set-Cookie2"`"name=value;Comment=\"good cookie\";" + "CommentURL=\"www.domain.com/goodcookie/\";Secure;Version=1");" is 146.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testParseOtherAttributes,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookiesWithComma,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookiesWithComma,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateNoDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainLeadingDot,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEmbeddedDot,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEmbeddedDot,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEmbeddedDot,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainLocal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainLocal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainLocalhost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEffectiveHost,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEffectiveHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainEffectiveHost,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainIllegal,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateDomainIllegal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePath,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePath,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateCookieName,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateCookieName,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateCookieName,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Magic Number,The method contains a magic number: 8000
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidatePort,Magic Number,The method contains a magic number: 800
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateVersion,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testValidateVersion,Magic Number,The method contains a magic number: 8000
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPath,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchDomain,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchDomainLocal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchDomainLocal,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPort,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPort,Magic Number,The method contains a magic number: 323
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPort,Magic Number,The method contains a magic number: 434
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testMatchPort,Magic Number,The method contains a magic number: 8080
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieExpiration,Magic Number,The method contains a magic number: 3600
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieExpiration,Magic Number,The method contains a magic number: 1000L
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieExpiration,Magic Number,The method contains a magic number: 3600
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieExpiration,Magic Number,The method contains a magic number: 1000L
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieSecure,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testCookieSecure,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRFC2965CookieFormatting,Long Statement,The length of the statement "assertEquals("$Version=1; name1=\"value\"; $Path=\"/\"; $Domain=\".domain.com\"; $Port=\"80`8080\""`headers.get(0).getValue());" is 127.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRFC2965CookieFormatting,Long Statement,The length of the statement "assertEquals("$Version=1; " + "name3=\"value\"; $Path=\"/a/b/\"; $Port=\"\"; " + "name2=\"value\"; $Path=\"/a/\"; $Domain=\".domain.com\"; "+ "name1=\"value\"; $Path=\"/\"; $Domain=\".domain.com\"; $Port=\"80`8080\""`headers.get(0).getValue());" is 244.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRFC2965CookieFormatting,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRFC2965CookiesFormatting,Long Statement,The length of the statement "assertEquals("$Version=1; name1=\"value1\"; $Path=\"/\"; $Domain=\".domain.com\"; $Port=\"80`8080\"; " + "name2=\"\"; $Path=\"/\"; $Domain=\".domain.com\""`headers.get(0).getValue());" is 183.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRejectSetCookie,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestCookieRFC2965Spec,testRejectSetCookie,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testBasicDateParse,Magic Number,The method contains a magic number: 2005
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testBasicDateParse,Magic Number,The method contains a magic number: 14
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testTwoDigitYearDateParse,Magic Number,The method contains a magic number: 2005
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testTwoDigitYearDateParse,Magic Number,The method contains a magic number: 14
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testTwoDigitYearDateParse,Magic Number,The method contains a magic number: 1900
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testTwoDigitYearDateParse,Magic Number,The method contains a magic number: 1905
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testTwoDigitYearDateParse,Magic Number,The method contains a magic number: 14
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testParseQuotedDate,Magic Number,The method contains a magic number: 2005
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testParseQuotedDate,Magic Number,The method contains a magic number: 14
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testBasicDateFormat,Magic Number,The method contains a magic number: 2005
+4.0.2,org.apache.http.impl.cookie,TestDateUtils,testBasicDateFormat,Magic Number,The method contains a magic number: 14
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate3,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainValidate4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeCookieAttribHandlers,testNetscapeDomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 3
+4.0.2,org.apache.http.impl.cookie,TestNetscapeDraftHeaderParser,testNetscapeCookieParsing,Magic Number,The method contains a magic number: 16
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testParse,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testParse,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testParse,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testParse,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testUnicode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testUnicode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testUnicode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testUnicode,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testWhitespace,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testWhitespace,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestPublicSuffixListParser,testWhitespace,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainParse,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainParse,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate1,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate2,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate3,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate4,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainValidate4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainMatch1,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainMatch2,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainMatch3,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainMatch4,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109DomainInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionParse,Magic Number,The method contains a magic number: 12
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionParseInvalid,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionValidate,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionValidate,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionValidate,Magic Number,The method contains a magic number: 12
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionValidate,Magic Number,The method contains a magic number: 12
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.impl.cookie,TestRFC2109CookieAttribHandlers,testRFC2109VersionInvalidInput,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,EchoHandler,handle,Complex Conditional,The conditional expression !"GET".equals(method) && !"POST".equals(method) && !"PUT".equals(method) is complex.
+4.0.2,org.apache.http.localserver,LocalTestServer,newDefaultParams,Long Statement,The length of the statement "params.setIntParameter(CoreConnectionPNames.SO_TIMEOUT`60000).setIntParameter(CoreConnectionPNames.SOCKET_BUFFER_SIZE`8 * 1024).setBooleanParameter(CoreConnectionPNames.STALE_CONNECTION_CHECK`false).setBooleanParameter(CoreConnectionPNames.TCP_NODELAY`true).setParameter(CoreProtocolPNames.ORIGIN_SERVER`"LocalTestServer/1.1");" is 327.
+4.0.2,org.apache.http.localserver,LocalTestServer,newDefaultParams,Magic Number,The method contains a magic number: 60000
+4.0.2,org.apache.http.localserver,LocalTestServer,newDefaultParams,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.localserver,LocalTestServer,newDefaultParams,Magic Number,The method contains a magic number: 1024
+4.0.2,org.apache.http.localserver,LocalTestServer,toString,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.localserver,LocalTestServer,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,LocalTestServer,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,LocalTestServer,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,RequestListener,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,RequestListener,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,RequestListener,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,Worker,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,Worker,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,Worker,run,Empty catch clause,The method has an empty catch block.
+4.0.2,org.apache.http.localserver,RandomHandler,handle,Magic Number,The method contains a magic number: 79.0
+4.0.2,org.apache.http.localserver,RandomHandler,writeTo,Magic Number,The method contains a magic number: 2048
+4.0.2,org.apache.http.localserver,RandomHandler,writeTo,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.localserver,RandomEntity,writeTo,Magic Number,The method contains a magic number: 2048
+4.0.2,org.apache.http.localserver,RandomEntity,writeTo,Magic Number,The method contains a magic number: 5
+4.0.2,org.apache.http.localserver,ServerTestBase,setUp,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.mockup,SocketFactoryMockup,connectSocket,Long Parameter List,The method has 6 parameters. 
+4.0.2,org.apache.http.client.benchmark,TestHttpClient3,main,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.benchmark,TestHttpClient3,main,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.client.benchmark,TestHttpClient3,main,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.client.benchmark,TestHttpClient4,main,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.benchmark,TestHttpClient4,main,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.client.benchmark,TestHttpClient4,main,Magic Number,The method contains a magic number: 1024
+4.0.2,org.apache.http.client.benchmark,TestHttpClient4,main,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.client.benchmark,TestHttpClient4,main,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Complex Method,Cyclomatic complexity of the method is 9
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Long Method,The method has 105 lines of code.
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 8
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 1024
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 80
+4.0.2,org.apache.http.client.benchmark,TestHttpCore,main,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.client.benchmark,TestHttpJRE,main,Magic Number,The method contains a magic number: 2
+4.0.2,org.apache.http.client.benchmark,TestHttpJRE,main,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.client.benchmark,TestHttpJRE,main,Magic Number,The method contains a magic number: 200
+4.0.2,org.apache.http.client.benchmark,TestHttpJRE,main,Magic Number,The method contains a magic number: 1000
+4.0.2,org.apache.http.entity.mime.content,FileBody,writeTo,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.entity.mime.content,InputStreamBody,writeTo,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.entity.mime.content,StringBody,writeTo,Magic Number,The method contains a magic number: 4096
+4.0.2,org.apache.http.entity.mime,HttpMultipart,doWriteTo,Complex Method,Cyclomatic complexity of the method is 10
+4.0.2,org.apache.http.entity.mime,MultipartEntity,generateContentType,Magic Number,The method contains a magic number: 11
+4.0.2,org.apache.http.entity.mime,MultipartEntity,generateContentType,Magic Number,The method contains a magic number: 30
+4.0.2,org.apache.http.entity.mime,TestMultipartContentBody,testStringBody,Magic Number,The method contains a magic number: 4
+4.0.2,org.apache.http.entity.mime,TestMultipartContentBody,testStringBody,Magic Number,The method contains a magic number: 9
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormLowLevel,Long Statement,The length of the statement "String expected="--foo\r\n" + "Content-Type: text/plain\r\n" + "\r\n"+ "this stuff\r\n"+ "--foo\r\n"+ "Content-Type: text/plain\r\n"+ "\r\n"+ "that stuff\r\n"+ "--foo\r\n"+ "Content-Type: text/plain\r\n"+ "\r\n"+ "all kind of stuff\r\n"+ "--foo--\r\n";" is 252.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormStringParts,Long Statement,The length of the statement "String expected="--foo\r\n" + "Content-Disposition: form-data; name=\"field1\"\r\n" + "Content-Type: text/plain; charset=" + Charset.defaultCharset() + "\r\n"+ "Content-Transfer-Encoding: 8bit\r\n"+ "\r\n"+ "this stuff\r\n"+ "--foo\r\n"+ "Content-Disposition: form-data; name=\"field2\"\r\n"+ "Content-Type: text/plain; charset=US-ASCII\r\n"+ "Content-Transfer-Encoding: 8bit\r\n"+ "\r\n"+ "that stuff\r\n"+ "--foo\r\n"+ "Content-Disposition: form-data; name=\"field3\"\r\n"+ "Content-Type: text/plain; charset="+ Charset.defaultCharset()+ "\r\n"+ "Content-Transfer-Encoding: 8bit\r\n"+ "\r\n"+ "all kind of stuff\r\n"+ "--foo--\r\n";" is 634.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormBinaryParts,Long Statement,The length of the statement "String expected="--foo\r\n" + "Content-Disposition: form-data; name=\"field1\"; " + "filename=\"" + tmpfile.getName() + "\"\r\n"+ "Content-Type: application/octet-stream\r\n"+ "Content-Transfer-Encoding: binary\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo\r\n"+ "Content-Disposition: form-data; name=\"field2\"; "+ "filename=\"file.tmp\"\r\n"+ "Content-Type: application/octet-stream\r\n"+ "Content-Transfer-Encoding: binary\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo--\r\n";" is 485.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormBrowserCompatible,Long Statement,The length of the statement "String expected="--foo\r\n" + "Content-Disposition: form-data; name=\"field1\"; " + "filename=\"" + tmpfile.getName() + "\"\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo\r\n"+ "Content-Disposition: form-data; name=\"field2\"; "+ "filename=\"file.tmp\"\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo--\r\n";" is 311.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormBrowserCompatibleNonASCIIHeaders,Long Statement,The length of the statement "String expected="--foo\r\n" + "Content-Disposition: form-data; name=\"field1\"; " + "filename=\"" + s1 + ".tmp\"\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo\r\n"+ "Content-Disposition: form-data; name=\"field2\"; "+ "filename=\""+ s2+ ".tmp\"\r\n"+ "\r\n"+ "some random whatever\r\n"+ "--foo--\r\n";" is 304.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormStringPartsMultiCharsets,Long Statement,The length of the statement "out2.write(("--foo\r\n" + "Content-Disposition: form-data; name=\"field1\"\r\n" + "Content-Type: text/plain; charset=ISO-8859-1\r\n"+ "Content-Transfer-Encoding: 8bit\r\n"+ "\r\n").getBytes("US-ASCII"));" is 203.
+4.0.2,org.apache.http.entity.mime,TestMultipartForm,testMultipartFormStringPartsMultiCharsets,Long Statement,The length of the statement "out2.write(("\r\n" + "--foo\r\n" + "Content-Disposition: form-data; name=\"field2\"\r\n"+ "Content-Type: text/plain; charset=KOI8-R\r\n"+ "Content-Transfer-Encoding: 8bit\r\n"+ "\r\n").getBytes("US-ASCII"));" is 207.
+4.0.2,org.apache.http.entity.mime,TestMultipartFormHttpEntity,testExplictContractorParams,Long Statement,The length of the statement "MultipartEntity entity=new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE`"whatever"`CharsetUtil.getCharset("UTF-8"));" is 124.
+4.0.2,org.apache.http.entity.mime,TestMultipartFormHttpEntity,testImplictContractorParams,Magic Number,The method contains a magic number: 30
+4.0.2,org.apache.http.entity.mime,TestMultipartFormHttpEntity,testImplictContractorParams,Magic Number,The method contains a magic number: 40

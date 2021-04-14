@@ -16,10 +16,11 @@ from openpyxl.styles.fills import PatternFill
 
 from thesis import get_dataset_dir
 from thesis.designite_projects import DesigniteProjects
+from thesis.metrics_mgr import MetricsMgr
 from thesis.package_efforts import PackageEffortsAnalyzer
 from thesis.release_details_mgr import ReleaseDetailsMgr
-from thesis.smells_parsers import ArchSmellsParser, DesignSmellsParser, \
-    MetricsMgr, PackageInfo
+from thesis.smells_parsers import ArchSmellsParserEx, DesignSmellsParser, \
+    PackageInfo
 
 
 def _add_chart(work_sheet, cols, rows, title, pos):
@@ -141,19 +142,26 @@ class ProjectSmellsAnalyzer:
         chart.shape = 'box'
         work_sheet.add_chart(chart, "B%s" % (rows + 6))
 
+    def _set_pkg_info(self, pkg):
+        self.packages_info[pkg] = PackageInfo(pkg)
+        self.packages_info[pkg].class_count = \
+            self._metrics.get_pkg_classes(pkg)
+        self.packages_info[pkg].loc = self._metrics.get_pkg_loc(pkg)
+        self.packages_info[pkg].metrics = self._metrics.get_pkg_metrics(pkg)
+        pkg_efforts = self.pkg_analyzer.get_pkg_efforts(
+            self.proj_info.proj, self.proj_info.next_release, pkg)
+        if pkg_efforts:
+            self.packages_info[pkg].lines_added = pkg_efforts.lines_added
+
     def analyze_smells(self):
         file_path = os.path.join(self.designite_path, "ArchitectureSmells.csv")
-        parser = ArchSmellsParser(file_path)
+        parser = ArchSmellsParserEx(file_path)
         self.proj_info.arch_smells = 0
         if "<All packages>" in parser.data:
             parser.data.pop("<All packages>")
         for pkg, pkg_data in parser.data.items():
             if pkg not in self.packages_info:
-                self.packages_info[pkg] = PackageInfo(pkg)
-                self.packages_info[pkg].class_count = \
-                    self._metrics.get_pkg_classes(pkg)
-                self.packages_info[pkg].loc = \
-                    self._metrics.get_pkg_loc(pkg)
+                self._set_pkg_info(pkg)
 
             pkg_info = self.packages_info[pkg]
 
@@ -163,16 +171,15 @@ class ProjectSmellsAnalyzer:
             pkg_info.arch_count = pkg_val
             self.proj_info.arch_smells += pkg_info.arch_count
             pkg_info.arch_score = pkg_val / parser.get_smells_count()
+            pkg_smells = parser.get_pkg_smells(pkg)
+            if pkg_smells:
+                pkg_info.smell_details = pkg_smells
 
         file_path = os.path.join(self.designite_path, "DesignSmells.csv")
         parser = DesignSmellsParser(file_path)
         for pkg, pkg_data in parser.data.items():
             if pkg not in self.packages_info:
-                self.packages_info[pkg] = PackageInfo(pkg)
-                self.packages_info[pkg].class_count = \
-                    self._metrics.get_pkg_classes(pkg)
-                self.packages_info[pkg].loc = \
-                    self._metrics.get_pkg_loc(pkg)
+                self._set_pkg_info(pkg)
 
         rows = 0
         columns = ("Package", "ArchSmells", "ArchScore", "Rank", "Effort",
@@ -258,8 +265,10 @@ class DesigniteAnalyzer:
         fp3_nd = open(os.path.join(out_folder, "pkg_efforts_3_nd.arff"), "w")
         fp5 = open(os.path.join(out_folder, "pkg_efforts_5.arff"), "w")
         fp5_nd = open(os.path.join(out_folder, "pkg_efforts_5_nd.arff"), "w")
+        fp_ext = open(os.path.join(out_folder, "pkg_efforts_ext.csv"), "w")
 
         fp3.write(PackageInfo.get_arff_header("Efforts-3-Levels"))
+        fp_ext.write(PackageInfo.get_extended_header())
         fp3_nd.write(PackageInfo.get_arff_header(
             "Efforts-3-Levels-Normal-Distribution"))
         fp5.write(PackageInfo.get_arff_header("Efforts-5-Levels"))
@@ -287,6 +296,7 @@ class DesigniteAnalyzer:
                     fp3_nd.write(pkg_info.get_arff_3_nd())
                     fp5.write(pkg_info.get_arff_5())
                     fp5_nd.write(pkg_info.get_arff_5_nd())
+                    fp_ext.write(pkg_info.get_extended_data(proj, release, pkg))
                 proj_analyzer.save()
                 if proj_analyzer.proj_info.rank_p < 0.05:
                     ws2.append(proj_analyzer.proj_info.to_tuple())
@@ -302,6 +312,7 @@ class DesigniteAnalyzer:
         fp3_nd.close()
         fp5.close()
         fp5_nd.close()
+        fp_ext.close()
         ws2.append(("",))
         ws2.append(("Median", numpy.median(cc_list)))
         ws2.append(("Mean", numpy.mean(cc_list)))

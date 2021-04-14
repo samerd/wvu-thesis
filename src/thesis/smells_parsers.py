@@ -5,6 +5,7 @@ Created on Jun 7, 2020
 '''
 from __future__ import (absolute_import, division)
 from thesis.arch_smells_info import SmellsInfoFactory
+from thesis.metrics_mgr import TypeMetrics
 
 
 class BaseSmellsParser:
@@ -39,20 +40,28 @@ class ArchSmellsParser(BaseSmellsParser):
         pkg_data[smell_type] += 1
 
 
-class ArchSmellsParserEx(BaseSmellsParser):
+class ArchSmellsParserEx(ArchSmellsParser):
+    smell_info = dict()
 
+#     def _parse(self):
+#         super()._parse()
+#         if "<All packages>" in self.smell_info:
+#             for pkg_data in self.smell_info.values():
+#                 pkg_data.
     def _parse_line(self, line):
+        super()._parse_line(line)
         _, package, smell_type, smell_cause = \
             line.strip().split(",", 3)
-        pkg_data = self.data.setdefault(package, dict())
+        smell_data = self.smell_info.setdefault(package, dict())
         smell_info = SmellsInfoFactory.create_smell_info(
             smell_type, smell_cause)
         if smell_info:
-            smell_info, smell_cause = \
-                smell_info.get_value(), smell_info.get_cause()
+            smell_data[smell_type] = smell_info.description
         else:
-            smell_info = 0, ""
-        pkg_data[smell_type] = smell_info, smell_cause
+            print("Error!")
+
+    def get_pkg_smells(self, pkg):
+        return self.smell_info.get(pkg)
 
 
 class DesignSmellsParser(BaseSmellsParser):
@@ -73,50 +82,6 @@ class ImplSmellsParser(BaseSmellsParser):
         pkg_data = self.data.setdefault(package, dict())
         pkg_data.setdefault(smell_type, 0)
         pkg_data[smell_type] += 1
-
-
-class MetricsMgr:
-
-    def __init__(self, file_name):
-        self._packages = set()
-        self._pkg_classes = dict()
-        self._classses = 0
-        self._loc = 0
-        self._pkg_loc = dict()
-        self._parse(file_name)
-
-    def _parse(self, file_name):
-        with open(file_name) as fp:
-            next(fp)
-            for line in fp:
-                ll = line.split(",")
-                pkg = ll[1]
-                loc = int(ll[7])
-                self._packages.add(pkg)
-                self._pkg_classes.setdefault(pkg, 0)
-                self._pkg_classes[pkg] += 1
-                self._pkg_loc.setdefault(pkg, 0)
-                self._pkg_loc[pkg] += loc
-                self._classses += 1
-                self._loc += loc
-
-    def get_pkg_count(self):
-        return len(self._packages)
-
-    def get_classes_count(self):
-        return self._classses
-
-    def get_total_loc(self):
-        return self._loc
-
-    def get_pkg_classes(self, pkg):
-        return self._pkg_classes.get(pkg, 0)
-
-    def get_pkg_loc(self, pkg):
-        return self._pkg_loc[pkg]
-
-    def iter_packages(self):
-        return iter(self._packages)
 
 # class PkgAnalyzer:
 #
@@ -163,6 +128,17 @@ ARFF_HEADER = """\
 @data
 """
 
+EXT_HEADER = """\
+Project,Release,Package,Classes,Refactoring-LOC,Smells-Rank-3,Efforts-Rank-3,\
+Smells-Rank-5,Efforts-Rank-5,%s,%s
+"""
+
+
+class SmellsInfo:
+
+    def __init__(self):
+        pass
+
 
 class PackageInfo:
     RANK_3_LEVELS = ["Low", "Medium", "High"]
@@ -176,6 +152,7 @@ class PackageInfo:
         self.design_score = 0
         self.class_count = 0
         self.loc = 0
+        self.metrics = None
         self.smells_rank_3 = 0
         self.smells_rank_5 = 0
         self.n_smells_rank_3 = 0
@@ -184,6 +161,8 @@ class PackageInfo:
         self.effort_rank_5 = 0
         self.n_effort_rank_3 = 0
         self.n_effort_rank_5 = 0
+        self.lines_added = 0
+        self.smell_details = dict()
 
     @classmethod
     def calc_bin(cls, rank, count):
@@ -224,6 +203,29 @@ class PackageInfo:
     @classmethod
     def get_arff_header(cls, relation):
         return ARFF_HEADER % relation
+
+    @classmethod
+    def get_extended_header(cls):
+        smells_header = ",".join(SmellsInfoFactory.get_smell_types())
+        return EXT_HEADER % (TypeMetrics.get_header(), smells_header)
+
+    def get_smells_info(self):
+        smell_types = SmellsInfoFactory.get_smell_types()
+        smells_info = list()
+        for stype in smell_types:
+            sinfo = self.smell_details.get(stype, "")
+            smells_info.append(sinfo)
+        return ",".join(smells_info)
+
+    def get_extended_data(self, proj, release, pkg):
+        return "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n" % (
+            proj, release, pkg, self.class_count, int(self.lines_added),
+            self.RANK_3_LEVELS[2 - self.n_smells_rank_3],
+            self.RANK_3_LEVELS[2 - self.n_effort_rank_3],
+            self.RANK_5_LEVELS[4 - self.n_smells_rank_5],
+            self.RANK_5_LEVELS[4 - self.n_effort_rank_5],
+            self.metrics.get_data(),
+            self.get_smells_info())
 
     def get_arff_3(self):
         return "%s,%s,%s,%s\n" % (

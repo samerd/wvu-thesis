@@ -7,6 +7,7 @@ import re
 
 
 class BaseSmellInfo:
+    description = ""
 
     def get_cause(self):
         return ""
@@ -24,7 +25,9 @@ class FeatureConcentrationInfo(BaseSmellInfo):
     def _parse(self, smell_cause):
         match = self.REGEX.search(smell_cause)
         if match:
-            self.lcc = float(match.group(2))
+            lcc = match.group(2)
+            self.lcc = float(lcc)
+            self.description = "LCC: %s" % lcc
         else:
             print("FC: No match")
 
@@ -54,6 +57,7 @@ class GodComponentInfo(BaseSmellInfo):
                 self.cause = "LOC"
             else:
                 print("GC: No match")
+        self.description = "%s: %d" % (self.cause, self.count)
 
     def get_value(self):
         return self.count
@@ -73,7 +77,10 @@ class UnstableDependencyInfo(BaseSmellInfo):
     def _parse(self, smell_cause):
         match = self.REGEX.search(smell_cause)
         if match:
-            self.count = len(match.group(1).split())
+            packages = match.group(1).split("; ")
+            self.count = len(packages)
+            self.description = "Packages(%d): %s" % (
+                self.count, ";".join(packages))
         else:
             print("UD: No match")
 
@@ -92,7 +99,10 @@ class CyclicDependencyInfo(BaseSmellInfo):
     def _parse(self, smell_cause):
         match = self.REGEX.search(smell_cause)
         if match:
-            self.count = len(match.group(1).split())
+            packages = match.group(1).split("; ")
+            self.count = len(packages)
+            self.description = "Packages(%d): %s" % (
+                self.count, ";".join(packages))
         else:
             print("UD: No match")
 
@@ -101,13 +111,20 @@ class CyclicDependencyInfo(BaseSmellInfo):
 
 
 class AmbiguousInterfaceInfo(BaseSmellInfo):
+    REGEX = re.compile(r"class: (\w+)")
 
     def __init__(self, smell_cause):
         self.count = 0
         self._parse(smell_cause)
 
     def _parse(self, smell_cause):
-        pass
+        match = self.REGEX.search(smell_cause)
+        if match:
+            class_name = match.group(1)
+            self.count = 1
+            self.description = "Class: %s" % class_name
+        else:
+            print("AI: No match")
 
     def get_value(self):
         return self.count
@@ -125,6 +142,7 @@ class DenseStructureInfo(BaseSmellInfo):
         match = self.REGEX.search(smell_cause)
         if match:
             self.degree = float(match.group(1))
+            self.description = "Average degree: %d" % self.degree
         else:
             print("DS: No match")
 
@@ -133,13 +151,21 @@ class DenseStructureInfo(BaseSmellInfo):
 
 
 class ScatteredFunctionalityInfo(BaseSmellInfo):
+    REGEX = re.compile(r"Following components realize the same concern: (.*)")
 
     def __init__(self, smell_cause):
         self.count = 0
         self._parse(smell_cause)
 
     def _parse(self, smell_cause):
-        pass
+        match = self.REGEX.search(smell_cause)
+        if match:
+            packages = match.group(1).split("; ")
+            self.count = len(packages)
+            self.description = "Packages(%d): %s" % (
+                self.count, ";".join(packages))
+        else:
+            print("SF: No match")
 
     def get_value(self):
         return self.count
@@ -161,3 +187,7 @@ class SmellsInfoFactory:
         if smell_type in cls.mapping:
             return cls.mapping[smell_type](smell_cause)
         return None
+
+    @classmethod
+    def get_smell_types(cls):
+        return sorted(cls.mapping.keys())
